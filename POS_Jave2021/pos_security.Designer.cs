@@ -1,7 +1,7 @@
 ﻿
 namespace POS_Jave2021
 {
-    partial class Form1
+    partial class pos_security
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,15 @@ namespace POS_Jave2021
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // pos_security
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 423);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(598, 410);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "pos_security";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Authentication Security ";
             this.ResumeLayout(false);
 
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace POS_Jave2021
 {
-    public partial class Form1 : Form
+    public partial class pos_security : Form
     {
-        public Form1()
+        public pos_security()
         {
             InitializeComponent();
         }
