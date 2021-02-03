@@ -41,10 +41,50 @@ namespace POS_Jave2021
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dt_menu = new System.Windows.Forms.DataGridView();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnNum1 = new System.Windows.Forms.Button();
+            this.btnNum4 = new System.Windows.Forms.Button();
+            this.btn00 = new System.Windows.Forms.Button();
+            this.btnNum7 = new System.Windows.Forms.Button();
+            this.btnNum8 = new System.Windows.Forms.Button();
+            this.btn0 = new System.Windows.Forms.Button();
+            this.btnNum5 = new System.Windows.Forms.Button();
+            this.btnNum2 = new System.Windows.Forms.Button();
+            this.btnNum9 = new System.Windows.Forms.Button();
+            this.btnpoint = new System.Windows.Forms.Button();
+            this.btnNum6 = new System.Windows.Forms.Button();
+            this.btnNum3 = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.dt_order = new System.Windows.Forms.DataGridView();
             this.POS.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_menu)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_order)).BeginInit();
             this.SuspendLayout();
             // 
             // POS
@@ -75,16 +115,22 @@ namespace POS_Jave2021
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.LightGray;
+            this.tabPage2.Controls.Add(this.pictureBox2);
+            this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1223, 623);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "passcode";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.groupBox4);
+            this.tabPage3.Controls.Add(this.groupBox3);
+            this.tabPage3.Controls.Add(this.groupBox2);
+            this.tabPage3.Controls.Add(this.groupBox1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -167,6 +213,335 @@ namespace POS_Jave2021
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(495, 31);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Location = new System.Drawing.Point(353, 136);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(516, 456);
+            this.panel2.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(0, 308);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button2.Size = new System.Drawing.Size(516, 148);
+            this.button2.TabIndex = 4;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(96, 236);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(338, 31);
+            this.textBox3.TabIndex = 1;
+            this.textBox3.UseSystemPasswordChar = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(99, 202);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(142, 31);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Passcode";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dt_order);
+            this.groupBox1.Location = new System.Drawing.Point(3, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(569, 223);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Orders";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.panel3);
+            this.groupBox2.Location = new System.Drawing.Point(3, 235);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(569, 370);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Location = new System.Drawing.Point(4, 16);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(564, 48);
+            this.panel3.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(2, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 24);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Sub Total";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(449, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 24);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "P 0.00";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.dt_menu);
+            this.groupBox3.Location = new System.Drawing.Point(578, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(639, 347);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Menu : ";
+            // 
+            // dt_menu
+            // 
+            this.dt_menu.BackgroundColor = System.Drawing.Color.AliceBlue;
+            this.dt_menu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_menu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dt_menu.Location = new System.Drawing.Point(3, 16);
+            this.dt_menu.Name = "dt_menu";
+            this.dt_menu.Size = new System.Drawing.Size(633, 328);
+            this.dt_menu.TabIndex = 0;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.btnDel);
+            this.groupBox4.Controls.Add(this.btnOK);
+            this.groupBox4.Controls.Add(this.btnClear);
+            this.groupBox4.Controls.Add(this.btnNum9);
+            this.groupBox4.Controls.Add(this.btnpoint);
+            this.groupBox4.Controls.Add(this.btnNum6);
+            this.groupBox4.Controls.Add(this.btnNum3);
+            this.groupBox4.Controls.Add(this.btnNum8);
+            this.groupBox4.Controls.Add(this.btn0);
+            this.groupBox4.Controls.Add(this.btnNum5);
+            this.groupBox4.Controls.Add(this.btnNum2);
+            this.groupBox4.Controls.Add(this.btnNum7);
+            this.groupBox4.Controls.Add(this.btn00);
+            this.groupBox4.Controls.Add(this.btnNum4);
+            this.groupBox4.Controls.Add(this.btnNum1);
+            this.groupBox4.Location = new System.Drawing.Point(581, 359);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(633, 258);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
+            // 
+            // btnNum1
+            // 
+            this.btnNum1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNum1.Location = new System.Drawing.Point(321, 136);
+            this.btnNum1.Name = "btnNum1";
+            this.btnNum1.Size = new System.Drawing.Size(72, 55);
+            this.btnNum1.TabIndex = 0;
+            this.btnNum1.Text = "1";
+            this.btnNum1.UseVisualStyleBackColor = false;
+            // 
+            // btnNum4
+            // 
+            this.btnNum4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnNum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNum4.Location = new System.Drawing.Point(321, 75);
+            this.btnNum4.Name = "btnNum4";
+            this.btnNum4.Size = new System.Drawing.Size(72, 55);
+            this.btnNum4.TabIndex = 1;
+            this.btnNum4.Text = "4";
+            this.btnNum4.UseVisualStyleBackColor = false;
+            // 
+            // btn00
+            // 
+            this.btn00.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn00.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn00.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn00.Location = new System.Drawing.Point(321, 197);
+            this.btn00.Name = "btn00";
+            this.btn00.Size = new System.Drawing.Size(72, 55);
+            this.btn00.TabIndex = 2;
+            this.btn00.Text = "00";
+            this.btn00.UseVisualStyleBackColor = false;
+            // 
+            // btnNum7
+            // 
+            this.btnNum7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnNum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNum7.Location = new System.Drawing.Point(321, 14);
+            this.btnNum7.Name = "btnNum7";
+            this.btnNum7.Size = new System.Drawing.Size(72, 55);
+            this.btnNum7.TabIndex = 3;
+            this.btnNum7.Text = "7";
+            this.btnNum7.UseVisualStyleBackColor = false;
+            // 
+            // btnNum8
+            // 
+            this.btnNum8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnNum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNum8.Location = new System.Drawing.Point(399, 14);
+            this.btnNum8.Name = "btnNum8";
+            this.btnNum8.Size = new System.Drawing.Size(72, 55);
+            this.btnNum8.TabIndex = 7;
+            this.btnNum8.Text = "8";
+            this.btnNum8.UseVisualStyleBackColor = false;
+            // 
+            // btn0
+            // 
+            this.btn0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn0.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn0.Location = new System.Drawing.Point(399, 197);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(72, 55);
+            this.btn0.TabIndex = 6;
+            this.btn0.Text = "0";
+            this.btn0.UseVisualStyleBackColor = false;
+            // 
+            // btnNum5
+            // 
+            this.btnNum5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnNum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNum5.Location = new System.Drawing.Point(399, 75);
+            this.btnNum5.Name = "btnNum5";
+            this.btnNum5.Size = new System.Drawing.Size(72, 55);
+            this.btnNum5.TabIndex = 5;
+            this.btnNum5.Text = "5";
+            this.btnNum5.UseVisualStyleBackColor = false;
+            // 
+            // btnNum2
+            // 
+            this.btnNum2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNum2.Location = new System.Drawing.Point(399, 136);
+            this.btnNum2.Name = "btnNum2";
+            this.btnNum2.Size = new System.Drawing.Size(72, 55);
+            this.btnNum2.TabIndex = 4;
+            this.btnNum2.Text = "2";
+            this.btnNum2.UseVisualStyleBackColor = false;
+            // 
+            // btnNum9
+            // 
+            this.btnNum9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnNum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNum9.Location = new System.Drawing.Point(477, 14);
+            this.btnNum9.Name = "btnNum9";
+            this.btnNum9.Size = new System.Drawing.Size(72, 55);
+            this.btnNum9.TabIndex = 11;
+            this.btnNum9.Text = "9";
+            this.btnNum9.UseVisualStyleBackColor = false;
+            // 
+            // btnpoint
+            // 
+            this.btnpoint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnpoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpoint.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnpoint.Location = new System.Drawing.Point(477, 197);
+            this.btnpoint.Name = "btnpoint";
+            this.btnpoint.Size = new System.Drawing.Size(72, 55);
+            this.btnpoint.TabIndex = 10;
+            this.btnpoint.Text = ".";
+            this.btnpoint.UseVisualStyleBackColor = false;
+            // 
+            // btnNum6
+            // 
+            this.btnNum6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnNum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNum6.Location = new System.Drawing.Point(477, 75);
+            this.btnNum6.Name = "btnNum6";
+            this.btnNum6.Size = new System.Drawing.Size(72, 55);
+            this.btnNum6.TabIndex = 9;
+            this.btnNum6.Text = "6";
+            this.btnNum6.UseVisualStyleBackColor = false;
+            // 
+            // btnNum3
+            // 
+            this.btnNum3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnNum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNum3.Location = new System.Drawing.Point(477, 136);
+            this.btnNum3.Name = "btnNum3";
+            this.btnNum3.Size = new System.Drawing.Size(72, 55);
+            this.btnNum3.TabIndex = 8;
+            this.btnNum3.Text = "3";
+            this.btnNum3.UseVisualStyleBackColor = false;
+            // 
+            // btnDel
+            // 
+            this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.Location = new System.Drawing.Point(555, 14);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(72, 55);
+            this.btnDel.TabIndex = 15;
+            this.btnDel.Text = "Del";
+            this.btnDel.UseVisualStyleBackColor = true;
+            // 
+            // btnOK
+            // 
+            this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.Location = new System.Drawing.Point(555, 136);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(72, 116);
+            this.btnOK.TabIndex = 14;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(555, 75);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(72, 55);
+            this.btnClear.TabIndex = 13;
+            this.btnClear.Text = "Clr";
+            this.btnClear.UseVisualStyleBackColor = true;
+            // 
+            // dt_order
+            // 
+            this.dt_order.BackgroundColor = System.Drawing.Color.White;
+            this.dt_order.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_order.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dt_order.Location = new System.Drawing.Point(3, 16);
+            this.dt_order.Name = "dt_order";
+            this.dt_order.Size = new System.Drawing.Size(563, 204);
+            this.dt_order.TabIndex = 0;
+            // 
             // pos_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -179,9 +554,23 @@ namespace POS_Jave2021
             this.POS.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dt_menu)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dt_order)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -199,5 +588,34 @@ namespace POS_Jave2021
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnDel;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnNum9;
+        private System.Windows.Forms.Button btnpoint;
+        private System.Windows.Forms.Button btnNum6;
+        private System.Windows.Forms.Button btnNum3;
+        private System.Windows.Forms.Button btnNum8;
+        private System.Windows.Forms.Button btn0;
+        private System.Windows.Forms.Button btnNum5;
+        private System.Windows.Forms.Button btnNum2;
+        private System.Windows.Forms.Button btnNum7;
+        private System.Windows.Forms.Button btn00;
+        private System.Windows.Forms.Button btnNum4;
+        private System.Windows.Forms.Button btnNum1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dt_menu;
+        private System.Windows.Forms.DataGridView dt_order;
     }
 }
