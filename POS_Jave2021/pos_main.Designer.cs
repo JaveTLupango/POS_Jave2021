@@ -84,6 +84,8 @@ namespace POS_Jave2021
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.POS.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -99,6 +101,8 @@ namespace POS_Jave2021
             ((System.ComponentModel.ISupportInitialize)(this.dt_menu)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt_order)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // POS
@@ -141,6 +145,7 @@ namespace POS_Jave2021
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.Silver;
             this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Controls.Add(this.groupBox2);
@@ -151,7 +156,6 @@ namespace POS_Jave2021
             this.tabPage3.Size = new System.Drawing.Size(1223, 655);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "POS Main";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -283,6 +287,7 @@ namespace POS_Jave2021
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.dt_order);
             this.groupBox1.Location = new System.Drawing.Point(3, 37);
             this.groupBox1.Name = "groupBox1";
@@ -359,6 +364,7 @@ namespace POS_Jave2021
             // groupBox3
             // 
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox3.Controls.Add(this.pictureBox3);
             this.groupBox3.Controls.Add(this.dt_menu);
             this.groupBox3.Location = new System.Drawing.Point(578, 37);
             this.groupBox3.Name = "groupBox3";
@@ -737,6 +743,24 @@ namespace POS_Jave2021
             this.button10.Text = "D. 25%";
             this.button10.UseVisualStyleBackColor = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Location = new System.Drawing.Point(236, 200);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(192, 121);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Location = new System.Drawing.Point(181, 78);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(192, 121);
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
             // pos_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -767,6 +791,8 @@ namespace POS_Jave2021
             ((System.ComponentModel.ISupportInitialize)(this.dt_menu)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dt_order)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -827,5 +853,7 @@ namespace POS_Jave2021
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
