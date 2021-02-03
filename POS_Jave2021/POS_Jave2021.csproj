@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pos_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_main.Designer.cs">
+      <DependentUpon>pos_main.cs</DependentUpon>
+    </Compile>
     <Compile Include="pos_security.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="pos_main.resx">
+      <DependentUpon>pos_main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pos_security.resx">
       <DependentUpon>pos_security.cs</DependentUpon>
     </EmbeddedResource>

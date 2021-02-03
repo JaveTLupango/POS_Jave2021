@@ -16,7 +16,7 @@ namespace POS_Jave2021
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new pos_security());
+            Application.Run(new pos_main());
         }
     }
 }
