@@ -34,19 +34,12 @@ namespace POS_Jave2021.Class
         /// </summary>
         public static void connect()
         {
-            try
-            {
                 classConnection m = connStringData();           
                 string connectionString;
                 connectionString = "SERVER=" + m.host + ";" + "DATABASE=" +
                 m.dbname + ";" + "UID=" + m.username + ";" + "PASSWORD=" + m.password + ";";
                 conn = new MySqlConnection(connectionString);
-                //MessageBox.Show("Success");
-            }
-            catch (Exception ex)
-            {
-                
-            }
+                //MessageBox.Show("Success");         
         }
     }
 }

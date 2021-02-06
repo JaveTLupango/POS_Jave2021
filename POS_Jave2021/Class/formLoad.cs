@@ -11,11 +11,6 @@ namespace POS_Jave2021.Class
     {
         public static string formLoad_data()
         {
-            string expdate = ConfigurationManager.AppSettings["ExpirationOfDebug"];
-
-
-
-
             return "";
         }
     }

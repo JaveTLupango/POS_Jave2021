@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using POS_Jave2021.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,9 +18,17 @@ namespace POS_Jave2021
         {
             InitializeComponent();
         }
-
+        MySqlConnection conn;
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void pos_main_Load(object sender, EventArgs e)
+        {
+            connectionClass.connect();
+            conn = connectionClass.conn;
+
 
         }
     }
