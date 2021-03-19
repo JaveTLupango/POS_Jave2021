@@ -235,7 +235,7 @@ namespace POS_Jave2021
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Location = new System.Drawing.Point(353, 136);
+            this.panel2.Location = new System.Drawing.Point(354, 136);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(516, 456);
             this.panel2.TabIndex = 2;
@@ -292,7 +292,7 @@ namespace POS_Jave2021
             this.groupBox4.Controls.Add(this.btn_coffee);
             this.groupBox4.Controls.Add(this.btn_Foods);
             this.groupBox4.Controls.Add(this.btnDrinks);
-            this.groupBox4.Location = new System.Drawing.Point(581, 574);
+            this.groupBox4.Location = new System.Drawing.Point(582, 574);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(633, 75);
             this.groupBox4.TabIndex = 1;
@@ -351,7 +351,7 @@ namespace POS_Jave2021
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox3.Controls.Add(this.pictureBox3);
             this.groupBox3.Controls.Add(this.dt_menu);
-            this.groupBox3.Location = new System.Drawing.Point(578, 37);
+            this.groupBox3.Location = new System.Drawing.Point(579, 37);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(639, 531);
             this.groupBox3.TabIndex = 1;
@@ -406,7 +406,7 @@ namespace POS_Jave2021
             this.groupBox2.Controls.Add(this.btnNum4);
             this.groupBox2.Controls.Add(this.btnNum1);
             this.groupBox2.Controls.Add(this.panel3);
-            this.groupBox2.Location = new System.Drawing.Point(3, 313);
+            this.groupBox2.Location = new System.Drawing.Point(4, 313);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(569, 336);
             this.groupBox2.TabIndex = 1;
@@ -735,7 +735,7 @@ namespace POS_Jave2021
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.dt_order);
-            this.groupBox1.Location = new System.Drawing.Point(3, 37);
+            this.groupBox1.Location = new System.Drawing.Point(4, 37);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(569, 270);
             this.groupBox1.TabIndex = 0;
@@ -769,7 +769,7 @@ namespace POS_Jave2021
             this.Controls.Add(this.POS);
             this.Name = "pos_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "pos_main";
+            this.Text = "POS & Inventory System";
             this.Load += new System.EventHandler(this.pos_main_Load);
             this.POS.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
