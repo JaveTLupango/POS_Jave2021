@@ -86,6 +86,7 @@ namespace POS_Jave2021
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.dt_order = new System.Windows.Forms.DataGridView();
+            this.User_Registration = new System.Windows.Forms.TabPage();
             this.POS.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -113,6 +114,7 @@ namespace POS_Jave2021
             this.POS.Controls.Add(this.tabPage1);
             this.POS.Controls.Add(this.tabPage2);
             this.POS.Controls.Add(this.tabPage3);
+            this.POS.Controls.Add(this.User_Registration);
             this.POS.Location = new System.Drawing.Point(0, 12);
             this.POS.Name = "POS";
             this.POS.SelectedIndex = 0;
@@ -761,6 +763,16 @@ namespace POS_Jave2021
             this.dt_order.Size = new System.Drawing.Size(563, 251);
             this.dt_order.TabIndex = 0;
             // 
+            // User_Registration
+            // 
+            this.User_Registration.Location = new System.Drawing.Point(4, 22);
+            this.User_Registration.Name = "User_Registration";
+            this.User_Registration.Padding = new System.Windows.Forms.Padding(3);
+            this.User_Registration.Size = new System.Drawing.Size(1223, 655);
+            this.User_Registration.TabIndex = 3;
+            this.User_Registration.Text = "User Registration";
+            this.User_Registration.UseVisualStyleBackColor = true;
+            // 
             // pos_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -856,5 +868,6 @@ namespace POS_Jave2021
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TabPage User_Registration;
     }
 }
