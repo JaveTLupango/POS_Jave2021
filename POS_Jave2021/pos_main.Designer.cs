@@ -116,6 +116,13 @@ namespace POS_Jave2021
             this.btn_userinfo = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.POS.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -136,6 +143,11 @@ namespace POS_Jave2021
             this.User_Registration.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // POS
@@ -797,6 +809,7 @@ namespace POS_Jave2021
             // 
             // User_Registration
             // 
+            this.User_Registration.Controls.Add(this.groupBox7);
             this.User_Registration.Controls.Add(this.groupBox6);
             this.User_Registration.Controls.Add(this.groupBox5);
             this.User_Registration.Location = new System.Drawing.Point(4, 22);
@@ -809,6 +822,7 @@ namespace POS_Jave2021
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.pictureBox6);
             this.groupBox5.Controls.Add(this.btn_userinfo);
             this.groupBox5.Controls.Add(this.comboBox3);
             this.groupBox5.Controls.Add(this.label14);
@@ -826,6 +840,7 @@ namespace POS_Jave2021
             this.groupBox5.Controls.Add(this.textBox6);
             this.groupBox5.Controls.Add(this.label7);
             this.groupBox5.Controls.Add(this.textBox5);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(15, 13);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(353, 622);
@@ -991,6 +1006,7 @@ namespace POS_Jave2021
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.pictureBox7);
             this.groupBox6.Controls.Add(this.button12);
             this.groupBox6.Controls.Add(this.button11);
             this.groupBox6.Controls.Add(this.label19);
@@ -1001,6 +1017,7 @@ namespace POS_Jave2021
             this.groupBox6.Controls.Add(this.textBox13);
             this.groupBox6.Controls.Add(this.label22);
             this.groupBox6.Controls.Add(this.textBox14);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(383, 13);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(353, 622);
@@ -1091,7 +1108,7 @@ namespace POS_Jave2021
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(15, 341);
+            this.button11.Location = new System.Drawing.Point(15, 324);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(315, 54);
             this.button11.TabIndex = 17;
@@ -1106,6 +1123,79 @@ namespace POS_Jave2021
             this.button12.TabIndex = 18;
             this.button12.Text = "BACK";
             this.button12.UseVisualStyleBackColor = true;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.pictureBox8);
+            this.groupBox7.Controls.Add(this.button14);
+            this.groupBox7.Controls.Add(this.pictureBox5);
+            this.groupBox7.Controls.Add(this.button13);
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Location = new System.Drawing.Point(742, 13);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(353, 622);
+            this.groupBox7.TabIndex = 19;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Upload Profile";
+            // 
+            // button13
+            // 
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Location = new System.Drawing.Point(15, 87);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(315, 54);
+            this.button13.TabIndex = 19;
+            this.button13.Text = "Upload Profile";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(15, 147);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(315, 232);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 20;
+            this.pictureBox5.TabStop = false;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(15, 387);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(315, 54);
+            this.button14.TabIndex = 21;
+            this.button14.Text = "Save";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(269, 15);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(66, 60);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 17;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(281, 15);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(66, 60);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 18;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(282, 15);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(66, 60);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 22;
+            this.pictureBox8.TabStop = false;
             // 
             // pos_main
             // 
@@ -1145,6 +1235,11 @@ namespace POS_Jave2021
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1237,5 +1332,12 @@ namespace POS_Jave2021
         private System.Windows.Forms.Button btn_userinfo;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }
