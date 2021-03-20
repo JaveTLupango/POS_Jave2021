@@ -28,8 +28,6 @@ namespace POS_Jave2021
         {
             connectionClass.connect();
             conn = connectionClass.conn;
-
-
         }
 
         private void textBox12_TextChanged(object sender, EventArgs e)
