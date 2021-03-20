@@ -128,6 +128,7 @@ namespace POS_Jave2021
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button17 = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
             this.POS.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -827,6 +828,7 @@ namespace POS_Jave2021
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.label17);
             this.groupBox7.Controls.Add(this.button17);
             this.groupBox7.Controls.Add(this.pictureBox8);
             this.groupBox7.Controls.Add(this.button14);
@@ -874,10 +876,11 @@ namespace POS_Jave2021
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.Location = new System.Drawing.Point(15, 87);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(315, 54);
+            this.button13.Size = new System.Drawing.Size(315, 33);
             this.button13.TabIndex = 19;
             this.button13.Text = "Upload Profile";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // groupBox6
             // 
@@ -1262,6 +1265,15 @@ namespace POS_Jave2021
             this.button17.Text = "BACK";
             this.button17.UseVisualStyleBackColor = true;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(21, 123);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(0, 15);
+            this.label17.TabIndex = 23;
+            // 
             // pos_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1297,6 +1309,7 @@ namespace POS_Jave2021
             ((System.ComponentModel.ISupportInitialize)(this.dt_order)).EndInit();
             this.User_Registration.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBox6.ResumeLayout(false);
@@ -1409,5 +1422,6 @@ namespace POS_Jave2021
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Label label17;
     }
 }
