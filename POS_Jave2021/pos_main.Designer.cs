@@ -127,6 +127,7 @@ namespace POS_Jave2021
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button17 = new System.Windows.Forms.Button();
             this.POS.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -826,6 +827,7 @@ namespace POS_Jave2021
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.button17);
             this.groupBox7.Controls.Add(this.pictureBox8);
             this.groupBox7.Controls.Add(this.button14);
             this.groupBox7.Controls.Add(this.pictureBox5);
@@ -969,6 +971,7 @@ namespace POS_Jave2021
             this.button11.TabIndex = 17;
             this.button11.Text = "NEXT";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label19
             // 
@@ -1040,6 +1043,7 @@ namespace POS_Jave2021
             // 
             // textBox14
             // 
+            this.textBox14.Enabled = false;
             this.textBox14.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox14.Location = new System.Drawing.Point(15, 81);
             this.textBox14.Name = "textBox14";
@@ -1249,6 +1253,15 @@ namespace POS_Jave2021
             this.textBox5.Size = new System.Drawing.Size(320, 26);
             this.textBox5.TabIndex = 0;
             // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(15, 447);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(315, 54);
+            this.button17.TabIndex = 23;
+            this.button17.Text = "BACK";
+            this.button17.UseVisualStyleBackColor = true;
+            // 
             // pos_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1395,5 +1408,6 @@ namespace POS_Jave2021
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button17;
     }
 }

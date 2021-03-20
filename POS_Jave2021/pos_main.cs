@@ -89,5 +89,18 @@ namespace POS_Jave2021
                 button16.Text = "Hide";
             }
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string retpass = passwordHash.encryptor(txt_confirmpassword.Text.Trim());
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }
