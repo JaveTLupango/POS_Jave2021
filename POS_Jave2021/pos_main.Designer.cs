@@ -93,6 +93,9 @@ namespace POS_Jave2021
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button13 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.button12 = new System.Windows.Forms.Button();
@@ -124,9 +127,6 @@ namespace POS_Jave2021
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.POS.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -841,9 +841,9 @@ namespace POS_Jave2021
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(282, 15);
+            this.pictureBox8.Location = new System.Drawing.Point(230, 15);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(66, 60);
+            this.pictureBox8.Size = new System.Drawing.Size(118, 60);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 22;
             this.pictureBox8.TabStop = false;
@@ -902,6 +902,37 @@ namespace POS_Jave2021
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "User Credential";
             // 
+            // button16
+            // 
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Location = new System.Drawing.Point(293, 271);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(54, 27);
+            this.button16.TabIndex = 22;
+            this.button16.Text = "Show";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // button15
+            // 
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Location = new System.Drawing.Point(293, 207);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(54, 26);
+            this.button15.TabIndex = 21;
+            this.button15.Text = "Show";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(24, 301);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(0, 15);
+            this.label16.TabIndex = 20;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -914,9 +945,9 @@ namespace POS_Jave2021
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(281, 15);
+            this.pictureBox7.Location = new System.Drawing.Point(229, 15);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(66, 60);
+            this.pictureBox7.Size = new System.Drawing.Size(118, 60);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 18;
             this.pictureBox7.TabStop = false;
@@ -1046,9 +1077,9 @@ namespace POS_Jave2021
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(269, 15);
+            this.pictureBox6.Location = new System.Drawing.Point(237, 15);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(66, 60);
+            this.pictureBox6.Size = new System.Drawing.Size(98, 60);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
@@ -1217,37 +1248,6 @@ namespace POS_Jave2021
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(320, 26);
             this.textBox5.TabIndex = 0;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(24, 301);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 15);
-            this.label16.TabIndex = 20;
-            // 
-            // button15
-            // 
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(293, 207);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(54, 26);
-            this.button15.TabIndex = 21;
-            this.button15.Text = "Show";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // button16
-            // 
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(293, 271);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(54, 27);
-            this.button16.TabIndex = 22;
-            this.button16.Text = "Show";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // pos_main
             // 
