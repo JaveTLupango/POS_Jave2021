@@ -31,5 +31,65 @@ namespace POS_Jave2021
 
 
         }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string passsword = txt_newpassword.Text.Trim();
+                label15.Text = passwordValidator.CheckStrength(passsword).ToString();
+            }
+            catch (Exception)
+            {
+                label15.Text = "Invalid Password..";
+            }
+        }
+
+        private void txt_confirmpassword_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txt_newpassword.Text.Trim() == txt_confirmpassword.Text.Trim())
+                {
+                    label16.Text = "Password match!";
+                }
+                else
+                {
+                    label16.Text = "Password not match!";
+                }
+            }
+            catch (Exception)
+            {
+                label16.Text = "Password not match!";
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            if (button15.Text == "Hide")
+            {
+                txt_newpassword.UseSystemPasswordChar = true;
+                button15.Text = "Show";
+            }
+            else
+            {
+                txt_newpassword.UseSystemPasswordChar = false;
+                button15.Text = "Hide";
+            }
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            if (button16.Text == "Hide")
+            {
+                txt_confirmpassword.UseSystemPasswordChar = true;
+                button16.Text = "Show";
+            }
+            else
+            {
+                txt_confirmpassword.UseSystemPasswordChar = false;
+                button16.Text = "Hide";
+            }
+        }
     }
 }

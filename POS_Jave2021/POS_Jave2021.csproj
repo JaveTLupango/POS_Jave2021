@@ -97,6 +97,7 @@
   <ItemGroup>
     <Compile Include="Class\connectionClass.cs" />
     <Compile Include="Class\formLoad.cs" />
+    <Compile Include="Class\passwordValidator.cs" />
     <Compile Include="Model\classConnection.cs" />
     <Compile Include="Model\ClassModel.cs" />
     <Compile Include="pos_main.cs">
