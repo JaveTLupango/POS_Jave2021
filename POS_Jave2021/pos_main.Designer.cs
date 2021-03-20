@@ -105,14 +105,6 @@ namespace POS_Jave2021
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -122,6 +114,8 @@ namespace POS_Jave2021
             this.label22 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.btn_userinfo = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.POS.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -997,14 +991,8 @@ namespace POS_Jave2021
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.comboBox4);
-            this.groupBox6.Controls.Add(this.label15);
-            this.groupBox6.Controls.Add(this.comboBox5);
-            this.groupBox6.Controls.Add(this.label16);
-            this.groupBox6.Controls.Add(this.comboBox6);
-            this.groupBox6.Controls.Add(this.label17);
-            this.groupBox6.Controls.Add(this.label18);
-            this.groupBox6.Controls.Add(this.textBox10);
+            this.groupBox6.Controls.Add(this.button12);
+            this.groupBox6.Controls.Add(this.button11);
             this.groupBox6.Controls.Add(this.label19);
             this.groupBox6.Controls.Add(this.textBox11);
             this.groupBox6.Controls.Add(this.label20);
@@ -1018,106 +1006,22 @@ namespace POS_Jave2021
             this.groupBox6.Size = new System.Drawing.Size(353, 622);
             this.groupBox6.TabIndex = 16;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "User Information";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Active",
-            "Inactive"});
-            this.comboBox4.Location = new System.Drawing.Point(12, 486);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(320, 28);
-            this.comboBox4.TabIndex = 15;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(15, 465);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(97, 18);
-            this.label15.TabIndex = 14;
-            this.label15.Text = "User Status";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.comboBox5.Location = new System.Drawing.Point(15, 424);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(320, 28);
-            this.comboBox5.TabIndex = 13;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(15, 403);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(183, 18);
-            this.label16.TabIndex = 12;
-            this.label16.Text = "2 Factor Authentication";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "Administrator",
-            "Employee"});
-            this.comboBox6.Location = new System.Drawing.Point(15, 362);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(320, 28);
-            this.comboBox6.TabIndex = 11;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(15, 341);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(84, 18);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "User Type";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(15, 286);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(50, 18);
-            this.label18.TabIndex = 9;
-            this.label18.Text = "Email";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(15, 307);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(320, 26);
-            this.textBox10.TabIndex = 8;
+            this.groupBox6.Text = "User Credential";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(15, 229);
+            this.label19.Location = new System.Drawing.Point(15, 251);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(71, 18);
+            this.label19.Size = new System.Drawing.Size(149, 18);
             this.label19.TabIndex = 7;
-            this.label19.Text = "Phone #";
+            this.label19.Text = "Confirm Password";
             // 
             // textBox11
             // 
             this.textBox11.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(15, 250);
+            this.textBox11.Location = new System.Drawing.Point(15, 272);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(320, 26);
             this.textBox11.TabIndex = 6;
@@ -1126,16 +1030,16 @@ namespace POS_Jave2021
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(15, 172);
+            this.label20.Location = new System.Drawing.Point(15, 186);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(105, 18);
+            this.label20.Size = new System.Drawing.Size(122, 18);
             this.label20.TabIndex = 5;
-            this.label20.Text = "Middle Name";
+            this.label20.Text = "New Password";
             // 
             // textBox12
             // 
             this.textBox12.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(15, 193);
+            this.textBox12.Location = new System.Drawing.Point(15, 207);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(320, 26);
             this.textBox12.TabIndex = 4;
@@ -1144,16 +1048,16 @@ namespace POS_Jave2021
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(15, 115);
+            this.label21.Location = new System.Drawing.Point(15, 120);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(90, 18);
+            this.label21.Size = new System.Drawing.Size(86, 18);
             this.label21.TabIndex = 3;
-            this.label21.Text = "First Name";
+            this.label21.Text = "Username";
             // 
             // textBox13
             // 
             this.textBox13.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(15, 139);
+            this.textBox13.Location = new System.Drawing.Point(15, 144);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(320, 26);
             this.textBox13.TabIndex = 2;
@@ -1164,9 +1068,9 @@ namespace POS_Jave2021
             this.label22.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(15, 58);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(89, 18);
+            this.label22.Size = new System.Drawing.Size(65, 18);
             this.label22.TabIndex = 1;
-            this.label22.Text = "Last Name";
+            this.label22.Text = "User ID";
             // 
             // textBox14
             // 
@@ -1184,6 +1088,24 @@ namespace POS_Jave2021
             this.btn_userinfo.TabIndex = 16;
             this.btn_userinfo.Text = "NEXT";
             this.btn_userinfo.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(15, 341);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(315, 54);
+            this.button11.TabIndex = 17;
+            this.button11.Text = "NEXT";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(15, 407);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(315, 54);
+            this.button12.TabIndex = 18;
+            this.button12.Text = "BACK";
+            this.button12.UseVisualStyleBackColor = true;
             // 
             // pos_main
             // 
@@ -1304,14 +1226,6 @@ namespace POS_Jave2021
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label20;
@@ -1321,5 +1235,7 @@ namespace POS_Jave2021
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Button btn_userinfo;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
     }
 }
