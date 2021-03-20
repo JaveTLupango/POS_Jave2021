@@ -1018,7 +1018,7 @@ namespace POS_Jave2021
             this.groupBox6.Controls.Add(this.label22);
             this.groupBox6.Controls.Add(this.textBox14);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(383, 13);
+            this.groupBox6.Location = new System.Drawing.Point(378, 13);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(353, 622);
             this.groupBox6.TabIndex = 16;
