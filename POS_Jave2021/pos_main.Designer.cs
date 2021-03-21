@@ -131,6 +131,7 @@ namespace POS_Jave2021
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.POS.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -167,6 +168,7 @@ namespace POS_Jave2021
             this.POS.Controls.Add(this.tabPage2);
             this.POS.Controls.Add(this.tabPage3);
             this.POS.Controls.Add(this.User_Registration);
+            this.POS.Controls.Add(this.tabPage4);
             this.POS.Location = new System.Drawing.Point(0, 12);
             this.POS.Name = "POS";
             this.POS.SelectedIndex = 0;
@@ -836,6 +838,7 @@ namespace POS_Jave2021
             this.groupBox7.Controls.Add(this.button14);
             this.groupBox7.Controls.Add(this.pictureBox5);
             this.groupBox7.Controls.Add(this.button13);
+            this.groupBox7.Enabled = false;
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(742, 13);
             this.groupBox7.Name = "groupBox7";
@@ -919,6 +922,7 @@ namespace POS_Jave2021
             this.groupBox6.Controls.Add(this.textBox13);
             this.groupBox6.Controls.Add(this.label22);
             this.groupBox6.Controls.Add(this.textBox14);
+            this.groupBox6.Enabled = false;
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(378, 13);
             this.groupBox6.Name = "groupBox6";
@@ -985,6 +989,7 @@ namespace POS_Jave2021
             this.button12.TabIndex = 18;
             this.button12.Text = "BACK";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -1139,6 +1144,7 @@ namespace POS_Jave2021
             this.btn_userinfo.TabIndex = 16;
             this.btn_userinfo.Text = "NEXT";
             this.btn_userinfo.UseVisualStyleBackColor = true;
+            this.btn_userinfo.Click += new System.EventHandler(this.btn_userinfo_Click);
             // 
             // comboBox3
             // 
@@ -1299,6 +1305,16 @@ namespace POS_Jave2021
             this.textBox5.Size = new System.Drawing.Size(320, 26);
             this.textBox5.TabIndex = 0;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1223, 655);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "Inventory";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // pos_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1450,5 +1466,6 @@ namespace POS_Jave2021
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TabPage tabPage4;
     }
 }

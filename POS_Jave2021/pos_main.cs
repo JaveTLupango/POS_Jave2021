@@ -146,5 +146,17 @@ namespace POS_Jave2021
         {
             label23.Text = validator.phonenumber(textBox8.Text.Trim());
         }
+
+        private void btn_userinfo_Click(object sender, EventArgs e)
+        {
+            groupBox6.Enabled = true;
+            groupBox5.Enabled = false;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            groupBox6.Enabled = false;
+            groupBox5.Enabled = true;
+        }
     }
 }
