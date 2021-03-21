@@ -124,5 +124,27 @@ namespace POS_Jave2021
                 throw;
             }
         }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+            if (validator.email(textBox9.Text.Trim()))
+            {
+                label18.Text = "Email is valid!";
+            }
+            else
+            {
+                label18.Text = "Invalid Email!";
+            }
+        }
+
+        //private void textBox8_Enter(object sender, EventArgs e)
+        //{
+
+        //}
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+            label23.Text = validator.phonenumber(textBox8.Text.Trim());
+        }
     }
 }

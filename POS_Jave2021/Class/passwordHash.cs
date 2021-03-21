@@ -8,6 +8,11 @@ namespace POS_Jave2021.Class
 {
     class passwordHash
     {
+        /// <summary>
+        /// password hash encryptor
+        /// </summary>
+        /// <param name="pass"></param>
+        /// <returns></returns>
         public static string encryptor(string pass)
         {
             string[] stringarray = { "a", "e", "i", "o", "u" };
@@ -21,6 +26,11 @@ namespace POS_Jave2021.Class
             return pass;
         }
 
+        /// <summary>
+        /// password hash decryptor
+        /// </summary>
+        /// <param name="pass"></param>
+        /// <returns></returns>
         public static string decryptor(string pass)
         {
             string[] stringarray = { "a", "e", "i", "o", "u" };

@@ -18,7 +18,11 @@ namespace POS_Jave2021.Class
     }
     public class passwordValidator
     {
-       
+       /// <summary>
+       /// password strong and valid password validator
+       /// </summary>
+       /// <param name="password"></param>
+       /// <returns></returns>
         public static PasswordScore CheckStrength(string password)
         {
             int score = 0;
