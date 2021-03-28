@@ -132,6 +132,8 @@ namespace POS_Jave2021
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.POS.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -157,6 +159,8 @@ namespace POS_Jave2021
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // POS
@@ -1307,6 +1311,8 @@ namespace POS_Jave2021
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.textBox10);
+            this.tabPage4.Controls.Add(this.dataGridView1);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -1314,6 +1320,21 @@ namespace POS_Jave2021
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Inventory";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(22, 59);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1192, 569);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(936, 28);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(278, 20);
+            this.textBox10.TabIndex = 1;
             // 
             // pos_main
             // 
@@ -1359,6 +1380,9 @@ namespace POS_Jave2021
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1467,5 +1491,7 @@ namespace POS_Jave2021
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox textBox10;
     }
 }
