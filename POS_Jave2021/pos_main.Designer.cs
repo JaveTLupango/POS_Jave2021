@@ -132,8 +132,8 @@ namespace POS_Jave2021
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox10 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.POS.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1139,6 +1139,7 @@ namespace POS_Jave2021
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // btn_userinfo
             // 
@@ -1321,6 +1322,13 @@ namespace POS_Jave2021
             this.tabPage4.Text = "Inventory";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(936, 28);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(278, 20);
+            this.textBox10.TabIndex = 1;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1328,13 +1336,6 @@ namespace POS_Jave2021
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1192, 569);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(936, 28);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(278, 20);
-            this.textBox10.TabIndex = 1;
             // 
             // pos_main
             // 

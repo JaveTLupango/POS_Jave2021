@@ -105,6 +105,7 @@
     <Compile Include="Class\validator.cs" />
     <Compile Include="Model\classConnection.cs" />
     <Compile Include="Model\ClassModel.cs" />
+    <Compile Include="Model\userModel.cs" />
     <Compile Include="pos_main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +151,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Class\Interfaces\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
