@@ -12,5 +12,7 @@ namespace POS_Jave2021.Model
         public string dbname { get; set; }
         public string username { get; set; }
         public string password { get; set; }
+
+        public string constring { get; set; }
     }
 }
