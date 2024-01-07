@@ -163,5 +163,10 @@ namespace POS_Jave2021
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
