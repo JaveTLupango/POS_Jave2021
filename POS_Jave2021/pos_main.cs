@@ -158,5 +158,10 @@ namespace POS_Jave2021
             groupBox6.Enabled = false;
             groupBox5.Enabled = true;
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
