@@ -115,22 +115,22 @@ namespace POS_Jave2021
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btn_userinfo = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbuserstatus = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbauthen = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbusertype = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtphone = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txt_middlename = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_firstname = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_lastname = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -174,7 +174,7 @@ namespace POS_Jave2021
             this.POS.Controls.Add(this.User_Registration);
             this.POS.Controls.Add(this.tabPage4);
             this.POS.Location = new System.Drawing.Point(0, 15);
-            this.POS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.POS.Margin = new System.Windows.Forms.Padding(4);
             this.POS.Name = "POS";
             this.POS.SelectedIndex = 0;
             this.POS.Size = new System.Drawing.Size(1641, 838);
@@ -186,9 +186,9 @@ namespace POS_Jave2021
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1633, 809);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Login";
@@ -198,7 +198,7 @@ namespace POS_Jave2021
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(679, 42);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(256, 256);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -215,17 +215,18 @@ namespace POS_Jave2021
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Location = new System.Drawing.Point(489, 171);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(688, 561);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button1
             // 
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(0, 379);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(688, 182);
@@ -259,7 +260,7 @@ namespace POS_Jave2021
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(124, 335);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(449, 37);
             this.textBox2.TabIndex = 1;
@@ -270,7 +271,7 @@ namespace POS_Jave2021
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(124, 240);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(449, 37);
             this.textBox1.TabIndex = 0;
@@ -281,9 +282,9 @@ namespace POS_Jave2021
             this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(1633, 809);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "passcode";
@@ -293,7 +294,7 @@ namespace POS_Jave2021
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(660, 38);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(256, 256);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -308,7 +309,7 @@ namespace POS_Jave2021
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Location = new System.Drawing.Point(472, 167);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(688, 561);
             this.panel2.TabIndex = 2;
@@ -318,7 +319,7 @@ namespace POS_Jave2021
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(0, 379);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button2.Size = new System.Drawing.Size(688, 182);
@@ -340,7 +341,7 @@ namespace POS_Jave2021
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(128, 290);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(449, 37);
             this.textBox3.TabIndex = 1;
@@ -354,9 +355,9 @@ namespace POS_Jave2021
             this.tabPage3.Controls.Add(this.groupBox2);
             this.tabPage3.Controls.Add(this.groupBox1);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage3.Size = new System.Drawing.Size(1633, 809);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "POS Main";
@@ -370,9 +371,9 @@ namespace POS_Jave2021
             this.groupBox4.Controls.Add(this.btn_Foods);
             this.groupBox4.Controls.Add(this.btnDrinks);
             this.groupBox4.Location = new System.Drawing.Point(776, 706);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(844, 92);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
@@ -383,7 +384,7 @@ namespace POS_Jave2021
             this.btn_dessert.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dessert.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_dessert.Location = new System.Drawing.Point(607, 16);
-            this.btn_dessert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_dessert.Margin = new System.Windows.Forms.Padding(4);
             this.btn_dessert.Name = "btn_dessert";
             this.btn_dessert.Size = new System.Drawing.Size(215, 68);
             this.btn_dessert.TabIndex = 34;
@@ -396,7 +397,7 @@ namespace POS_Jave2021
             this.btn_coffee.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_coffee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_coffee.Location = new System.Drawing.Point(408, 16);
-            this.btn_coffee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_coffee.Margin = new System.Windows.Forms.Padding(4);
             this.btn_coffee.Name = "btn_coffee";
             this.btn_coffee.Size = new System.Drawing.Size(191, 68);
             this.btn_coffee.TabIndex = 33;
@@ -409,7 +410,7 @@ namespace POS_Jave2021
             this.btn_Foods.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Foods.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Foods.Location = new System.Drawing.Point(215, 16);
-            this.btn_Foods.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Foods.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Foods.Name = "btn_Foods";
             this.btn_Foods.Size = new System.Drawing.Size(185, 68);
             this.btn_Foods.TabIndex = 32;
@@ -422,7 +423,7 @@ namespace POS_Jave2021
             this.btnDrinks.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDrinks.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDrinks.Location = new System.Drawing.Point(8, 16);
-            this.btnDrinks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDrinks.Margin = new System.Windows.Forms.Padding(4);
             this.btnDrinks.Name = "btnDrinks";
             this.btnDrinks.Size = new System.Drawing.Size(199, 68);
             this.btnDrinks.TabIndex = 31;
@@ -435,9 +436,9 @@ namespace POS_Jave2021
             this.groupBox3.Controls.Add(this.pictureBox3);
             this.groupBox3.Controls.Add(this.dt_menu);
             this.groupBox3.Location = new System.Drawing.Point(772, 46);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(852, 654);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
@@ -447,7 +448,7 @@ namespace POS_Jave2021
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Location = new System.Drawing.Point(315, 246);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(256, 149);
             this.pictureBox3.TabIndex = 1;
@@ -459,7 +460,7 @@ namespace POS_Jave2021
             this.dt_menu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_menu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_menu.Location = new System.Drawing.Point(4, 19);
-            this.dt_menu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dt_menu.Margin = new System.Windows.Forms.Padding(4);
             this.dt_menu.Name = "dt_menu";
             this.dt_menu.RowHeadersWidth = 51;
             this.dt_menu.Size = new System.Drawing.Size(844, 631);
@@ -495,9 +496,9 @@ namespace POS_Jave2021
             this.groupBox2.Controls.Add(this.btnNum1);
             this.groupBox2.Controls.Add(this.panel3);
             this.groupBox2.Location = new System.Drawing.Point(5, 385);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(759, 414);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -508,7 +509,7 @@ namespace POS_Jave2021
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button10.Location = new System.Drawing.Point(172, 337);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(157, 52);
             this.button10.TabIndex = 42;
@@ -521,7 +522,7 @@ namespace POS_Jave2021
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button9.Location = new System.Drawing.Point(172, 284);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(157, 52);
             this.button9.TabIndex = 41;
@@ -534,7 +535,7 @@ namespace POS_Jave2021
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button8.Location = new System.Drawing.Point(8, 337);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(156, 52);
             this.button8.TabIndex = 40;
@@ -547,7 +548,7 @@ namespace POS_Jave2021
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button7.Location = new System.Drawing.Point(7, 284);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(157, 52);
             this.button7.TabIndex = 39;
@@ -560,7 +561,7 @@ namespace POS_Jave2021
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button6.Location = new System.Drawing.Point(157, 176);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(176, 101);
             this.button6.TabIndex = 38;
@@ -573,7 +574,7 @@ namespace POS_Jave2021
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button5.Location = new System.Drawing.Point(8, 176);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(141, 101);
             this.button5.TabIndex = 37;
@@ -586,7 +587,7 @@ namespace POS_Jave2021
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Location = new System.Drawing.Point(157, 70);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(176, 101);
             this.button4.TabIndex = 36;
@@ -599,7 +600,7 @@ namespace POS_Jave2021
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Location = new System.Drawing.Point(8, 70);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(141, 101);
             this.button3.TabIndex = 35;
@@ -621,7 +622,7 @@ namespace POS_Jave2021
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(549, 68);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(199, 46);
             this.textBox4.TabIndex = 31;
@@ -630,7 +631,7 @@ namespace POS_Jave2021
             // 
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDel.Location = new System.Drawing.Point(653, 118);
-            this.btnDel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(4);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(96, 68);
             this.btnDel.TabIndex = 30;
@@ -641,7 +642,7 @@ namespace POS_Jave2021
             // 
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.Location = new System.Drawing.Point(653, 268);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(96, 143);
             this.btnOK.TabIndex = 29;
@@ -652,7 +653,7 @@ namespace POS_Jave2021
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(653, 193);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(96, 68);
             this.btnClear.TabIndex = 28;
@@ -665,7 +666,7 @@ namespace POS_Jave2021
             this.btnNum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNum9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNum9.Location = new System.Drawing.Point(549, 118);
-            this.btnNum9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNum9.Margin = new System.Windows.Forms.Padding(4);
             this.btnNum9.Name = "btnNum9";
             this.btnNum9.Size = new System.Drawing.Size(96, 68);
             this.btnNum9.TabIndex = 27;
@@ -678,7 +679,7 @@ namespace POS_Jave2021
             this.btnpoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpoint.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnpoint.Location = new System.Drawing.Point(549, 343);
-            this.btnpoint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnpoint.Margin = new System.Windows.Forms.Padding(4);
             this.btnpoint.Name = "btnpoint";
             this.btnpoint.Size = new System.Drawing.Size(96, 68);
             this.btnpoint.TabIndex = 26;
@@ -691,7 +692,7 @@ namespace POS_Jave2021
             this.btnNum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNum6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNum6.Location = new System.Drawing.Point(549, 193);
-            this.btnNum6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNum6.Margin = new System.Windows.Forms.Padding(4);
             this.btnNum6.Name = "btnNum6";
             this.btnNum6.Size = new System.Drawing.Size(96, 68);
             this.btnNum6.TabIndex = 25;
@@ -704,7 +705,7 @@ namespace POS_Jave2021
             this.btnNum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNum3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNum3.Location = new System.Drawing.Point(549, 268);
-            this.btnNum3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNum3.Margin = new System.Windows.Forms.Padding(4);
             this.btnNum3.Name = "btnNum3";
             this.btnNum3.Size = new System.Drawing.Size(96, 68);
             this.btnNum3.TabIndex = 24;
@@ -717,7 +718,7 @@ namespace POS_Jave2021
             this.btnNum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNum8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNum8.Location = new System.Drawing.Point(445, 118);
-            this.btnNum8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNum8.Margin = new System.Windows.Forms.Padding(4);
             this.btnNum8.Name = "btnNum8";
             this.btnNum8.Size = new System.Drawing.Size(96, 68);
             this.btnNum8.TabIndex = 23;
@@ -730,7 +731,7 @@ namespace POS_Jave2021
             this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn0.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn0.Location = new System.Drawing.Point(445, 343);
-            this.btn0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn0.Margin = new System.Windows.Forms.Padding(4);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(96, 68);
             this.btn0.TabIndex = 22;
@@ -743,7 +744,7 @@ namespace POS_Jave2021
             this.btnNum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNum5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNum5.Location = new System.Drawing.Point(445, 193);
-            this.btnNum5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNum5.Margin = new System.Windows.Forms.Padding(4);
             this.btnNum5.Name = "btnNum5";
             this.btnNum5.Size = new System.Drawing.Size(96, 68);
             this.btnNum5.TabIndex = 21;
@@ -756,7 +757,7 @@ namespace POS_Jave2021
             this.btnNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNum2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNum2.Location = new System.Drawing.Point(445, 268);
-            this.btnNum2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNum2.Margin = new System.Windows.Forms.Padding(4);
             this.btnNum2.Name = "btnNum2";
             this.btnNum2.Size = new System.Drawing.Size(96, 68);
             this.btnNum2.TabIndex = 20;
@@ -769,7 +770,7 @@ namespace POS_Jave2021
             this.btnNum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNum7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNum7.Location = new System.Drawing.Point(341, 118);
-            this.btnNum7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNum7.Margin = new System.Windows.Forms.Padding(4);
             this.btnNum7.Name = "btnNum7";
             this.btnNum7.Size = new System.Drawing.Size(96, 68);
             this.btnNum7.TabIndex = 19;
@@ -782,7 +783,7 @@ namespace POS_Jave2021
             this.btn00.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn00.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn00.Location = new System.Drawing.Point(341, 343);
-            this.btn00.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn00.Margin = new System.Windows.Forms.Padding(4);
             this.btn00.Name = "btn00";
             this.btn00.Size = new System.Drawing.Size(96, 68);
             this.btn00.TabIndex = 18;
@@ -795,7 +796,7 @@ namespace POS_Jave2021
             this.btnNum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNum4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNum4.Location = new System.Drawing.Point(341, 193);
-            this.btnNum4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNum4.Margin = new System.Windows.Forms.Padding(4);
             this.btnNum4.Name = "btnNum4";
             this.btnNum4.Size = new System.Drawing.Size(96, 68);
             this.btnNum4.TabIndex = 17;
@@ -808,7 +809,7 @@ namespace POS_Jave2021
             this.btnNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNum1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNum1.Location = new System.Drawing.Point(341, 268);
-            this.btnNum1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNum1.Margin = new System.Windows.Forms.Padding(4);
             this.btnNum1.Name = "btnNum1";
             this.btnNum1.Size = new System.Drawing.Size(96, 68);
             this.btnNum1.TabIndex = 16;
@@ -821,7 +822,7 @@ namespace POS_Jave2021
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(5, 20);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(752, 43);
             this.panel3.TabIndex = 0;
@@ -854,9 +855,9 @@ namespace POS_Jave2021
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.dt_order);
             this.groupBox1.Location = new System.Drawing.Point(5, 46);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(759, 332);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -866,7 +867,7 @@ namespace POS_Jave2021
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.Location = new System.Drawing.Point(241, 96);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(256, 149);
             this.pictureBox4.TabIndex = 2;
@@ -878,7 +879,7 @@ namespace POS_Jave2021
             this.dt_order.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_order.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_order.Location = new System.Drawing.Point(4, 19);
-            this.dt_order.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dt_order.Margin = new System.Windows.Forms.Padding(4);
             this.dt_order.Name = "dt_order";
             this.dt_order.RowHeadersWidth = 51;
             this.dt_order.Size = new System.Drawing.Size(751, 309);
@@ -890,9 +891,9 @@ namespace POS_Jave2021
             this.User_Registration.Controls.Add(this.groupBox6);
             this.User_Registration.Controls.Add(this.groupBox5);
             this.User_Registration.Location = new System.Drawing.Point(4, 25);
-            this.User_Registration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.User_Registration.Margin = new System.Windows.Forms.Padding(4);
             this.User_Registration.Name = "User_Registration";
-            this.User_Registration.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.User_Registration.Padding = new System.Windows.Forms.Padding(4);
             this.User_Registration.Size = new System.Drawing.Size(1633, 809);
             this.User_Registration.TabIndex = 3;
             this.User_Registration.Text = "User Registration";
@@ -909,9 +910,9 @@ namespace POS_Jave2021
             this.groupBox7.Enabled = false;
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(989, 16);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox7.Size = new System.Drawing.Size(471, 766);
             this.groupBox7.TabIndex = 19;
             this.groupBox7.TabStop = false;
@@ -930,18 +931,19 @@ namespace POS_Jave2021
             // button17
             // 
             this.button17.Location = new System.Drawing.Point(20, 550);
-            this.button17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button17.Margin = new System.Windows.Forms.Padding(4);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(420, 66);
             this.button17.TabIndex = 23;
             this.button17.Text = "BACK";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(307, 18);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(157, 74);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -951,29 +953,31 @@ namespace POS_Jave2021
             // button14
             // 
             this.button14.Location = new System.Drawing.Point(20, 476);
-            this.button14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button14.Margin = new System.Windows.Forms.Padding(4);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(420, 66);
             this.button14.TabIndex = 21;
             this.button14.Text = "Save";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(20, 181);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(420, 286);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 20;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // button13
             // 
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.Location = new System.Drawing.Point(20, 100);
-            this.button13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button13.Margin = new System.Windows.Forms.Padding(4);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(420, 48);
             this.button13.TabIndex = 19;
@@ -1001,9 +1005,9 @@ namespace POS_Jave2021
             this.groupBox6.Enabled = false;
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(504, 16);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox6.Size = new System.Drawing.Size(471, 766);
             this.groupBox6.TabIndex = 16;
             this.groupBox6.TabStop = false;
@@ -1013,7 +1017,7 @@ namespace POS_Jave2021
             // 
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.Location = new System.Drawing.Point(391, 334);
-            this.button16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button16.Margin = new System.Windows.Forms.Padding(4);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(72, 33);
             this.button16.TabIndex = 22;
@@ -1025,7 +1029,7 @@ namespace POS_Jave2021
             // 
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.Location = new System.Drawing.Point(391, 255);
-            this.button15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button15.Margin = new System.Windows.Forms.Padding(4);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(72, 32);
             this.button15.TabIndex = 21;
@@ -1057,7 +1061,7 @@ namespace POS_Jave2021
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(305, 18);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(157, 74);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1067,7 +1071,7 @@ namespace POS_Jave2021
             // button12
             // 
             this.button12.Location = new System.Drawing.Point(20, 501);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button12.Margin = new System.Windows.Forms.Padding(4);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(420, 66);
             this.button12.TabIndex = 18;
@@ -1078,7 +1082,7 @@ namespace POS_Jave2021
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(20, 399);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(420, 66);
             this.button11.TabIndex = 17;
@@ -1101,7 +1105,7 @@ namespace POS_Jave2021
             // 
             this.txt_confirmpassword.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_confirmpassword.Location = new System.Drawing.Point(20, 335);
-            this.txt_confirmpassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_confirmpassword.Margin = new System.Windows.Forms.Padding(4);
             this.txt_confirmpassword.Name = "txt_confirmpassword";
             this.txt_confirmpassword.Size = new System.Drawing.Size(441, 30);
             this.txt_confirmpassword.TabIndex = 6;
@@ -1123,7 +1127,7 @@ namespace POS_Jave2021
             // 
             this.txt_newpassword.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_newpassword.Location = new System.Drawing.Point(20, 255);
-            this.txt_newpassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_newpassword.Margin = new System.Windows.Forms.Padding(4);
             this.txt_newpassword.Name = "txt_newpassword";
             this.txt_newpassword.Size = new System.Drawing.Size(441, 30);
             this.txt_newpassword.TabIndex = 4;
@@ -1145,7 +1149,7 @@ namespace POS_Jave2021
             // 
             this.textBox13.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox13.Location = new System.Drawing.Point(20, 177);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(425, 30);
             this.textBox13.TabIndex = 2;
@@ -1166,7 +1170,7 @@ namespace POS_Jave2021
             this.textBox14.Enabled = false;
             this.textBox14.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox14.Location = new System.Drawing.Point(20, 100);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(4);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(425, 30);
             this.textBox14.TabIndex = 0;
@@ -1177,31 +1181,32 @@ namespace POS_Jave2021
             this.groupBox5.Controls.Add(this.label18);
             this.groupBox5.Controls.Add(this.pictureBox6);
             this.groupBox5.Controls.Add(this.btn_userinfo);
-            this.groupBox5.Controls.Add(this.comboBox3);
+            this.groupBox5.Controls.Add(this.cmbuserstatus);
             this.groupBox5.Controls.Add(this.label14);
-            this.groupBox5.Controls.Add(this.comboBox2);
+            this.groupBox5.Controls.Add(this.cmbauthen);
             this.groupBox5.Controls.Add(this.label13);
-            this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Controls.Add(this.cmbusertype);
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Controls.Add(this.label11);
-            this.groupBox5.Controls.Add(this.textBox9);
+            this.groupBox5.Controls.Add(this.txtemail);
             this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Controls.Add(this.textBox8);
+            this.groupBox5.Controls.Add(this.txtphone);
             this.groupBox5.Controls.Add(this.label9);
-            this.groupBox5.Controls.Add(this.textBox7);
+            this.groupBox5.Controls.Add(this.txt_middlename);
             this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Controls.Add(this.textBox6);
+            this.groupBox5.Controls.Add(this.txt_firstname);
             this.groupBox5.Controls.Add(this.label7);
-            this.groupBox5.Controls.Add(this.textBox5);
+            this.groupBox5.Controls.Add(this.txt_lastname);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(20, 16);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(471, 766);
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "User Information";
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // label23
             // 
@@ -1227,7 +1232,7 @@ namespace POS_Jave2021
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(316, 18);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(131, 74);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1238,7 +1243,7 @@ namespace POS_Jave2021
             // btn_userinfo
             // 
             this.btn_userinfo.Location = new System.Drawing.Point(16, 692);
-            this.btn_userinfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_userinfo.Margin = new System.Windows.Forms.Padding(4);
             this.btn_userinfo.Name = "btn_userinfo";
             this.btn_userinfo.Size = new System.Drawing.Size(420, 66);
             this.btn_userinfo.TabIndex = 16;
@@ -1246,18 +1251,18 @@ namespace POS_Jave2021
             this.btn_userinfo.UseVisualStyleBackColor = true;
             this.btn_userinfo.Click += new System.EventHandler(this.btn_userinfo_Click);
             // 
-            // comboBox3
+            // cmbuserstatus
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cmbuserstatus.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbuserstatus.FormattingEnabled = true;
+            this.cmbuserstatus.Items.AddRange(new object[] {
             "Active",
             "Inactive"});
-            this.comboBox3.Location = new System.Drawing.Point(16, 633);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(425, 32);
-            this.comboBox3.TabIndex = 15;
+            this.cmbuserstatus.Location = new System.Drawing.Point(16, 633);
+            this.cmbuserstatus.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbuserstatus.Name = "cmbuserstatus";
+            this.cmbuserstatus.Size = new System.Drawing.Size(425, 32);
+            this.cmbuserstatus.TabIndex = 15;
             // 
             // label14
             // 
@@ -1270,18 +1275,18 @@ namespace POS_Jave2021
             this.label14.TabIndex = 14;
             this.label14.Text = "User Status";
             // 
-            // comboBox2
+            // cmbauthen
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbauthen.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbauthen.FormattingEnabled = true;
+            this.cmbauthen.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBox2.Location = new System.Drawing.Point(20, 554);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(425, 32);
-            this.comboBox2.TabIndex = 13;
+            this.cmbauthen.Location = new System.Drawing.Point(20, 554);
+            this.cmbauthen.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbauthen.Name = "cmbauthen";
+            this.cmbauthen.Size = new System.Drawing.Size(425, 32);
+            this.cmbauthen.TabIndex = 13;
             // 
             // label13
             // 
@@ -1294,18 +1299,19 @@ namespace POS_Jave2021
             this.label13.TabIndex = 12;
             this.label13.Text = "2 Factor Authentication";
             // 
-            // comboBox1
+            // cmbusertype
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbusertype.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbusertype.FormattingEnabled = true;
+            this.cmbusertype.Items.AddRange(new object[] {
             "Administrator",
             "Employee"});
-            this.comboBox1.Location = new System.Drawing.Point(20, 462);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(425, 32);
-            this.comboBox1.TabIndex = 11;
+            this.cmbusertype.Location = new System.Drawing.Point(20, 462);
+            this.cmbusertype.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbusertype.Name = "cmbusertype";
+            this.cmbusertype.Size = new System.Drawing.Size(425, 32);
+            this.cmbusertype.TabIndex = 11;
+            this.cmbusertype.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -1329,15 +1335,15 @@ namespace POS_Jave2021
             this.label11.TabIndex = 9;
             this.label11.Text = "Email";
             // 
-            // textBox9
+            // txtemail
             // 
-            this.textBox9.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(20, 378);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(425, 30);
-            this.textBox9.TabIndex = 8;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            this.txtemail.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemail.Location = new System.Drawing.Point(20, 378);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(425, 30);
+            this.txtemail.TabIndex = 8;
+            this.txtemail.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // label10
             // 
@@ -1350,16 +1356,16 @@ namespace POS_Jave2021
             this.label10.TabIndex = 7;
             this.label10.Text = "Phone #";
             // 
-            // textBox8
+            // txtphone
             // 
-            this.textBox8.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(20, 299);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox8.MaxLength = 11;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(425, 30);
-            this.textBox8.TabIndex = 6;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.txtphone.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtphone.Location = new System.Drawing.Point(20, 299);
+            this.txtphone.Margin = new System.Windows.Forms.Padding(4);
+            this.txtphone.MaxLength = 11;
+            this.txtphone.Name = "txtphone";
+            this.txtphone.Size = new System.Drawing.Size(425, 30);
+            this.txtphone.TabIndex = 6;
+            this.txtphone.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label9
             // 
@@ -1372,14 +1378,14 @@ namespace POS_Jave2021
             this.label9.TabIndex = 5;
             this.label9.Text = "Middle Name";
             // 
-            // textBox7
+            // txt_middlename
             // 
-            this.textBox7.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(20, 238);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(425, 30);
-            this.textBox7.TabIndex = 4;
+            this.txt_middlename.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_middlename.Location = new System.Drawing.Point(20, 238);
+            this.txt_middlename.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_middlename.Name = "txt_middlename";
+            this.txt_middlename.Size = new System.Drawing.Size(425, 30);
+            this.txt_middlename.TabIndex = 4;
             // 
             // label8
             // 
@@ -1392,14 +1398,14 @@ namespace POS_Jave2021
             this.label8.TabIndex = 3;
             this.label8.Text = "First Name";
             // 
-            // textBox6
+            // txt_firstname
             // 
-            this.textBox6.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(20, 171);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(425, 30);
-            this.textBox6.TabIndex = 2;
+            this.txt_firstname.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_firstname.Location = new System.Drawing.Point(20, 171);
+            this.txt_firstname.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_firstname.Name = "txt_firstname";
+            this.txt_firstname.Size = new System.Drawing.Size(425, 30);
+            this.txt_firstname.TabIndex = 2;
             // 
             // label7
             // 
@@ -1412,23 +1418,23 @@ namespace POS_Jave2021
             this.label7.TabIndex = 1;
             this.label7.Text = "Last Name";
             // 
-            // textBox5
+            // txt_lastname
             // 
-            this.textBox5.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(20, 100);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(425, 30);
-            this.textBox5.TabIndex = 0;
+            this.txt_lastname.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_lastname.Location = new System.Drawing.Point(20, 100);
+            this.txt_lastname.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_lastname.Name = "txt_lastname";
+            this.txt_lastname.Size = new System.Drawing.Size(425, 30);
+            this.txt_lastname.TabIndex = 0;
             // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.textBox10);
             this.tabPage4.Controls.Add(this.dataGridView1);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage4.Size = new System.Drawing.Size(1633, 809);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Inventory";
@@ -1437,7 +1443,7 @@ namespace POS_Jave2021
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(1248, 34);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(369, 22);
             this.textBox10.TabIndex = 1;
@@ -1446,7 +1452,7 @@ namespace POS_Jave2021
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(29, 73);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1589, 700);
@@ -1458,7 +1464,7 @@ namespace POS_Jave2021
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1640, 855);
             this.Controls.Add(this.POS);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "pos_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POS & Inventory System";
@@ -1565,20 +1571,20 @@ namespace POS_Jave2021
         private System.Windows.Forms.TabPage User_Registration;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txt_middlename;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_firstname;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_lastname;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtphone;
+        private System.Windows.Forms.ComboBox cmbusertype;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbauthen;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbuserstatus;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label19;

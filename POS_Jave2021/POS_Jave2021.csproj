@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -102,6 +103,8 @@
     <Compile Include="Class\formLoad.cs" />
     <Compile Include="Class\passwordHash.cs" />
     <Compile Include="Class\passwordValidator.cs" />
+    <Compile Include="Class\UserLogin.cs" />
+    <Compile Include="Class\UserRegistration.cs" />
     <Compile Include="Class\validator.cs" />
     <Compile Include="Model\classConnection.cs" />
     <Compile Include="Model\ClassModel.cs" />

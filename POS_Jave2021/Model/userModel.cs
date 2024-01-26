@@ -16,5 +16,14 @@ namespace POS_Jave2021.Model
         public bool is_active { get; set; }
         public bool is_deleted { get; set; }
         public bool profile_pic { get; set; }
+        public bool factor_authen { get; set; }
+        public bool user_status { get; set; }
+        public string comfirm_pass { get; set; }
+        public string user_id { get; set; }
+        
+
+
+
+
     }
 }
