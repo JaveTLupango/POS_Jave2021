@@ -105,6 +105,13 @@ namespace POS_Jave2021
 
         private void button11_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(textBox13.Text) ||
+                string.IsNullOrWhiteSpace(txt_newpassword.Text) ||
+                string.IsNullOrWhiteSpace(txt_confirmpassword.Text))
+            {
+                MessageBox.Show("Please fill in all required fields.");
+                return;
+            }
             try
             {
                 string retpass = passwordHash.encryptor(txt_confirmpassword.Text.Trim());
@@ -117,9 +124,9 @@ namespace POS_Jave2021
 
             DateTime dtm = DateTime.Now;
 
-                usermodel.username = textBox1.Text;
-                usermodel.password = textBox2.Text;
-                usermodel.user_id = dtm.ToString("yyyy/MM/dd/hh/mm/ss");
+                usermodel.username = textBox13.Text;
+                usermodel.password = txt_newpassword.Text;
+                usermodel.user_id = dtm.ToString("yyyyMMddhhmmss");
 
                 usermodel.is_active = true;
                 usermodel.is_deleted = true;
@@ -177,7 +184,25 @@ namespace POS_Jave2021
 
         private void btn_userinfo_Click(object sender, EventArgs e)
         {
-           
+            if (string.IsNullOrWhiteSpace(txt_lastname.Text) ||
+                string.IsNullOrWhiteSpace(txt_firstname.Text) ||
+                string.IsNullOrWhiteSpace(txtphone.Text) ||
+                string.IsNullOrWhiteSpace(txtemail.Text))
+
+            {
+                MessageBox.Show("Please fill in all required fields.");
+                return; 
+            }
+            if (!IsValidEmail(txtemail.Text))
+            {
+                MessageBox.Show("Please enter a valid email address.");
+                return;
+            }
+            if (!IsValidPhoneNumber(txtphone.Text))
+            {
+                MessageBox.Show("Please enter a valid phone number.");
+                return;
+            }
             usermodel.lastname = txt_lastname.Text;
             usermodel.firstname = txt_firstname.Text;
             usermodel.middlename = txt_middlename.Text;
@@ -191,6 +216,24 @@ namespace POS_Jave2021
             groupBox6.Enabled = true;
             groupBox5.Enabled = false;
         }
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        private bool IsValidPhoneNumber(string phoneNumber)
+        {
+           
+            return true; 
+        }
+
 
         private void button12_Click(object sender, EventArgs e)
         {
@@ -205,31 +248,39 @@ namespace POS_Jave2021
 
         private void button1_Click(object sender, EventArgs e)
         {
-                    
-            DialogResult d = MessageBox.Show("Login...", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
 
-            if ((d == DialogResult.OK))
+            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                MessageBox.Show("Please enter both username and password.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult d = MessageBox.Show("Login...", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //DialogResult d = MessageBox.Show("LOGIN");
+           
+            if (d == DialogResult.OK)
             {
                 usermodel = new userModel();
                 usermodel.username = textBox1.Text;
                 usermodel.password = textBox2.Text;
                 conn.Close();
+
                 var retval = UserLogin.login(usermodel, conn);
 
-                if (retval) 
+                if (retval)
                 {
                     MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                else 
+                else
                 {
                     MessageBox.Show("Login Failed. Please check your username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            if (d == DialogResult.Cancel)
+            else if (d == DialogResult.Cancel)
             {
-
+                
             }
-            
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
