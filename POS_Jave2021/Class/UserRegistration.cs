@@ -16,7 +16,7 @@ namespace POS_Jave2021
     public class UserRegistration
     {
         
-        public bool register(userModel model, OleDbConnection conn)
+        public ResponseModel register(userModel model, OleDbConnection conn)
         {
 
             try
@@ -43,24 +43,42 @@ namespace POS_Jave2021
                         command.Parameters.AddWithValue("@usertype", model.usertype);
                         command.Parameters.AddWithValue("@auth_factor", model.auth_factor);
                         command.Parameters.AddWithValue("@is_active", model.is_active);
-                        command.Parameters.AddWithValue("@is_deleted", model.is_deleted);
+                        command.Parameters.AddWithValue("@is_deleted", false);
 
                         int rowsAffected = command.ExecuteNonQuery();
                         conn.Close();
-
-                        return rowsAffected > 0; 
+                     if(rowsAffected > 0)
+                    {
+                        return new ResponseModel{
+                            is_catch = false,
+                            is_Success = true,
+                            message = "User Successfully Inserted!!",
+                            title = "Success"
+                           
+                        };
+                    }
+                    else
+                    {
+                        return new ResponseModel {
+                            is_catch = false,
+                            is_Success = false,
+                            message = "User Unsuccessfully Inserted!!",
+                            title = "Success"
+                        };
+                    }
                 }
             
             
             }
             catch (Exception ex)
             {
-                        Console.WriteLine("Error during registration: " + ex.Message);
-                        return false;
+                return new ResponseModel
+                {
+                    is_catch = true,
+                    is_Success = false,
+                    message = ex.Message
+                };
             }
-           
-
-
         }
     }
 }

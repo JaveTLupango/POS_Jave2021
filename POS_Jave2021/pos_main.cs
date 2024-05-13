@@ -119,13 +119,9 @@ namespace POS_Jave2021
 
                 usermodel.username = textBox1.Text;
                 usermodel.password = textBox2.Text;
-                usermodel.user_id = dtm.ToString("yyyy/MM/dd/hh/mm/ss");
-
+                usermodel.user_id = dtm.ToString("yyyyMMddhhmmss");
                 usermodel.is_active = true;
-                usermodel.is_deleted = true;
-
-           
-
+                usermodel.is_deleted = true;         
                 groupBox6.Enabled = false;
                 groupBox7.Enabled = true;
 
@@ -251,16 +247,19 @@ namespace POS_Jave2021
             {
                 conn.Close();
                var retval = UR_serviceClass.register(usermodel, conn);
-
-                MessageBox.Show("You clicked OK");
-               
+                if(retval.is_Success)
+                {
+                    MessageBox.Show(retval.message, retval.title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(retval.message, retval.title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }             
 
             }
             if (d == DialogResult.Cancel)
             {
-                MessageBox.Show("You clicked Cancel");
-
-
+                MessageBox.Show("You clicked Cancel"); 
             }
           
         }

@@ -108,6 +108,7 @@
     <Compile Include="Class\validator.cs" />
     <Compile Include="Model\classConnection.cs" />
     <Compile Include="Model\ClassModel.cs" />
+    <Compile Include="Model\ResponseModel.cs" />
     <Compile Include="Model\userModel.cs" />
     <Compile Include="pos_main.cs">
       <SubType>Form</SubType>
