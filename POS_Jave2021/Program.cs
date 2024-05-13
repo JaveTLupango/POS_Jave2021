@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS_Jave2021.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace POS_Jave2021
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new pos_main());
+            //Application.Run(new CashierHome(null));
         }
     }
 }

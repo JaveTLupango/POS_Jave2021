@@ -1,40 +1,26 @@
-﻿using Google.Protobuf.WellKnownTypes;
-using MySql.Data.MySqlClient;
-using POS_Jave2021.Class;
+﻿using POS_Jave2021.Class;
 using POS_Jave2021.Model;
-using Renci.SshNet.Security;
+using POS_Jave2021.View;
+using POS_Jave2021.View.Cashier;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
-using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace POS_Jave2021
 {
     public partial class pos_main : Form
     {
-
-
-        OleDbConnection conn;
+        public static OleDbConnection conn;
         UserRegistration UR_serviceClass = new UserRegistration();
         UserLogin UserLogin = new UserLogin();
+        userModel usermodel = new userModel();
+        public static DataTable userDetails;
         public pos_main()
         {
             InitializeComponent();
             conn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Jino\\POS\\POS_Jave2021\\DBSource\\POS_DB.accdb");
-
-        }
-
-        userModel usermodel = new userModel();
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -117,8 +103,8 @@ namespace POS_Jave2021
 
             DateTime dtm = DateTime.Now;
 
-                usermodel.username = textBox1.Text;
-                usermodel.password = textBox2.Text;
+                usermodel.username = textBox13.Text;
+                usermodel.password = txt_confirmpassword.Text;
                 usermodel.user_id = dtm.ToString("yyyyMMddhhmmss");
                 usermodel.is_active = true;
                 usermodel.is_deleted = true;         
@@ -201,30 +187,56 @@ namespace POS_Jave2021
 
         private void button1_Click(object sender, EventArgs e)
         {
-                    
-            DialogResult d = MessageBox.Show("Login...", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-
-            if ((d == DialogResult.OK))
+            try
             {
                 usermodel = new userModel();
-                usermodel.username = textBox1.Text;
-                usermodel.password = textBox2.Text;
+                usermodel.username = txtUserName.Text;
+                usermodel.password = txtUserPassword.Text;
                 conn.Close();
-                var retval = UserLogin.login(usermodel, conn);
-
-                if (retval) 
+                userDetails = UserLogin.login(usermodel, conn);
+                if (userDetails.Rows.Count > 0)
                 {
-                    MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (bool.Parse(userDetails.Rows[0]["auth_factor"].ToString()) == true)
+                    {
+                        tabControl.SelectedIndex = 1;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //this.Hide();
+                        shiftstart ss = new shiftstart(conn);
+                        if (!ss.shiftvalidate(userDetails.Rows[0]["user_id"].ToString()))
+                        {
+                            var form = new Shift_Start();
+                            form.ShowDialog();
+                            var shift_status = form.is_status;
+                            if (shift_status)
+                            {
+
+                                CashierHome cashier = new CashierHome(userDetails);
+                                cashier.Show();
+                                this.Hide();
+                            }
+                        }
+                        else
+                        {
+                            CashierHome cashier = new CashierHome(userDetails);
+                            cashier.Show();
+                            this.Hide();
+                        }
+                    }
                 }
-                else 
+                else
                 {
                     MessageBox.Show("Login Failed. Please check your username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            if (d == DialogResult.Cancel)
+            catch (Exception)
             {
 
+                throw;
             }
+                 
             
         }
 
@@ -250,6 +262,7 @@ namespace POS_Jave2021
                 if(retval.is_Success)
                 {
                     MessageBox.Show(retval.message, retval.title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    tabControl.SelectedIndex = 0;
                 }
                 else
                 {
@@ -275,6 +288,36 @@ namespace POS_Jave2021
             groupBox7.Enabled = false;
             groupBox6.Enabled = true;
 
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtUserName.Text) && !string.IsNullOrEmpty(txtUserPassword.Text))
+            {
+                btnLogin.Enabled = true;
+            }
+            else
+            {
+                btnLogin.Enabled = false;
+            }
+        }
+
+        private void txtUserPassword_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtUserName.Text) && !string.IsNullOrEmpty(txtUserPassword.Text))
+            {
+                btnLogin.Enabled = true;
+            }
+            else
+            {
+                btnLogin.Enabled = false;
+            }
         }
     }
 }

@@ -101,34 +101,46 @@
   <ItemGroup>
     <Compile Include="Class\connectionClass.cs" />
     <Compile Include="Class\formLoad.cs" />
+    <Compile Include="Class\InventoryClass.cs" />
     <Compile Include="Class\passwordHash.cs" />
     <Compile Include="Class\passwordValidator.cs" />
+    <Compile Include="Class\shiftstart.cs" />
     <Compile Include="Class\UserLogin.cs" />
     <Compile Include="Class\UserRegistration.cs" />
     <Compile Include="Class\validator.cs" />
     <Compile Include="Model\classConnection.cs" />
     <Compile Include="Model\ClassModel.cs" />
     <Compile Include="Model\ResponseModel.cs" />
+    <Compile Include="Model\shiftmodel.cs" />
     <Compile Include="Model\userModel.cs" />
-    <Compile Include="pos_main.cs">
+    <Compile Include="View\Cashier\CashierHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pos_main.Designer.cs">
+    <Compile Include="View\Cashier\CashierHome.Designer.cs">
+      <DependentUpon>CashierHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cashier\Shift_Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cashier\Shift_Start.Designer.cs">
+      <DependentUpon>Shift_Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\pos_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\pos_main.Designer.cs">
       <DependentUpon>pos_main.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pos_security.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pos_security.Designer.cs">
-      <DependentUpon>pos_security.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="pos_main.resx">
-      <DependentUpon>pos_main.cs</DependentUpon>
+    <EmbeddedResource Include="View\Cashier\CashierHome.resx">
+      <DependentUpon>CashierHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pos_security.resx">
-      <DependentUpon>pos_security.cs</DependentUpon>
+    <EmbeddedResource Include="View\Cashier\Shift_Start.resx">
+      <DependentUpon>Shift_Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\pos_main.resx">
+      <DependentUpon>pos_main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

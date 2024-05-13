@@ -12,7 +12,7 @@ namespace POS_Jave2021.Class
     public class UserLogin
     {
 
-        public bool login(userModel model, OleDbConnection conn)
+        public DataTable login(userModel model, OleDbConnection conn)
         {
             try
             {
@@ -28,13 +28,13 @@ namespace POS_Jave2021.Class
                     da.Fill(dtResult);
                     conn.Close();
 
-                    return dtResult.Rows.Count > 0;
+                    return dtResult;
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error during login: " + ex.ToString());
-                return false;
+                throw ex;
             }
         }
 
