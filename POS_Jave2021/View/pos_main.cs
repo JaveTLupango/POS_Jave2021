@@ -213,14 +213,14 @@ namespace POS_Jave2021
                             if (shift_status)
                             {
 
-                                CashierHome cashier = new CashierHome(userDetails);
+                                CashierHome cashier = new CashierHome(userDetails, conn);
                                 cashier.Show();
                                 this.Hide();
                             }
                         }
                         else
                         {
-                            CashierHome cashier = new CashierHome(userDetails);
+                            CashierHome cashier = new CashierHome(userDetails, conn);
                             cashier.Show();
                             this.Hide();
                         }

@@ -38,5 +38,16 @@ namespace POS_Jave2021.Class
                 throw ex;
             }
         }
+
+        public DataTable customOrderLayout()
+        { 
+            var dt = new DataTable();
+            dt.Columns.Add("ID");
+            dt.Columns.Add("Name");
+            dt.Columns.Add("QTY");
+            dt.Columns.Add("Price");
+            dt.Columns.Add("TotalPrice");
+            return dt;
+        }
     }
 }

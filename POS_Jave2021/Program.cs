@@ -1,4 +1,5 @@
-﻿using POS_Jave2021.View;
+﻿using POS_Jave2021.Class;
+using POS_Jave2021.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +16,13 @@ namespace POS_Jave2021
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new pos_main());
-            //Application.Run(new CashierHome(null));
+            //Application.Run(new pos_main());
+
+            var conn = connectionClass.connect();
+            Application.Run(new CashierHome(null, conn));
         }
     }
 }
