@@ -55,6 +55,9 @@
     <Reference Include="MySQLConnection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MySQLConnection.1.0.1\lib\MySQLConnection.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Renci.SshNet, Version=2020.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
       <HintPath>..\packages\SSH.NET.2020.0.0\lib\net40\Renci.SshNet.dll</HintPath>
     </Reference>
@@ -104,6 +107,7 @@
     <Compile Include="Class\connectionClass.cs" />
     <Compile Include="Class\formLoad.cs" />
     <Compile Include="Class\InventoryClass.cs" />
+    <Compile Include="Class\logsClass.cs" />
     <Compile Include="Class\passwordHash.cs" />
     <Compile Include="Class\passwordValidator.cs" />
     <Compile Include="Class\shiftstart.cs" />
@@ -122,6 +126,18 @@
     <Compile Include="View\Cashier\CashierHome.Designer.cs">
       <DependentUpon>CashierHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Cashier\CashPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cashier\CashPayment.Designer.cs">
+      <DependentUpon>CashPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cashier\Remarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cashier\Remarks.Designer.cs">
+      <DependentUpon>Remarks.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Cashier\Shift_Start.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +154,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="View\Cashier\CashierHome.resx">
       <DependentUpon>CashierHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cashier\CashPayment.resx">
+      <DependentUpon>CashPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cashier\Remarks.resx">
+      <DependentUpon>Remarks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Cashier\Shift_Start.resx">
       <DependentUpon>Shift_Start.cs</DependentUpon>
@@ -171,12 +193,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Class\Interfaces\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DBSource\POS_DB.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="GIF\loading1.gif" />
+    <Content Include="GIF\loading2.gif" />
+    <Content Include="logs\logs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
