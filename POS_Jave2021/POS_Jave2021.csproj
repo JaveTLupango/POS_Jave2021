@@ -108,6 +108,7 @@
     <Compile Include="Class\formLoad.cs" />
     <Compile Include="Class\InventoryClass.cs" />
     <Compile Include="Class\logsClass.cs" />
+    <Compile Include="Class\OrderTransactionClass.cs" />
     <Compile Include="Class\passwordHash.cs" />
     <Compile Include="Class\passwordValidator.cs" />
     <Compile Include="Class\shiftstart.cs" />

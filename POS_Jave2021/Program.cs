@@ -1,4 +1,5 @@
 ﻿using POS_Jave2021.Class;
+using POS_Jave2021.Model;
 using POS_Jave2021.View;
 using System;
 using System.Collections.Generic;
@@ -21,8 +22,16 @@ namespace POS_Jave2021
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new pos_main());
 
+
             var conn = connectionClass.connect();
-            Application.Run(new CashierHome(null, conn));
+            var model = new userModel
+            {
+                username = "testuser",
+                password = "test12",
+            };
+            UserLogin ul = new UserLogin();
+            var dtuser = ul.login(model, conn);
+            Application.Run(new CashierHome(dtuser, conn));
         }
     }
 }

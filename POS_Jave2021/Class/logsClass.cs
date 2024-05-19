@@ -10,21 +10,29 @@ namespace POS_Jave2021.Class
 {
     public class logsClass
     {
-        string _logPath;
-        string __filename;
+        public static string _logPath;
+        public static string _filename;
         public logsClass()
         {
             _logPath = ConfigurationManager.AppSettings["logspath"];
-            __filename = "\\"+DateTime.Now.ToString("yyyyMMdd")+".txt";
-        }
-
-        public void validateFile()
-        {
-            if (File.Exists(_logPath+ __filename))
+            _filename = "" + DateTime.Now.ToString("yyyyMMdd") + ".txt";
+            
+            if (!File.Exists(_logPath + _filename))
             {
-
+                File.Create(_logPath + _filename).Dispose();
             }
         }
+        public void writelineLogs(string logs)
+        {
 
+            File.AppendAllText(_logPath + _filename,
+                DateTime.Now.ToString("yyyyMMdd-HHmmss : ") +
+                logs + Environment.NewLine);
+
+            //using (StreamWriter writer = new StreamWriter(_logPath + _filename))
+            //{
+            //    writer.wh(logs);
+            //}
+        }
     }
 }

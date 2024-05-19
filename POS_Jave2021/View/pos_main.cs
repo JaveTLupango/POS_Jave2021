@@ -1,4 +1,5 @@
-﻿using POS_Jave2021.Class;
+﻿using Newtonsoft.Json;
+using POS_Jave2021.Class;
 using POS_Jave2021.Model;
 using POS_Jave2021.View;
 using POS_Jave2021.View.Cashier;
@@ -17,11 +18,12 @@ namespace POS_Jave2021
         UserLogin UserLogin = new UserLogin();
         userModel usermodel = new userModel();
         public static DataTable userDetails;
+        logsClass _logsClass;
         public pos_main()
         {
             InitializeComponent();
             conn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Jino\\POS\\POS_Jave2021\\DBSource\\POS_DB.accdb");
-
+            _logsClass = new logsClass();
         }
 
         private void pos_main_Load(object sender, EventArgs e)
@@ -202,6 +204,8 @@ namespace POS_Jave2021
                     }
                     else
                     {
+                        _logsClass.writelineLogs("Login Successfully.....");
+                        _logsClass.writelineLogs("USER JSON : " + JsonConvert.SerializeObject(userDetails));
                         MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         //this.Hide();
                         shiftstart ss = new shiftstart(conn);
@@ -211,8 +215,7 @@ namespace POS_Jave2021
                             form.ShowDialog();
                             var shift_status = form.is_status;
                             if (shift_status)
-                            {
-
+                            {                                
                                 CashierHome cashier = new CashierHome(userDetails, conn);
                                 cashier.Show();
                                 this.Hide();

@@ -1,4 +1,5 @@
-﻿using POS_Jave2021.Class;
+﻿using Newtonsoft.Json;
+using POS_Jave2021.Class;
 using POS_Jave2021.Model;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,11 @@ namespace POS_Jave2021.View.Cashier
 {
     public partial class Shift_Start : Form
     {
+        logsClass lc;
         public Shift_Start()
         {
             InitializeComponent();
+            lc = new logsClass();
         }
         public bool is_status = false;
         private void Shift_Start_Load(object sender, EventArgs e)
@@ -42,6 +45,7 @@ namespace POS_Jave2021.View.Cashier
                 var res = ss.Insert(model);
                 if(res.is_Success)
                 {
+                    lc.writelineLogs("USER Shift CashOnHand : " + JsonConvert.SerializeObject(model));
                     is_status = true;
                     this.Close();
                 }

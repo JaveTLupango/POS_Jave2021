@@ -19,9 +19,13 @@ namespace POS_Jave2021.View.Cashier
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(richTextBox1.Text))
+            if(string.IsNullOrEmpty(richTextBox1.Text.Trim()))
             {
                 MessageBox.Show("Please input remark!", "Remark is null or empty!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if(richTextBox1.Text.Length <=10)
+            {
+                MessageBox.Show("Remark must be morethan 10 characters!", "Please try again!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {

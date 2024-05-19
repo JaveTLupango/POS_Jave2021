@@ -1,0 +1,43 @@
+20240519-185429 : Login Successfully.....
+20240519-185429 : USER JSON : [{"ID":14,"user_id":"20240513081334","username":"testuser","password":"test12","lastname":"cash","firstname":"hier","middlename":"","phone_no":"09123456789","email":"cash@cahs.com","usertype":0,"auth_factor":false,"is_active":true,"is_deleted":false}]
+20240519-185441 : USER Shift CashOnHand : {"ID":0,"user_id":"20240513081334","shift_date":"05/19/2024","shift_amount":1000.75}
+20240519-190326 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240519-190326 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240519-190344 : 20240513081334 - testuser - SCAN PRODUCTID : 4806508627222
+20240519-190344 : 20240513081334 - testuser - Product JSON: [{"ID":"3","ProductID":"4806508627222","Name":"sardinas","Description":"senoria red","Price":30.0,"Stocks":50}]
+20240519-190347 : 20240513081334 - testuser - SCAN PRODUCTID : 4806508627215
+20240519-190347 : 20240513081334 - testuser - Product JSON: [{"ID":"2","ProductID":"4806508627215","Name":"sardinas","Description":"senorita green","Price":27.1,"Stocks":50}]
+20240519-190406 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240519-190406 : 20240513081334 - testuser - Custumer total order: ₱77.60
+20240519-190406 : 20240513081334 - testuser - Custumer Change: ₱22.40
+20240519-190412 : 20240513081334 - testuser - Clear Orders......
+20240519-190422 : 20240513081334 - testuser - Remarks : ambot onsa rason
+20240519-191821 : 20240513081334 - testuser - POS Ready!!
+20240519-191836 : 20240513081334 - testuser - SCAN PRODUCTID : 4806508627215
+20240519-191836 : 20240513081334 - testuser - Product JSON: [{"ID":"2","ProductID":"4806508627215","Name":"sardinas","Description":"senorita green","Price":27.1,"Stocks":50}]
+20240519-191839 : 20240513081334 - testuser - SCAN PRODUCTID : 4806508627222
+20240519-191839 : 20240513081334 - testuser - Product JSON: [{"ID":"3","ProductID":"4806508627222","Name":"sardinas","Description":"senoria red","Price":30.0,"Stocks":50}]
+20240519-191850 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240519-191850 : 20240513081334 - testuser - Custumer total order: ₱57.10
+20240519-191850 : 20240513081334 - testuser - Custumer Change: ₱42.90
+20240519-191900 : 20240513081334 - testuser - Clear Orders......
+20240519-191906 : 20240513081334 - testuser - Remarks : asda
+20240519-191938 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240519-191938 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240519-191939 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240519-191939 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240519-191942 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240519-191942 : 20240513081334 - testuser - Custumer total order: ₱41.00
+20240519-191942 : 20240513081334 - testuser - Custumer Change: ₱59.00
+20240519-191945 : 20240513081334 - testuser - Clear Orders......
+20240519-191949 : 20240513081334 - testuser - Remarks : xd
+20240519-192002 : 20240513081334 - testuser - POS Ready!!
+20240519-192003 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240519-192003 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240519-192004 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240519-192004 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240519-192008 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240519-192008 : 20240513081334 - testuser - Custumer total order: ₱41.00
+20240519-192008 : 20240513081334 - testuser - Custumer Change: ₱59.00
+20240519-192011 : 20240513081334 - testuser - Clear Orders......
+20240519-192055 : 20240513081334 - testuser - Remarks : okay po, okay na okay

@@ -18,7 +18,9 @@ namespace POS_Jave2021.View
 {
     public partial class CashierHome : Form
     {
+        logsClass _logClass;
         public static DataTable _userDetails;
+        public static string _userDetailsName;
         public static DataTable _dtInv;
         public static DataTable _dtOrders;
         customOrderLayoutModel orderModels;
@@ -32,6 +34,8 @@ namespace POS_Jave2021.View
             InitializeComponent();
             _userDetails = userDetails;
             _conn = conn;
+            _logClass = new logsClass();
+            _userDetailsName = _userDetails.Rows[0]["user_id"].ToString() + " - " + _userDetails.Rows[0]["username"].ToString();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -42,6 +46,7 @@ namespace POS_Jave2021.View
         public void logs(string log)
         {
             rtb_logs.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss -- ")+log+ "\n");
+            _logClass.writelineLogs(_userDetailsName + " - "+log);
         }
 
         private void CashierHome_Load(object sender, EventArgs e)
@@ -193,6 +198,9 @@ namespace POS_Jave2021.View
                 if((_cashorder >= _totalOrder))
                 {
                     processOnOff(true);
+                    
+                    processOnOff(false);
+
                 }
                 else
                 {
