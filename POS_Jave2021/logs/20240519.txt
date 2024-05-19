@@ -41,3 +41,8 @@
 20240519-192008 : 20240513081334 - testuser - Custumer Change: ₱59.00
 20240519-192011 : 20240513081334 - testuser - Clear Orders......
 20240519-192055 : 20240513081334 - testuser - Remarks : okay po, okay na okay
+20240519-200318 : 20240513081334 - testuser - POS Ready!!
+20240519-200320 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240519-200320 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240519-200418 : 20240513081334 - testuser - SCAN PRODUCTID : 4806508627215
+20240519-200418 : 20240513081334 - testuser - Product JSON: [{"ID":"2","ProductID":"4806508627215","Name":"sardinas","Description":"senorita green","Price":27.1,"Stocks":50}]

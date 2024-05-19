@@ -43,10 +43,13 @@ namespace POS_Jave2021.Class
         { 
             var dt = new DataTable();
             dt.Columns.Add("ID");
+            dt.Columns.Add("InvID");
             dt.Columns.Add("Name");
             dt.Columns.Add("QTY");
             dt.Columns.Add("Price");
             dt.Columns.Add("TotalPrice");
+            dt.Columns.Add("IsCancel");
+            dt.Columns.Add("Remarks");
             return dt;
         }
     }

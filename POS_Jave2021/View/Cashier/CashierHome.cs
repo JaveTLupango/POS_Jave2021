@@ -100,10 +100,14 @@ namespace POS_Jave2021.View
                         orderModels = new customOrderLayoutModel
                         {
                             ID = orderID + 1,
+                            InvID = r["ProductID"].ToString(),
                             Name = r["Name"].ToString(),
                             QTY = 1,
                             Price = decimal.Parse(r["Price"].ToString()),
-                            TotalPrice = decimal.Parse(r["Price"].ToString())
+                            TotalPrice = decimal.Parse(r["Price"].ToString()),
+                            IsCancel = false,
+                            Remarks = string.Empty,
+                            
                         };
                         addRowsOrder(orderModels);
                         break;
@@ -133,7 +137,7 @@ namespace POS_Jave2021.View
 
         public void addRowsOrder(customOrderLayoutModel model)
         {
-            _dtOrders.Rows.Add(model.ID, model.Name, model.QTY, model.Price, model.TotalPrice);
+            _dtOrders.Rows.Add(model.ID, model.InvID, model.Name, model.QTY, model.Price, model.TotalPrice, model.IsCancel, model.Remarks);
             _totalOrder = _totalOrder + model.TotalPrice;
             lblTotalPriceOrder.Text = Convert.ToDecimal(_totalOrder).ToString("C");
             dt_orderlist.DataSource = _dtOrders;

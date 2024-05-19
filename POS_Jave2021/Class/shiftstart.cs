@@ -20,7 +20,6 @@ namespace POS_Jave2021.Class
         {
             try
             {
-                _conn.Close();
                 string query = "INSERT INTO [tbl_shifts_start] (user_id, shift_date, shift_start_amount, tdt)" +
                     "VALUES (@userid, @shiftdate, @shiftamount, @tdt)";
                 using (OleDbCommand command = new OleDbCommand(query, _conn))
@@ -57,6 +56,7 @@ namespace POS_Jave2021.Class
             }
             catch (Exception ex)
             {
+                _conn.Close();
                 return new ResponseModel
                 {
                     is_catch = true,
