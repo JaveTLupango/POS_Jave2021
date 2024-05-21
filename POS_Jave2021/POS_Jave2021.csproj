@@ -115,6 +115,7 @@
     <Compile Include="Class\UserLogin.cs" />
     <Compile Include="Class\UserRegistration.cs" />
     <Compile Include="Class\validator.cs" />
+    <Compile Include="Model\cashierBtnEnabilityModel.cs" />
     <Compile Include="Model\classConnection.cs" />
     <Compile Include="Model\ClassModel.cs" />
     <Compile Include="Model\customOrderLayoutModel.cs" />
@@ -203,6 +204,7 @@
     <Content Include="GIF\loading1.gif" />
     <Content Include="GIF\loading2.gif" />
     <Content Include="logs\logs.txt" />
+    <None Include="Resources\png-clipart-computer-icons-synchronization-refresh-miscellaneous-leaf-thumbnail.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

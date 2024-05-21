@@ -79,5 +79,15 @@ namespace POS_Jave2021.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_computer_icons_synchronization_refresh_miscellaneous_leaf_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-computer-icons-synchronization-refresh-miscellaneous-leaf-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

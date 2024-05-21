@@ -41,6 +41,7 @@
             // 
             // txtShiftName
             // 
+            this.txtShiftName.Enabled = false;
             this.txtShiftName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtShiftName.HideSelection = false;
             this.txtShiftName.Location = new System.Drawing.Point(240, 44);
@@ -89,6 +90,7 @@
             // 
             // txtShiftDate
             // 
+            this.txtShiftDate.Enabled = false;
             this.txtShiftDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtShiftDate.HideSelection = false;
             this.txtShiftDate.Location = new System.Drawing.Point(7, 109);

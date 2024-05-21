@@ -1,0 +1,115 @@
+20240521-160632 : 20240513081334 - testuser - Cashier window 2 is open...
+20240521-160632 : 20240513081334 - testuser - getSaleINV....wait
+20240521-160632 : 20240513081334 - testuser - getSaleINV....end
+20240521-160632 : 20240513081334 - testuser - getSalePOS....wait
+20240521-160632 : 20240513081334 - testuser - getSaleINV....end
+20240521-160632 : 20240513081334 - testuser - getShiftIN....wait
+20240521-160632 : 20240513081334 - testuser - getShiftIN....end
+20240521-160726 : 20240513081334 - testuser - Cashier window 2 is open...
+20240521-160730 : 20240513081334 - testuser - getSaleINV....wait
+20240521-160740 : 20240513081334 - testuser - getSaleINV....end
+20240521-160741 : 20240513081334 - testuser - getSalePOS....wait
+20240521-160741 : 20240513081334 - testuser - getSaleINV....end
+20240521-160747 : 20240513081334 - testuser - getSalePOS....wait
+20240521-160758 : 20240513081334 - testuser - getSaleINV....end
+20240521-160800 : 20240513081334 - testuser - getShiftIN....wait
+20240521-160829 : 20240513081334 - testuser - getShiftIN....end
+20240521-160928 : 20240513081334 - testuser - Cashier window 2 is open...
+20240521-160930 : 20240513081334 - testuser - getSaleINV....wait
+20240521-160930 : 20240513081334 - testuser - getSaleINV....end
+20240521-160930 : 20240513081334 - testuser - getSalePOS....wait
+20240521-160930 : 20240513081334 - testuser - getSaleINV....end
+20240521-160932 : 20240513081334 - testuser - getShiftIN....wait
+20240521-160941 : 20240513081334 - testuser - getShiftIN....end
+20240521-161302 : 20240513081334 - testuser - POS Ready!!
+20240521-161303 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-161303 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":9}]
+20240521-161304 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-161304 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":9}]
+20240521-161307 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240521-161309 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240521-161309 : 20240513081334 - testuser - Custumer total order: ₱41.00
+20240521-161309 : 20240513081334 - testuser - Custumer Change: ₱59.00
+20240521-161309 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240521-161325 : 20240513081334 - testuser - POS VOid Orders Transaction: Started
+20240521-161325 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"2","total_price":41.0,"cash":100.0,"change":59.0,"user_id":"20240513081334"}
+20240521-161325 : 20240513081334 - testuser - Orders POS response: {"is_Success":true,"message":"20240521161325","is_catch":false,"title":"Success"}
+20240521-161325 : 20240513081334 - testuser - Orders [tbl_inv_sold] : waiting
+20240521-161325 : 20240513081334 - testuser - Orders [tbl_inv_sold]: {"is_Success":true,"message":"Successfully Inserted","is_catch":false,"title":"Success"}
+20240521-161327 : 20240513081334 - testuser - POS VOid Orders Transaction: End
+20240521-161436 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-161436 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":7}]
+20240521-161437 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-161437 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":7}]
+20240521-161444 : 20240513081334 - testuser - POS Ready!!
+20240521-161450 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240521-161501 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240521-161501 : 20240513081334 - testuser - Custumer total order: ₱82.00
+20240521-161501 : 20240513081334 - testuser - Custumer Change: ₱18.00
+20240521-161501 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240521-161507 : 20240513081334 - testuser - POS Orders Transaction: Started
+20240521-161507 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"2","total_price":82.0,"cash":100.0,"change":18.0,"user_id":"20240513081334"}
+20240521-161517 : 20240513081334 - testuser - Orders POS response: {"is_Success":true,"message":"20240521161516","is_catch":false,"title":"Success"}
+20240521-161517 : 20240513081334 - testuser - Orders [tbl_inv_sold] : waiting
+20240521-161518 : 20240513081334 - testuser - Orders [tbl_inv_sold]: {"is_Success":true,"message":"Successfully Inserted","is_catch":false,"title":"Success"}
+20240521-161520 : 20240513081334 - testuser - POS Orders Transaction: End
+20240521-161533 : 20240513081334 - testuser - POS Ready!!
+20240521-161534 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-161534 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":5}]
+20240521-161535 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-161535 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":5}]
+20240521-161807 : 20240513081334 - testuser - POS Ready!!
+20240521-161808 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-161808 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":5}]
+20240521-161809 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-161809 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":5}]
+20240521-161811 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240521-161815 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240521-161815 : 20240513081334 - testuser - Custumer total order: ₱41.00
+20240521-161815 : 20240513081334 - testuser - Custumer Change: ₱59.00
+20240521-161815 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240521-161825 : 20240513081334 - testuser - POS VOid Orders Transaction: Started
+20240521-161825 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"2","total_price":41.0,"cash":100.0,"change":59.0,"user_id":"20240513081334"}
+20240521-162010 : 20240513081334 - testuser - POS Ready!!
+20240521-162010 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-162010 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":5}]
+20240521-162011 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-162011 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":5}]
+20240521-162013 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240521-162015 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240521-162015 : 20240513081334 - testuser - Custumer total order: ₱41.00
+20240521-162015 : 20240513081334 - testuser - Custumer Change: ₱59.00
+20240521-162015 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240521-162019 : 20240513081334 - testuser - POS VOid Orders Transaction: Started
+20240521-162024 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"2","total_price":41.0,"cash":100.0,"change":59.0,"user_id":"20240513081334"}
+20240521-162034 : 20240513081334 - testuser - Orders POS response: {"is_Success":true,"message":"20240521162028","is_catch":false,"title":"Success"}
+20240521-162034 : 20240513081334 - testuser - Orders [tbl_inv_sold] : waiting
+20240521-162034 : 20240513081334 - testuser - Orders [tbl_inv_sold]: {"is_Success":true,"message":"Successfully Inserted","is_catch":false,"title":"Success"}
+20240521-162036 : 20240513081334 - testuser - POS VOid Orders Transaction: End
+20240521-162039 : 20240513081334 - testuser - POS Ready!!
+20240521-162040 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-162040 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":5}]
+20240521-162353 : 20240513081334 - testuser - POS Ready!!
+20240521-162355 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-162355 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":5}]
+20240521-162355 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240521-162355 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":5}]
+20240521-162400 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240521-162403 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240521-162403 : 20240513081334 - testuser - Custumer total order: ₱41.00
+20240521-162403 : 20240513081334 - testuser - Custumer Change: ₱59.00
+20240521-162403 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240521-162407 : 20240513081334 - testuser - POS VOid Orders Transaction: Started
+20240521-162411 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"2","total_price":41.0,"cash":100.0,"change":59.0,"user_id":"20240513081334"}
+20240521-162414 : 20240513081334 - testuser - Orders POS response: {"is_Success":true,"message":"20240521162414","is_catch":false,"title":"Success"}
+20240521-162414 : 20240513081334 - testuser - Orders [tbl_inv_sold] : waiting
+20240521-162414 : 20240513081334 - testuser - Orders [tbl_inv_sold]: {"is_Success":true,"message":"Successfully Inserted","is_catch":false,"title":"Success"}
+20240521-162417 : 20240513081334 - testuser - POS VOid Orders Transaction: End
+20240521-162420 : 20240513081334 - testuser - POS Ready!!
+20240521-163126 : 20240513081334 - testuser - Cashier window 2 is open...
+20240521-163126 : 20240513081334 - testuser - getSaleINV....wait
+20240521-163126 : 20240513081334 - testuser - getSaleINV....end
+20240521-163126 : 20240513081334 - testuser - getSalePOS....wait
+20240521-163126 : 20240513081334 - testuser - getSaleINV....end
+20240521-163126 : 20240513081334 - testuser - getShiftIN....wait
+20240521-163126 : 20240513081334 - testuser - getShiftIN....end

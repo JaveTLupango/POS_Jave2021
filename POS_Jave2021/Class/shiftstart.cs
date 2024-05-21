@@ -20,7 +20,7 @@ namespace POS_Jave2021.Class
         {
             try
             {
-                string query = "INSERT INTO [tbl_shifts_start] (user_id, shift_date, shift_start_amount, tdt)" +
+                string query = "INSERT INTO [tbl_shifts_start] (user_id, shift_date, shift_In_amount, tdt)" +
                     "VALUES (@userid, @shiftdate, @shiftamount, @tdt)";
                 using (OleDbCommand command = new OleDbCommand(query, _conn))
                 {
@@ -85,6 +85,30 @@ namespace POS_Jave2021.Class
             {
                 _conn.Close();
                 throw ex;
+            }
+        }
+
+        public DataTable getShiftIn(string userid)
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                string query = "SELECT * FROM [tbl_shifts_start] WHERE shift_date = @tdt AND user_id = @id";
+                using (OleDbCommand command = new OleDbCommand(query, _conn))
+                {
+                    _conn.Open();
+                    command.Parameters.AddWithValue("@tdt", DateTime.Now.ToString("MM/dd/yyyy"));
+                    command.Parameters.AddWithValue("@id", userid); 
+                    OleDbDataAdapter da = new OleDbDataAdapter(command);
+                    da.Fill(dt);
+                    _conn.Close();
+                }
+                return dt;
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }

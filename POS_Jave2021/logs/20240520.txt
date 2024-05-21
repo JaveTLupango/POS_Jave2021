@@ -1,0 +1,105 @@
+20240520-134731 : 20240513081334 - testuser - POS Ready!!
+20240520-134735 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-134736 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-134743 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240520-134743 : 20240513081334 - testuser - Custumer total order: ₱20.50
+20240520-134743 : 20240513081334 - testuser - Custumer Change: ₱79.50
+20240520-134907 : 20240513081334 - testuser - POS Ready!!
+20240520-134908 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-134908 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-134911 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240520-134911 : 20240513081334 - testuser - Custumer total order: ₱20.50
+20240520-134911 : 20240513081334 - testuser - Custumer Change: ₱79.50
+20240520-135248 : 20240513081334 - testuser - POS Ready!!
+20240520-135250 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-135250 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-135308 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240520-135308 : 20240513081334 - testuser - Custumer total order: ₱20.50
+20240520-135308 : 20240513081334 - testuser - Custumer Change: ₱79.50
+20240520-135720 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-135720 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-135727 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240520-135727 : 20240513081334 - testuser - Custumer total order: ₱20.50
+20240520-135727 : 20240513081334 - testuser - Custumer Change: ₱79.50
+20240520-135908 : 20240513081334 - testuser - POS Ready!!
+20240520-135910 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-135910 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-135914 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240520-135914 : 20240513081334 - testuser - Custumer total order: ₱20.50
+20240520-135914 : 20240513081334 - testuser - Custumer Change: ₱79.50
+20240520-181026 : 20240513081334 - testuser - POS Ready!!
+20240520-181028 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-181028 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-181034 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240520-181034 : 20240513081334 - testuser - Custumer total order: ₱20.50
+20240520-181034 : 20240513081334 - testuser - Custumer Change: ₱79.50
+20240520-181301 : 20240513081334 - testuser - POS Ready!!
+20240520-181303 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-181303 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-181313 : 20240513081334 - testuser - Enter Custumer Cash: ₱40.00
+20240520-181313 : 20240513081334 - testuser - Custumer total order: ₱20.50
+20240520-181313 : 20240513081334 - testuser - Custumer Change: ₱19.50
+20240520-181548 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-181548 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-181553 : 20240513081334 - testuser - Enter Custumer Cash: ₱40.00
+20240520-181553 : 20240513081334 - testuser - Custumer total order: ₱20.50
+20240520-181553 : 20240513081334 - testuser - Custumer Change: ₱19.50
+20240520-181640 : 20240513081334 - testuser - POS Ready!!
+20240520-181641 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-181641 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-181644 : 20240513081334 - testuser - Enter Custumer Cash: ₱40.00
+20240520-181644 : 20240513081334 - testuser - Custumer total order: ₱20.50
+20240520-181644 : 20240513081334 - testuser - Custumer Change: ₱19.50
+20240520-181733 : 20240513081334 - testuser - POS Ready!!
+20240520-181734 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-181734 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-181738 : 20240513081334 - testuser - Enter Custumer Cash: ₱40.00
+20240520-181738 : 20240513081334 - testuser - Custumer total order: ₱20.50
+20240520-181738 : 20240513081334 - testuser - Custumer Change: ₱19.50
+20240520-182358 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-182359 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-182403 : 20240513081334 - testuser - SCAN PRODUCTID : 4806508627215
+20240520-182403 : 20240513081334 - testuser - Product JSON: [{"ID":"2","ProductID":"4806508627215","Name":"sardinas","Description":"senorita green","Price":27.1,"Stocks":50}]
+20240520-182413 : 20240513081334 - testuser - Enter Custumer Cash: ₱40.00
+20240520-182413 : 20240513081334 - testuser - Custumer total order: ₱47.60
+20240520-182413 : 20240513081334 - testuser - Custumer Change: -₱7.60
+20240520-182421 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240520-182421 : 20240513081334 - testuser - Custumer total order: ₱47.60
+20240520-182421 : 20240513081334 - testuser - Custumer Change: ₱52.40
+20240520-183145 : 20240513081334 - testuser - POS Ready!!
+20240520-183147 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-183147 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-183153 : 20240513081334 - testuser - SCAN PRODUCTID : 4806508627215
+20240520-183153 : 20240513081334 - testuser - Product JSON: [{"ID":"2","ProductID":"4806508627215","Name":"sardinas","Description":"senorita green","Price":27.1,"Stocks":50}]
+20240520-183157 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240520-183157 : 20240513081334 - testuser - Custumer total order: ₱47.60
+20240520-183157 : 20240513081334 - testuser - Custumer Change: ₱52.40
+20240520-183252 : 20240513081334 - testuser - POS Ready!!
+20240520-183252 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-183253 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":20}]
+20240520-183256 : 20240513081334 - testuser - SCAN PRODUCTID : 4806508627215
+20240520-183256 : 20240513081334 - testuser - Product JSON: [{"ID":"2","ProductID":"4806508627215","Name":"sardinas","Description":"senorita green","Price":27.1,"Stocks":50}]
+20240520-183259 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240520-183259 : 20240513081334 - testuser - Custumer total order: ₱47.60
+20240520-183259 : 20240513081334 - testuser - Custumer Change: ₱52.40
+20240520-184900 : 20240513081334 - testuser - POS Ready!!
+20240520-184959 : 20240513081334 - testuser - POS Ready!!
+20240520-185303 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-185303 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240520-185303 : 20240513081334 - testuser - SCAN PRODUCTID : 
+20240520-185305 : 20240513081334 - testuser - Catch : No Item Found!
+20240520-185307 : 20240513081334 - testuser - SCAN PRODUCTID : 2
+20240520-185308 : 20240513081334 - testuser - Catch : No Item Found!
+20240520-185309 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-185309 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240520-185415 : 20240513081334 - testuser - POS Ready!!
+20240520-185426 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240520-185426 : 20240513081334 - testuser - Custumer total order: ₱0.00
+20240520-185426 : 20240513081334 - testuser - Custumer Change: ₱100.00
+20240520-185431 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-185431 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240520-185433 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240520-185433 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240520-185441 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240520-185441 : 20240513081334 - testuser - Custumer total order: ₱41.00
+20240520-185441 : 20240513081334 - testuser - Custumer Change: ₱59.00
