@@ -130,7 +130,8 @@ namespace POS_Jave2021.Class
             try
             {
                 DataTable dt = new DataTable();
-                string query = "SELECT * FROM [tbl_pos] WHERE tdt = @tdt";
+                string query = "SELECT " +
+                    " * FROM [tbl_pos] WHERE tdt = @tdt";
                 using (OleDbCommand command = new OleDbCommand(query, _conn))
                 {
                     _conn.Open();

@@ -122,6 +122,7 @@
     <Compile Include="Model\PosModel.cs" />
     <Compile Include="Model\ResponseModel.cs" />
     <Compile Include="Model\shiftmodel.cs" />
+    <Compile Include="Model\shiftOffModel.cs" />
     <Compile Include="Model\userModel.cs" />
     <Compile Include="View\Cashier\CashierHome.cs">
       <SubType>Form</SubType>

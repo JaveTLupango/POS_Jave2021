@@ -60,22 +60,46 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.label28 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.btn_shiftOut = new System.Windows.Forms.Button();
             this.lbl_shiftInAmount = new System.Windows.Forms.Label();
             this.lbl_shiftTotalSales = new System.Windows.Forms.Label();
             this.lbl_shiftVoidSales = new System.Windows.Forms.Label();
             this.lbl_isBalance = new System.Windows.Forms.Label();
             this.lbl_disbalance = new System.Windows.Forms.Label();
-            this.lbl_cashOnHand = new System.Windows.Forms.Label();
+            this.lbl_expectCashOnHand = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btn_shiftOut = new System.Windows.Forms.Button();
+            this.txt_ReportCashOnHand = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.dgv_saleReportPOS = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.dgv_salesReportInvSold = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
@@ -104,6 +128,15 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_saleReportPOS)).BeginInit();
+            this.tableLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_salesReportInvSold)).BeginInit();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.tableLayoutPanel10.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -425,6 +458,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tabPage2.Controls.Add(btn_refresh);
             this.tabPage2.Controls.Add(this.tabControlCashierReport);
             this.tabPage2.Controls.Add(this.groupBox3);
@@ -434,19 +468,16 @@
             this.tabPage2.Size = new System.Drawing.Size(1535, 658);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Shift Out";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabControlCashierReport
             // 
             this.tabControlCashierReport.Controls.Add(this.tabPage3);
             this.tabControlCashierReport.Controls.Add(this.tabPage4);
-            this.tabControlCashierReport.Controls.Add(this.tabPage5);
-            this.tabControlCashierReport.Location = new System.Drawing.Point(250, 15);
+            this.tabControlCashierReport.Location = new System.Drawing.Point(250, 3);
             this.tabControlCashierReport.Name = "tabControlCashierReport";
             this.tabControlCashierReport.SelectedIndex = 0;
-            this.tabControlCashierReport.Size = new System.Drawing.Size(1279, 634);
+            this.tabControlCashierReport.Size = new System.Drawing.Size(1279, 659);
             this.tabControlCashierReport.TabIndex = 1;
-            this.tabControlCashierReport.SelectedIndexChanged += new System.EventHandler(this.tabControlCashierReport_SelectedIndexChanged);
             // 
             // tabPage3
             // 
@@ -454,13 +485,14 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1271, 601);
+            this.tabPage3.Size = new System.Drawing.Size(1271, 626);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Report";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel4
             // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -468,8 +500,8 @@
             this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 6);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.78378F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.21622F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.49324F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.50676F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1262, 592);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
@@ -478,33 +510,47 @@
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.52F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.48F));
+            this.tableLayoutPanel5.Controls.Add(this.label28, 0, 6);
             this.tableLayoutPanel5.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.pictureBox3, 1, 6);
             this.tableLayoutPanel5.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.label11, 0, 2);
             this.tableLayoutPanel5.Controls.Add(this.label12, 0, 3);
             this.tableLayoutPanel5.Controls.Add(this.label13, 0, 4);
-            this.tableLayoutPanel5.Controls.Add(this.btn_shiftOut, 0, 6);
             this.tableLayoutPanel5.Controls.Add(this.lbl_shiftInAmount, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.lbl_shiftTotalSales, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.lbl_shiftVoidSales, 1, 2);
             this.tableLayoutPanel5.Controls.Add(this.lbl_isBalance, 1, 3);
             this.tableLayoutPanel5.Controls.Add(this.lbl_disbalance, 1, 4);
-            this.tableLayoutPanel5.Controls.Add(this.lbl_cashOnHand, 1, 5);
+            this.tableLayoutPanel5.Controls.Add(this.lbl_expectCashOnHand, 1, 5);
             this.tableLayoutPanel5.Controls.Add(this.label14, 0, 5);
+            this.tableLayoutPanel5.Controls.Add(this.pictureBox3, 1, 7);
+            this.tableLayoutPanel5.Controls.Add(this.btn_shiftOut, 0, 7);
+            this.tableLayoutPanel5.Controls.Add(this.txt_ReportCashOnHand, 1, 6);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 7;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.38889F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.61111F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 131F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(625, 341);
+            this.tableLayoutPanel5.RowCount = 8;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.16279F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.83721F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 167F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(625, 435);
             this.tableLayoutPanel5.TabIndex = 0;
-            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label28.Location = new System.Drawing.Point(3, 229);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(122, 20);
+            this.label28.TabIndex = 18;
+            this.label28.Text = "Cash On Hand :";
             // 
             // label9
             // 
@@ -516,16 +562,6 @@
             this.label9.Size = new System.Drawing.Size(128, 20);
             this.label9.TabIndex = 4;
             this.label9.Text = "Shift In Amount :";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::POS_Jave2021.Properties.Resources.loading2;
-            this.pictureBox3.Location = new System.Drawing.Point(225, 212);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(397, 126);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
             // 
             // label10
             // 
@@ -554,7 +590,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(3, 106);
+            this.label12.Location = new System.Drawing.Point(3, 110);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(88, 20);
             this.label12.TabIndex = 7;
@@ -565,21 +601,11 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(3, 140);
+            this.label13.Location = new System.Drawing.Point(3, 148);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(152, 20);
             this.label13.TabIndex = 8;
             this.label13.Text = "Disbalance Amount:";
-            // 
-            // btn_shiftOut
-            // 
-            this.btn_shiftOut.Location = new System.Drawing.Point(3, 212);
-            this.btn_shiftOut.Name = "btn_shiftOut";
-            this.btn_shiftOut.Size = new System.Drawing.Size(214, 39);
-            this.btn_shiftOut.TabIndex = 9;
-            this.btn_shiftOut.Text = "Shift Out";
-            this.btn_shiftOut.UseVisualStyleBackColor = true;
-            this.btn_shiftOut.Click += new System.EventHandler(this.btn_shiftOut_Click);
             // 
             // lbl_shiftInAmount
             // 
@@ -619,7 +645,7 @@
             this.lbl_isBalance.AutoSize = true;
             this.lbl_isBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_isBalance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_isBalance.Location = new System.Drawing.Point(225, 106);
+            this.lbl_isBalance.Location = new System.Drawing.Point(225, 110);
             this.lbl_isBalance.Name = "lbl_isBalance";
             this.lbl_isBalance.Size = new System.Drawing.Size(18, 20);
             this.lbl_isBalance.TabIndex = 14;
@@ -630,53 +656,361 @@
             this.lbl_disbalance.AutoSize = true;
             this.lbl_disbalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_disbalance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_disbalance.Location = new System.Drawing.Point(225, 140);
+            this.lbl_disbalance.Location = new System.Drawing.Point(225, 148);
             this.lbl_disbalance.Name = "lbl_disbalance";
             this.lbl_disbalance.Size = new System.Drawing.Size(18, 20);
             this.lbl_disbalance.TabIndex = 15;
             this.lbl_disbalance.Text = "0";
             // 
-            // lbl_cashOnHand
+            // lbl_expectCashOnHand
             // 
-            this.lbl_cashOnHand.AutoSize = true;
-            this.lbl_cashOnHand.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cashOnHand.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_cashOnHand.Location = new System.Drawing.Point(225, 177);
-            this.lbl_cashOnHand.Name = "lbl_cashOnHand";
-            this.lbl_cashOnHand.Size = new System.Drawing.Size(18, 20);
-            this.lbl_cashOnHand.TabIndex = 16;
-            this.lbl_cashOnHand.Text = "0";
+            this.lbl_expectCashOnHand.AutoSize = true;
+            this.lbl_expectCashOnHand.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_expectCashOnHand.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_expectCashOnHand.Location = new System.Drawing.Point(225, 191);
+            this.lbl_expectCashOnHand.Name = "lbl_expectCashOnHand";
+            this.lbl_expectCashOnHand.Size = new System.Drawing.Size(18, 20);
+            this.lbl_expectCashOnHand.TabIndex = 16;
+            this.lbl_expectCashOnHand.Text = "0";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(3, 177);
+            this.label14.Location = new System.Drawing.Point(3, 191);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(122, 20);
+            this.label14.Size = new System.Drawing.Size(178, 20);
             this.label14.TabIndex = 10;
-            this.label14.Text = "Cash On Hand :";
+            this.label14.Text = "Expected Cash Onhand";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::POS_Jave2021.Properties.Resources.loading2;
+            this.pictureBox3.Location = new System.Drawing.Point(225, 270);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(397, 162);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btn_shiftOut
+            // 
+            this.btn_shiftOut.Location = new System.Drawing.Point(3, 270);
+            this.btn_shiftOut.Name = "btn_shiftOut";
+            this.btn_shiftOut.Size = new System.Drawing.Size(214, 39);
+            this.btn_shiftOut.TabIndex = 9;
+            this.btn_shiftOut.Text = "Shift Out";
+            this.btn_shiftOut.UseVisualStyleBackColor = true;
+            // 
+            // txt_ReportCashOnHand
+            // 
+            this.txt_ReportCashOnHand.Location = new System.Drawing.Point(225, 232);
+            this.txt_ReportCashOnHand.Name = "txt_ReportCashOnHand";
+            this.txt_ReportCashOnHand.Size = new System.Drawing.Size(397, 26);
+            this.txt_ReportCashOnHand.TabIndex = 19;
+            this.txt_ReportCashOnHand.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_ReportCashOnHand_KeyDown);
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.tabPage4.Controls.Add(this.tableLayoutPanel6);
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1271, 601);
+            this.tabPage4.Size = new System.Drawing.Size(1271, 626);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Sales Report";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
+            // tableLayoutPanel6
             // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 29);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1271, 601);
-            this.tabPage5.TabIndex = 2;
-            this.tabPage5.Text = "Void Reports";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.27403F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.72597F));
+            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel8, 1, 0);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(6, 3);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 1;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1259, 623);
+            this.tableLayoutPanel6.TabIndex = 0;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 1;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.richTextBox2, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel11, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.dgv_saleReportPOS, 0, 0);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 3;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75.09364F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.90637F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(564, 617);
+            this.tableLayoutPanel7.TabIndex = 0;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox2.Location = new System.Drawing.Point(3, 537);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(558, 77);
+            this.richTextBox2.TabIndex = 3;
+            this.richTextBox2.Text = "";
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.ColumnCount = 4;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.63235F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.36765F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 172F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
+            this.tableLayoutPanel11.Controls.Add(this.label27, 0, 3);
+            this.tableLayoutPanel11.Controls.Add(this.label24, 2, 0);
+            this.tableLayoutPanel11.Controls.Add(this.label25, 2, 2);
+            this.tableLayoutPanel11.Controls.Add(this.label26, 2, 1);
+            this.tableLayoutPanel11.Controls.Add(this.label23, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.label19, 0, 2);
+            this.tableLayoutPanel11.Controls.Add(this.label22, 0, 1);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 404);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 4;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.61905F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.38095F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(558, 124);
+            this.tableLayoutPanel11.TabIndex = 2;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label27.Location = new System.Drawing.Point(3, 95);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(64, 20);
+            this.label27.TabIndex = 11;
+            this.label27.Text = "UserID:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label24.Location = new System.Drawing.Point(222, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(45, 20);
+            this.label24.TabIndex = 7;
+            this.label24.Text = "QTY:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label25.Location = new System.Drawing.Point(222, 58);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(79, 20);
+            this.label25.TabIndex = 9;
+            this.label25.Text = "Is Cancel:";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label26.Location = new System.Drawing.Point(222, 28);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(86, 20);
+            this.label26.TabIndex = 10;
+            this.label26.Text = "Date Time:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label23.Location = new System.Drawing.Point(3, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(50, 20);
+            this.label23.TabIndex = 6;
+            this.label23.Text = "Cash:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label19.Location = new System.Drawing.Point(3, 58);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(69, 20);
+            this.label19.TabIndex = 4;
+            this.label19.Text = "Change:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label22.Location = new System.Drawing.Point(3, 28);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(48, 20);
+            this.label22.TabIndex = 5;
+            this.label22.Text = "Price:";
+            // 
+            // dgv_saleReportPOS
+            // 
+            this.dgv_saleReportPOS.AllowUserToAddRows = false;
+            this.dgv_saleReportPOS.AllowUserToDeleteRows = false;
+            this.dgv_saleReportPOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_saleReportPOS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_saleReportPOS.Location = new System.Drawing.Point(3, 3);
+            this.dgv_saleReportPOS.Name = "dgv_saleReportPOS";
+            this.dgv_saleReportPOS.Size = new System.Drawing.Size(558, 395);
+            this.dgv_saleReportPOS.TabIndex = 0;
+            this.dgv_saleReportPOS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_saleReportPOS_CellContentClick);
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.dgv_salesReportInvSold, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel9, 0, 1);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(573, 3);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 2;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.61588F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.38412F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(683, 617);
+            this.tableLayoutPanel8.TabIndex = 1;
+            // 
+            // dgv_salesReportInvSold
+            // 
+            this.dgv_salesReportInvSold.AllowUserToAddRows = false;
+            this.dgv_salesReportInvSold.AllowUserToDeleteRows = false;
+            this.dgv_salesReportInvSold.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_salesReportInvSold.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_salesReportInvSold.Location = new System.Drawing.Point(3, 3);
+            this.dgv_salesReportInvSold.Name = "dgv_salesReportInvSold";
+            this.dgv_salesReportInvSold.ReadOnly = true;
+            this.dgv_salesReportInvSold.Size = new System.Drawing.Size(677, 367);
+            this.dgv_salesReportInvSold.TabIndex = 1;
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 1;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.55096F));
+            this.tableLayoutPanel9.Controls.Add(this.richTextBox1, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 0, 0);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 376);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 2;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.10126F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.89874F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(677, 237);
+            this.tableLayoutPanel9.TabIndex = 2;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(3, 116);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(671, 118);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 4;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.63235F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.36765F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 172F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
+            this.tableLayoutPanel10.Controls.Add(this.label15, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.label16, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.label17, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.label18, 2, 0);
+            this.tableLayoutPanel10.Controls.Add(this.label20, 2, 2);
+            this.tableLayoutPanel10.Controls.Add(this.label21, 2, 1);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 3;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.83544F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.16456F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(671, 107);
+            this.tableLayoutPanel10.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label15.Location = new System.Drawing.Point(3, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(85, 20);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "ProductID:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label16.Location = new System.Drawing.Point(3, 70);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(48, 20);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Price:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label17.Location = new System.Drawing.Point(3, 33);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(46, 20);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "Cost:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label18.Location = new System.Drawing.Point(335, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(45, 20);
+            this.label18.TabIndex = 7;
+            this.label18.Text = "QTY:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label20.Location = new System.Drawing.Point(335, 70);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(79, 20);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Is Cancel:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label21.Location = new System.Drawing.Point(335, 33);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(86, 20);
+            this.label21.TabIndex = 10;
+            this.label21.Text = "Date Time:";
             // 
             // groupBox3
             // 
@@ -715,7 +1049,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(237, 603);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label5
             // 
@@ -834,6 +1167,17 @@
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel11.ResumeLayout(false);
+            this.tableLayoutPanel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_saleReportPOS)).EndInit();
+            this.tableLayoutPanel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_salesReportInvSold)).EndInit();
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -882,23 +1226,47 @@
         private System.Windows.Forms.Label lbl_usertype;
         private System.Windows.Forms.TabControl tabControlCashierReport;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btn_shiftOut;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lbl_shiftInAmount;
         private System.Windows.Forms.Label lbl_shiftTotalSales;
         private System.Windows.Forms.Label lbl_shiftVoidSales;
         private System.Windows.Forms.Label lbl_isBalance;
         private System.Windows.Forms.Label lbl_disbalance;
-        private System.Windows.Forms.Label lbl_cashOnHand;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lbl_expectCashOnHand;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.DataGridView dgv_saleReportPOS;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.DataGridView dgv_salesReportInvSold;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox txt_ReportCashOnHand;
     }
 }

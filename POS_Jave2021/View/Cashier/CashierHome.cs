@@ -37,6 +37,7 @@ namespace POS_Jave2021.View
         DataTable _dtMySalesPOS = new DataTable();
         DataTable _dtMyShiftIn = new DataTable();
         shiftstart _ssClass;
+        shiftOffModel _soModel;
 
         public CashierHome(DataTable userDetails, OleDbConnection conn)
         {
@@ -48,6 +49,7 @@ namespace POS_Jave2021.View
             _invClass = new InventoryClass(_conn);
             _ssClass = new shiftstart(_conn);
             _userDetailsName = _userDetails.Rows[0]["user_id"].ToString() + " - " + _userDetails.Rows[0]["username"].ToString();
+            _soModel = new shiftOffModel();
         }
 
         private void CashierTab_SelectedIndexChanged(object sender, EventArgs e)
@@ -403,14 +405,11 @@ namespace POS_Jave2021.View
             }
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         #endregion
 
         public async Task CashierTab_window2()
         {
+            btn_shiftOut.Enabled = false;
             processOnOff(true);
             logs("Cashier window 2 is open...");
             try
@@ -422,10 +421,39 @@ namespace POS_Jave2021.View
                 await getSaleINV();
                 await getSalePOS();
                 await getShiftIN();
-                lbl_shiftInAmount.Text = _dtMyShiftIn.Rows[0]["shift_In_amount"].ToString();
-                lbl_shiftTotalSales.Text = gettotalSales(false).ToString("C");
-                lbl_shiftVoidSales.Text = gettotalSales(true).ToString("C");
+                _soModel = new shiftOffModel
+                {
+                    ShiftInAmount = decimal.Parse(_dtMyShiftIn.Rows[0]["shift_In_amount"].ToString()),
+                    TotalSales = gettotalSales(false),
+                    VoidSales = gettotalSales(true),
+                    IsBalance= false,
+                    ExpectedCashOnHand = decimal.Parse(_dtMyShiftIn.Rows[0]["shift_In_amount"].ToString()) + gettotalSales(false),
+                    CashOnHand = 0,
+                };
+                lbl_shiftInAmount.Text = _soModel.ShiftInAmount.ToString("C");
+                lbl_shiftTotalSales.Text = _soModel.TotalSales.ToString("C");
+                lbl_shiftVoidSales.Text = _soModel.VoidSales.ToString("C");
+                lbl_isBalance.Text = _soModel.IsBalance ? "Yes" : "No";
+                lbl_expectCashOnHand.Text = _soModel.ExpectedCashOnHand.ToString("C");
 
+                DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+                dgv_saleReportPOS.Columns.Add(btn); // .Columns.Add(btn);
+                btn.HeaderText = "Option";
+                btn.Text = "View";
+                btn.Name = "btnClick";
+                btn.UseColumnTextForButtonValue = true;
+                btn.DisplayIndex = 0;
+
+                //btn = new DataGridViewButtonColumn();
+                //dgv_saleReportPOS.Columns.Add(btn); // .Columns.Add(btn);
+                //btn.HeaderText = "IsVoid";
+                //btn.Text = ;
+                //btn.UseColumnTextForButtonValue = true;
+                //btn.DisplayIndex = 0;
+
+                dgv_saleReportPOS.DataSource = _dtMySalesPOS;
+                dgv_saleReportPOS.Columns[9].ValueType = typeof(string);
+                //dgv_saleReportPOS.Columns[9].Visible = false;
 
             }
             catch (Exception ex)
@@ -494,24 +522,58 @@ namespace POS_Jave2021.View
             logs("getShiftIN....end");
         }
 
-        private void tabControlCashierReport_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btn_shiftOut_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_refresh_Click(object sender, EventArgs e)
         {
             CashierTab_window2();
+        }
+
+
+        private void txt_ReportCashOnHand_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_shiftOut.Enabled = true;
+                decimal cashonHand = decimal.Parse(txt_ReportCashOnHand.Text);
+                _soModel.DisbalanceAmount = cashonHand - _soModel.ExpectedCashOnHand;
+                lbl_disbalance.Text = _soModel.DisbalanceAmount.ToString("C");
+                _soModel.IsBalance = _soModel.DisbalanceAmount == 0 ? true : false;
+                lbl_isBalance.Text = _soModel.IsBalance ? "Yes" : "No";
+
+                if(_soModel.DisbalanceAmount < 0)
+                {
+                    // Is balance
+                    label12.BackColor = Color.Red;
+                    label12.ForeColor = Color.White;
+                    lbl_isBalance.BackColor = Color.Red;
+                    lbl_isBalance.ForeColor = Color.White;
+
+                    //Disbalance
+                    label13.BackColor = Color.Red;
+                    label13.ForeColor = Color.White;
+                    lbl_disbalance.BackColor = Color.Red;
+                    lbl_disbalance.ForeColor = Color.White;
+                }
+                else
+                {
+                    // Is balance
+                    label12.BackColor = Color.White;
+                    label12.ForeColor = Color.Black ;
+                    lbl_isBalance.BackColor = Color.White;
+                    lbl_isBalance.ForeColor = Color.Black;
+
+                    //Disbalance
+                    label13.BackColor = Color.White;
+                    label13.ForeColor = Color.Black;
+                    lbl_disbalance.BackColor = Color.White;
+                    lbl_disbalance.ForeColor = Color.Black;
+                }
+            }   
+        }
+
+        private void dgv_saleReportPOS_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
     
