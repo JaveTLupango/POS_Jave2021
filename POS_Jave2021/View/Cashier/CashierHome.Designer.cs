@@ -110,6 +110,7 @@
             this.lbl_username = new System.Windows.Forms.Label();
             this.lbl_userfullname = new System.Windows.Forms.Label();
             this.lbl_usertype = new System.Windows.Forms.Label();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             btn_refresh = new System.Windows.Forms.Button();
             this.CashierTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -145,9 +146,9 @@
             // 
             btn_refresh.BackgroundImage = global::POS_Jave2021.Properties.Resources.png_clipart_computer_icons_synchronization_refresh_miscellaneous_leaf_thumbnail;
             btn_refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            btn_refresh.Location = new System.Drawing.Point(1475, 3);
+            btn_refresh.Location = new System.Drawing.Point(1488, 3);
             btn_refresh.Name = "btn_refresh";
-            btn_refresh.Size = new System.Drawing.Size(47, 35);
+            btn_refresh.Size = new System.Drawing.Size(34, 26);
             btn_refresh.TabIndex = 10;
             btn_refresh.UseVisualStyleBackColor = true;
             btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
@@ -497,6 +498,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.richTextBox3, 0, 1);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 6);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
@@ -703,6 +705,7 @@
             this.btn_shiftOut.TabIndex = 9;
             this.btn_shiftOut.Text = "Shift Out";
             this.btn_shiftOut.UseVisualStyleBackColor = true;
+            this.btn_shiftOut.Click += new System.EventHandler(this.btn_shiftOut_Click);
             // 
             // txt_ReportCashOnHand
             // 
@@ -768,7 +771,7 @@
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.63235F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.36765F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 172F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
             this.tableLayoutPanel11.Controls.Add(this.label27, 0, 3);
             this.tableLayoutPanel11.Controls.Add(this.label24, 2, 0);
             this.tableLayoutPanel11.Controls.Add(this.label25, 2, 2);
@@ -802,7 +805,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label24.Location = new System.Drawing.Point(222, 0);
+            this.label24.Location = new System.Drawing.Point(220, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(45, 20);
             this.label24.TabIndex = 7;
@@ -813,7 +816,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label25.Location = new System.Drawing.Point(222, 58);
+            this.label25.Location = new System.Drawing.Point(220, 58);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(79, 20);
             this.label25.TabIndex = 9;
@@ -824,7 +827,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label26.Location = new System.Drawing.Point(222, 28);
+            this.label26.Location = new System.Drawing.Point(220, 28);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(86, 20);
             this.label26.TabIndex = 10;
@@ -900,6 +903,7 @@
             this.dgv_salesReportInvSold.ReadOnly = true;
             this.dgv_salesReportInvSold.Size = new System.Drawing.Size(677, 367);
             this.dgv_salesReportInvSold.TabIndex = 1;
+            this.dgv_salesReportInvSold.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_salesReportInvSold_CellContentClick);
             // 
             // tableLayoutPanel9
             // 
@@ -930,7 +934,7 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.63235F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.36765F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 172F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
             this.tableLayoutPanel10.Controls.Add(this.label15, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.label16, 0, 2);
             this.tableLayoutPanel10.Controls.Add(this.label17, 0, 1);
@@ -984,7 +988,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label18.Location = new System.Drawing.Point(335, 0);
+            this.label18.Location = new System.Drawing.Point(333, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(45, 20);
             this.label18.TabIndex = 7;
@@ -995,7 +999,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label20.Location = new System.Drawing.Point(335, 70);
+            this.label20.Location = new System.Drawing.Point(333, 70);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(79, 20);
             this.label20.TabIndex = 9;
@@ -1006,7 +1010,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label21.Location = new System.Drawing.Point(335, 33);
+            this.label21.Location = new System.Drawing.Point(333, 33);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(86, 20);
             this.label21.TabIndex = 10;
@@ -1133,6 +1137,16 @@
             this.lbl_usertype.Size = new System.Drawing.Size(90, 20);
             this.lbl_usertype.TabIndex = 10;
             this.lbl_usertype.Text = "User Type";
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox3.Enabled = false;
+            this.richTextBox3.Location = new System.Drawing.Point(3, 444);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(625, 145);
+            this.richTextBox3.TabIndex = 1;
+            this.richTextBox3.Text = "";
             // 
             // CashierHome
             // 
@@ -1268,5 +1282,6 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox txt_ReportCashOnHand;
+        private System.Windows.Forms.RichTextBox richTextBox3;
     }
 }

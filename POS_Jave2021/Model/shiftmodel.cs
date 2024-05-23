@@ -12,5 +12,9 @@ namespace POS_Jave2021.Model
         public string user_id { get; set; }
         public string shift_date { get; set; }
         public decimal shift_amount { get; set; }
+        public bool is_balance { get; set;}
+        public Decimal disbalance_amount { get; set; }
+        public decimal total_void_sales { get; set; }
+        public string assist_by { get; set; }
     }
 }

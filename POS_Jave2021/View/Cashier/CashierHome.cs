@@ -38,6 +38,8 @@ namespace POS_Jave2021.View
         DataTable _dtMyShiftIn = new DataTable();
         shiftstart _ssClass;
         shiftOffModel _soModel;
+        public static DataTable _userAdminDetails;
+        public static bool _isAdminVerified = false;
 
         public CashierHome(DataTable userDetails, OleDbConnection conn)
         {
@@ -466,16 +468,23 @@ namespace POS_Jave2021.View
         public decimal gettotalSales(bool isVoid)
         {
             decimal totalSales = 0;
-            DataTable ret = _dtMySalesPOS.AsEnumerable().Where(
-                    w => w.Field<bool>("is_void") == isVoid).CopyToDataTable();
-            if (ret.Rows.Count > 0)
+            try
             {
-                foreach (DataRow row in ret.Rows)
+                DataTable ret = _dtMySalesPOS.AsEnumerable().Where(
+                    w => w.Field<bool>("is_void") == isVoid).CopyToDataTable();
+                if (ret.Rows.Count > 0)
                 {
-                    totalSales = totalSales + Decimal.Parse(row["total_price"].ToString());
+                    foreach (DataRow row in ret.Rows)
+                    {
+                        totalSales = totalSales + Decimal.Parse(row["total_price"].ToString());
+                    }
                 }
+                return totalSales;
+            }
+            catch (Exception)
+            {
+                return totalSales;
             }            
-            return totalSales;
         }
 
         public async Task getSaleINV()
@@ -572,6 +581,50 @@ namespace POS_Jave2021.View
         }
 
         private void dgv_saleReportPOS_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_shiftOut_Click(object sender, EventArgs e)
+        {
+            logs("Shift Out Started");
+            if (_ssClass.shiftOutAssistValidation())
+            {
+                logs("Shift Out -- Admin Credential Login.. ");
+                var fr = new AdminCredential(_conn);
+                fr.ShowDialog();
+                if (_isAdminVerified)
+                {
+                    logs("Shift Out -- Admin Credential Verified.. ");
+                    logs("Shift Out -- Assisted By: " + _userAdminDetails.Rows[0]["lastname"].ToString() + ", " + _userAdminDetails.Rows[0]["firstname"].ToString());
+                    cashierShiftOutAssisted(true, _userAdminDetails.Rows[0]["user_id"].ToString());
+                    logs("Shift Out -- Finish.. ");
+                }
+                else
+                {
+                    logs("Shift Out -- User Credential is not an Admin.. ");
+                }
+            }
+            else
+            {
+                logs("Shift Out -- Admin Credential Void..");
+            }
+            _isAdminVerified = false;
+        }
+
+        public void cashierShiftOutAssisted(bool isNeedAssisst, string adminID)
+        {
+            try
+            {
+                
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void dgv_salesReportInvSold_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

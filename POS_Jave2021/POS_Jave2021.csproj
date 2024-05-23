@@ -124,6 +124,12 @@
     <Compile Include="Model\shiftmodel.cs" />
     <Compile Include="Model\shiftOffModel.cs" />
     <Compile Include="Model\userModel.cs" />
+    <Compile Include="View\Cashier\AdminCredential.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cashier\AdminCredential.Designer.cs">
+      <DependentUpon>AdminCredential.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Cashier\CashierHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\Cashier\AdminCredential.resx">
+      <DependentUpon>AdminCredential.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Cashier\CashierHome.resx">
       <DependentUpon>CashierHome.cs</DependentUpon>
     </EmbeddedResource>

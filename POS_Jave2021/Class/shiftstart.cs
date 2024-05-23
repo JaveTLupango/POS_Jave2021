@@ -1,6 +1,7 @@
 ﻿using POS_Jave2021.Model;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.OleDb;
 using System.Linq;
@@ -109,6 +110,56 @@ namespace POS_Jave2021.Class
             {
 
                 throw;
+            }
+        }
+
+        public bool shiftOutAssistValidation()
+        {
+            string soAssist = ConfigurationManager.AppSettings["shiftOutAssistance"];
+            if(Int32.Parse(soAssist) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public ResponseModel shiftOutUpdate()
+        {
+            string query = "INSERT INTO [tbl_shifts_start] (user_id, shift_date, shift_In_amount, tdt)" +
+                   "VALUES (@userid, @shiftdate, @shiftamount, @tdt)";
+            using (OleDbCommand command = new OleDbCommand(query, _conn))
+            {
+                _conn.Open();
+                command.Parameters.AddWithValue("@userid", model.user_id);
+                command.Parameters.AddWithValue("@shiftdate", model.shift_date);
+                command.Parameters.AddWithValue("@shiftamount", model.shift_amount);
+                command.Parameters.AddWithValue("@tdt", DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss"));
+                int rowsAffected = command.ExecuteNonQuery();
+                _conn.Close();
+                if (rowsAffected > 0)
+                {
+                    return new ResponseModel
+                    {
+                        is_catch = false,
+                        is_Success = true,
+                        message = "Successfully Inserted!!",
+                        title = "Success"
+
+                    };
+                }
+                else
+                {
+                    return new ResponseModel
+                    {
+                        is_catch = false,
+                        is_Success = false,
+                        message = "Unsuccessfully Inserted!!",
+                        title = "Success"
+                    };
+                }
             }
         }
     }
