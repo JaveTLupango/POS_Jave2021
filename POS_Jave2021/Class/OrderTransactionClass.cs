@@ -17,13 +17,14 @@ namespace POS_Jave2021.Class
             _conn = conn;
         }
 
-        public ResponseModel InsertPosTransaction(PosModel model, bool isVoid, string remarks)
+        public ResponseModel InsertPosTransaction(PosModel model, bool isVoid, bool isDebtCredit, string remarks)
         {
             try
             {
+                remarks = isDebtCredit ? "Debt Credit : "+ remarks: remarks;
                 model.pos_id = DateTime.Now.ToString("yyyyMMddHHmmss");
-                string query = "INSERT INTO [tbl_pos] (pos_id, total_inv, total_price, cash, change, tdt, upd, userid, is_void, remarks)" +
-                    "VALUES (@pos_id, @total_inv, @total_price, @cash, @change, @tdt, @upd, @userid, @isvoid, @remarks)";
+                string query = "INSERT INTO [tbl_pos] (pos_id, total_inv, total_price, cash, change, tdt, upd, userid, is_void, is_debt_credit, remarks)" +
+                    "VALUES (@pos_id, @total_inv, @total_price, @cash, @change, @tdt, @upd, @userid, @isvoid, @isdebtcredit, @remarks)";
                 using (OleDbCommand command = new OleDbCommand(query, _conn))
                 {
                     command.CommandType = CommandType.Text;
@@ -36,6 +37,7 @@ namespace POS_Jave2021.Class
                     command.Parameters.AddWithValue("@upd", DateTime.Now.ToString("MM/dd/yyyy"));
                     command.Parameters.AddWithValue("@userid", model.user_id.ToString());
                     command.Parameters.AddWithValue("@isvoid", isVoid);
+                    command.Parameters.AddWithValue("@isdebtcredit", isDebtCredit);
                     command.Parameters.AddWithValue("@remarks", remarks);
                     _conn.Open();
                     int rowsAffected = command.ExecuteNonQuery();

@@ -76,14 +76,14 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btn_shiftOut = new System.Windows.Forms.Button();
             this.txt_ReportCashOnHand = new System.Windows.Forms.TextBox();
+            this.richTextRemarks = new System.Windows.Forms.RichTextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.rtb_posRemark = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.label27 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -110,7 +110,19 @@
             this.lbl_username = new System.Windows.Forms.Label();
             this.lbl_userfullname = new System.Windows.Forms.Label();
             this.lbl_usertype = new System.Windows.Forms.Label();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.btnDebtCredit = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
+            this.lbl_TotalDebtCreditAmount = new System.Windows.Forms.Label();
+            this.lbl_posCash = new System.Windows.Forms.Label();
+            this.lbl_posPrice = new System.Windows.Forms.Label();
+            this.lbl_posChange = new System.Windows.Forms.Label();
+            this.lbl_posIsCancel = new System.Windows.Forms.Label();
+            this.lbl_posQTY = new System.Windows.Forms.Label();
+            this.lbl_posTDT = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.lbl_posIsDeptCredit = new System.Windows.Forms.Label();
+            this.adasdasdasdadasd = new System.Windows.Forms.Label();
+            this.lbl_posUserID = new System.Windows.Forms.Label();
             btn_refresh = new System.Windows.Forms.Button();
             this.CashierTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -296,6 +308,7 @@
             this.tableLayoutPanel3.Controls.Add(this.btn_reset, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.btn_ready, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.btn_void, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnDebtCredit, 1, 1);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
@@ -498,7 +511,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.richTextBox3, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.richTextRemarks, 0, 1);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 6);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
@@ -512,7 +525,9 @@
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.52F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.48F));
-            this.tableLayoutPanel5.Controls.Add(this.label28, 0, 6);
+            this.tableLayoutPanel5.Controls.Add(this.lbl_TotalDebtCreditAmount, 1, 6);
+            this.tableLayoutPanel5.Controls.Add(this.pictureBox3, 1, 8);
+            this.tableLayoutPanel5.Controls.Add(this.label29, 0, 7);
             this.tableLayoutPanel5.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.label11, 0, 2);
@@ -525,12 +540,12 @@
             this.tableLayoutPanel5.Controls.Add(this.lbl_disbalance, 1, 4);
             this.tableLayoutPanel5.Controls.Add(this.lbl_expectCashOnHand, 1, 5);
             this.tableLayoutPanel5.Controls.Add(this.label14, 0, 5);
-            this.tableLayoutPanel5.Controls.Add(this.pictureBox3, 1, 7);
-            this.tableLayoutPanel5.Controls.Add(this.btn_shiftOut, 0, 7);
-            this.tableLayoutPanel5.Controls.Add(this.txt_ReportCashOnHand, 1, 6);
+            this.tableLayoutPanel5.Controls.Add(this.btn_shiftOut, 0, 8);
+            this.tableLayoutPanel5.Controls.Add(this.txt_ReportCashOnHand, 1, 7);
+            this.tableLayoutPanel5.Controls.Add(this.label28, 0, 6);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 8;
+            this.tableLayoutPanel5.RowCount = 9;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.16279F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.83721F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
@@ -538,7 +553,8 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 167F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 152F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(625, 435);
             this.tableLayoutPanel5.TabIndex = 0;
@@ -546,13 +562,15 @@
             // label28
             // 
             this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label28.Location = new System.Drawing.Point(3, 229);
+            this.label28.Location = new System.Drawing.Point(3, 209);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(122, 20);
+            this.label28.Size = new System.Drawing.Size(193, 20);
             this.label28.TabIndex = 18;
-            this.label28.Text = "Cash On Hand :";
+            this.label28.Text = "Total Debt Credit Amount:";
+            this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // label9
             // 
@@ -570,7 +588,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(3, 38);
+            this.label10.Location = new System.Drawing.Point(3, 28);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(96, 20);
             this.label10.TabIndex = 5;
@@ -581,7 +599,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(3, 74);
+            this.label11.Location = new System.Drawing.Point(3, 54);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(93, 20);
             this.label11.TabIndex = 6;
@@ -592,7 +610,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(3, 110);
+            this.label12.Location = new System.Drawing.Point(3, 90);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(88, 20);
             this.label12.TabIndex = 7;
@@ -603,7 +621,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(3, 148);
+            this.label13.Location = new System.Drawing.Point(3, 128);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(152, 20);
             this.label13.TabIndex = 8;
@@ -625,7 +643,7 @@
             this.lbl_shiftTotalSales.AutoSize = true;
             this.lbl_shiftTotalSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_shiftTotalSales.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_shiftTotalSales.Location = new System.Drawing.Point(225, 38);
+            this.lbl_shiftTotalSales.Location = new System.Drawing.Point(225, 28);
             this.lbl_shiftTotalSales.Name = "lbl_shiftTotalSales";
             this.lbl_shiftTotalSales.Size = new System.Drawing.Size(18, 20);
             this.lbl_shiftTotalSales.TabIndex = 12;
@@ -636,7 +654,7 @@
             this.lbl_shiftVoidSales.AutoSize = true;
             this.lbl_shiftVoidSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_shiftVoidSales.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_shiftVoidSales.Location = new System.Drawing.Point(225, 74);
+            this.lbl_shiftVoidSales.Location = new System.Drawing.Point(225, 54);
             this.lbl_shiftVoidSales.Name = "lbl_shiftVoidSales";
             this.lbl_shiftVoidSales.Size = new System.Drawing.Size(18, 20);
             this.lbl_shiftVoidSales.TabIndex = 13;
@@ -647,7 +665,7 @@
             this.lbl_isBalance.AutoSize = true;
             this.lbl_isBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_isBalance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_isBalance.Location = new System.Drawing.Point(225, 110);
+            this.lbl_isBalance.Location = new System.Drawing.Point(225, 90);
             this.lbl_isBalance.Name = "lbl_isBalance";
             this.lbl_isBalance.Size = new System.Drawing.Size(18, 20);
             this.lbl_isBalance.TabIndex = 14;
@@ -658,7 +676,7 @@
             this.lbl_disbalance.AutoSize = true;
             this.lbl_disbalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_disbalance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_disbalance.Location = new System.Drawing.Point(225, 148);
+            this.lbl_disbalance.Location = new System.Drawing.Point(225, 128);
             this.lbl_disbalance.Name = "lbl_disbalance";
             this.lbl_disbalance.Size = new System.Drawing.Size(18, 20);
             this.lbl_disbalance.TabIndex = 15;
@@ -669,7 +687,7 @@
             this.lbl_expectCashOnHand.AutoSize = true;
             this.lbl_expectCashOnHand.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_expectCashOnHand.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_expectCashOnHand.Location = new System.Drawing.Point(225, 191);
+            this.lbl_expectCashOnHand.Location = new System.Drawing.Point(225, 171);
             this.lbl_expectCashOnHand.Name = "lbl_expectCashOnHand";
             this.lbl_expectCashOnHand.Size = new System.Drawing.Size(18, 20);
             this.lbl_expectCashOnHand.TabIndex = 16;
@@ -680,7 +698,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(3, 191);
+            this.label14.Location = new System.Drawing.Point(3, 171);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(178, 20);
             this.label14.TabIndex = 10;
@@ -688,18 +706,17 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = global::POS_Jave2021.Properties.Resources.loading2;
-            this.pictureBox3.Location = new System.Drawing.Point(225, 270);
+            this.pictureBox3.Location = new System.Drawing.Point(225, 285);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(397, 162);
+            this.pictureBox3.Size = new System.Drawing.Size(397, 147);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
             // 
             // btn_shiftOut
             // 
-            this.btn_shiftOut.Location = new System.Drawing.Point(3, 270);
+            this.btn_shiftOut.Location = new System.Drawing.Point(3, 285);
             this.btn_shiftOut.Name = "btn_shiftOut";
             this.btn_shiftOut.Size = new System.Drawing.Size(214, 39);
             this.btn_shiftOut.TabIndex = 9;
@@ -709,11 +726,20 @@
             // 
             // txt_ReportCashOnHand
             // 
-            this.txt_ReportCashOnHand.Location = new System.Drawing.Point(225, 232);
+            this.txt_ReportCashOnHand.Location = new System.Drawing.Point(225, 250);
             this.txt_ReportCashOnHand.Name = "txt_ReportCashOnHand";
             this.txt_ReportCashOnHand.Size = new System.Drawing.Size(397, 26);
             this.txt_ReportCashOnHand.TabIndex = 19;
             this.txt_ReportCashOnHand.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_ReportCashOnHand_KeyDown);
+            // 
+            // richTextRemarks
+            // 
+            this.richTextRemarks.Enabled = false;
+            this.richTextRemarks.Location = new System.Drawing.Point(3, 444);
+            this.richTextRemarks.Name = "richTextRemarks";
+            this.richTextRemarks.Size = new System.Drawing.Size(625, 145);
+            this.richTextRemarks.TabIndex = 1;
+            this.richTextRemarks.Text = "";
             // 
             // tabPage4
             // 
@@ -744,7 +770,7 @@
             // 
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.richTextBox2, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.rtb_posRemark, 0, 2);
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel11, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.dgv_saleReportPOS, 0, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
@@ -756,14 +782,15 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(564, 617);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
-            // richTextBox2
+            // rtb_posRemark
             // 
-            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox2.Location = new System.Drawing.Point(3, 537);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(558, 77);
-            this.richTextBox2.TabIndex = 3;
-            this.richTextBox2.Text = "";
+            this.rtb_posRemark.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtb_posRemark.Location = new System.Drawing.Point(3, 537);
+            this.rtb_posRemark.Name = "rtb_posRemark";
+            this.rtb_posRemark.ReadOnly = true;
+            this.rtb_posRemark.Size = new System.Drawing.Size(558, 77);
+            this.rtb_posRemark.TabIndex = 3;
+            this.rtb_posRemark.Text = "";
             // 
             // tableLayoutPanel11
             // 
@@ -771,14 +798,23 @@
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.63235F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.36765F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 172F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
-            this.tableLayoutPanel11.Controls.Add(this.label27, 0, 3);
-            this.tableLayoutPanel11.Controls.Add(this.label24, 2, 0);
-            this.tableLayoutPanel11.Controls.Add(this.label25, 2, 2);
-            this.tableLayoutPanel11.Controls.Add(this.label26, 2, 1);
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
             this.tableLayoutPanel11.Controls.Add(this.label23, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.label19, 0, 2);
             this.tableLayoutPanel11.Controls.Add(this.label22, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.lbl_posCash, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(this.lbl_posPrice, 1, 1);
+            this.tableLayoutPanel11.Controls.Add(this.lbl_posChange, 1, 2);
+            this.tableLayoutPanel11.Controls.Add(this.lbl_posTDT, 3, 0);
+            this.tableLayoutPanel11.Controls.Add(this.lbl_posIsCancel, 3, 1);
+            this.tableLayoutPanel11.Controls.Add(this.lbl_posQTY, 1, 3);
+            this.tableLayoutPanel11.Controls.Add(this.label24, 0, 3);
+            this.tableLayoutPanel11.Controls.Add(this.label26, 2, 0);
+            this.tableLayoutPanel11.Controls.Add(this.label27, 2, 1);
+            this.tableLayoutPanel11.Controls.Add(this.label25, 2, 2);
+            this.tableLayoutPanel11.Controls.Add(this.lbl_posIsDeptCredit, 3, 2);
+            this.tableLayoutPanel11.Controls.Add(this.adasdasdasdadasd, 2, 3);
+            this.tableLayoutPanel11.Controls.Add(this.lbl_posUserID, 3, 3);
             this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 404);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 4;
@@ -794,40 +830,29 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label27.Location = new System.Drawing.Point(3, 95);
+            this.label27.Location = new System.Drawing.Point(219, 28);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(64, 20);
+            this.label27.Size = new System.Drawing.Size(75, 20);
             this.label27.TabIndex = 11;
-            this.label27.Text = "UserID:";
+            this.label27.Text = "Is Cancel";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label24.Location = new System.Drawing.Point(220, 0);
+            this.label24.Location = new System.Drawing.Point(3, 95);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(45, 20);
             this.label24.TabIndex = 7;
             this.label24.Text = "QTY:";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label25.Location = new System.Drawing.Point(220, 58);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(79, 20);
-            this.label25.TabIndex = 9;
-            this.label25.Text = "Is Cancel:";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label26.Location = new System.Drawing.Point(220, 28);
+            this.label26.Location = new System.Drawing.Point(219, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(86, 20);
             this.label26.TabIndex = 10;
@@ -874,6 +899,7 @@
             this.dgv_saleReportPOS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_saleReportPOS.Location = new System.Drawing.Point(3, 3);
             this.dgv_saleReportPOS.Name = "dgv_saleReportPOS";
+            this.dgv_saleReportPOS.ReadOnly = true;
             this.dgv_saleReportPOS.Size = new System.Drawing.Size(558, 395);
             this.dgv_saleReportPOS.TabIndex = 0;
             this.dgv_saleReportPOS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_saleReportPOS_CellContentClick);
@@ -924,6 +950,7 @@
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Location = new System.Drawing.Point(3, 116);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(671, 118);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
@@ -934,7 +961,7 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.63235F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.36765F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 172F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
             this.tableLayoutPanel10.Controls.Add(this.label15, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.label16, 0, 2);
             this.tableLayoutPanel10.Controls.Add(this.label17, 0, 1);
@@ -988,7 +1015,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label18.Location = new System.Drawing.Point(333, 0);
+            this.label18.Location = new System.Drawing.Point(332, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(45, 20);
             this.label18.TabIndex = 7;
@@ -999,7 +1026,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label20.Location = new System.Drawing.Point(333, 70);
+            this.label20.Location = new System.Drawing.Point(332, 70);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(79, 20);
             this.label20.TabIndex = 9;
@@ -1010,7 +1037,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label21.Location = new System.Drawing.Point(333, 33);
+            this.label21.Location = new System.Drawing.Point(332, 33);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(86, 20);
             this.label21.TabIndex = 10;
@@ -1138,15 +1165,149 @@
             this.lbl_usertype.TabIndex = 10;
             this.lbl_usertype.Text = "User Type";
             // 
-            // richTextBox3
+            // btnDebtCredit
             // 
-            this.richTextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox3.Enabled = false;
-            this.richTextBox3.Location = new System.Drawing.Point(3, 444);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(625, 145);
-            this.richTextBox3.TabIndex = 1;
-            this.richTextBox3.Text = "";
+            this.btnDebtCredit.Location = new System.Drawing.Point(215, 47);
+            this.btnDebtCredit.Name = "btnDebtCredit";
+            this.btnDebtCredit.Size = new System.Drawing.Size(206, 38);
+            this.btnDebtCredit.TabIndex = 4;
+            this.btnDebtCredit.Text = "Debt Credit (F9)";
+            this.btnDebtCredit.UseVisualStyleBackColor = true;
+            this.btnDebtCredit.Click += new System.EventHandler(this.btnDebtCredit_Click);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label29.Location = new System.Drawing.Point(3, 247);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(122, 20);
+            this.label29.TabIndex = 20;
+            this.label29.Text = "Cash On Hand :";
+            // 
+            // lbl_TotalDebtCreditAmount
+            // 
+            this.lbl_TotalDebtCreditAmount.AutoSize = true;
+            this.lbl_TotalDebtCreditAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lbl_TotalDebtCreditAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TotalDebtCreditAmount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_TotalDebtCreditAmount.Location = new System.Drawing.Point(225, 209);
+            this.lbl_TotalDebtCreditAmount.Name = "lbl_TotalDebtCreditAmount";
+            this.lbl_TotalDebtCreditAmount.Size = new System.Drawing.Size(18, 20);
+            this.lbl_TotalDebtCreditAmount.TabIndex = 21;
+            this.lbl_TotalDebtCreditAmount.Text = "0";
+            // 
+            // lbl_posCash
+            // 
+            this.lbl_posCash.AutoSize = true;
+            this.lbl_posCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_posCash.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_posCash.Location = new System.Drawing.Point(110, 0);
+            this.lbl_posCash.Name = "lbl_posCash";
+            this.lbl_posCash.Size = new System.Drawing.Size(18, 20);
+            this.lbl_posCash.TabIndex = 12;
+            this.lbl_posCash.Text = "0";
+            // 
+            // lbl_posPrice
+            // 
+            this.lbl_posPrice.AutoSize = true;
+            this.lbl_posPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_posPrice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_posPrice.Location = new System.Drawing.Point(110, 28);
+            this.lbl_posPrice.Name = "lbl_posPrice";
+            this.lbl_posPrice.Size = new System.Drawing.Size(18, 20);
+            this.lbl_posPrice.TabIndex = 13;
+            this.lbl_posPrice.Text = "0";
+            // 
+            // lbl_posChange
+            // 
+            this.lbl_posChange.AutoSize = true;
+            this.lbl_posChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_posChange.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_posChange.Location = new System.Drawing.Point(110, 58);
+            this.lbl_posChange.Name = "lbl_posChange";
+            this.lbl_posChange.Size = new System.Drawing.Size(18, 20);
+            this.lbl_posChange.TabIndex = 14;
+            this.lbl_posChange.Text = "0";
+            // 
+            // lbl_posIsCancel
+            // 
+            this.lbl_posIsCancel.AutoSize = true;
+            this.lbl_posIsCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_posIsCancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_posIsCancel.Location = new System.Drawing.Point(391, 28);
+            this.lbl_posIsCancel.Name = "lbl_posIsCancel";
+            this.lbl_posIsCancel.Size = new System.Drawing.Size(18, 20);
+            this.lbl_posIsCancel.TabIndex = 17;
+            this.lbl_posIsCancel.Text = "0";
+            // 
+            // lbl_posQTY
+            // 
+            this.lbl_posQTY.AutoSize = true;
+            this.lbl_posQTY.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_posQTY.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_posQTY.Location = new System.Drawing.Point(110, 95);
+            this.lbl_posQTY.Name = "lbl_posQTY";
+            this.lbl_posQTY.Size = new System.Drawing.Size(18, 20);
+            this.lbl_posQTY.TabIndex = 18;
+            this.lbl_posQTY.Text = "0";
+            // 
+            // lbl_posTDT
+            // 
+            this.lbl_posTDT.AutoSize = true;
+            this.lbl_posTDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_posTDT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_posTDT.Location = new System.Drawing.Point(391, 0);
+            this.lbl_posTDT.Name = "lbl_posTDT";
+            this.lbl_posTDT.Size = new System.Drawing.Size(18, 20);
+            this.lbl_posTDT.TabIndex = 15;
+            this.lbl_posTDT.Text = "0";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label25.Location = new System.Drawing.Point(219, 58);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(107, 20);
+            this.label25.TabIndex = 19;
+            this.label25.Text = "Is Debt Credit";
+            // 
+            // lbl_posIsDeptCredit
+            // 
+            this.lbl_posIsDeptCredit.AutoSize = true;
+            this.lbl_posIsDeptCredit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_posIsDeptCredit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_posIsDeptCredit.Location = new System.Drawing.Point(391, 58);
+            this.lbl_posIsDeptCredit.Name = "lbl_posIsDeptCredit";
+            this.lbl_posIsDeptCredit.Size = new System.Drawing.Size(18, 20);
+            this.lbl_posIsDeptCredit.TabIndex = 20;
+            this.lbl_posIsDeptCredit.Text = "0";
+            // 
+            // adasdasdasdadasd
+            // 
+            this.adasdasdasdadasd.AutoSize = true;
+            this.adasdasdasdadasd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adasdasdasdadasd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.adasdasdasdadasd.Location = new System.Drawing.Point(219, 95);
+            this.adasdasdasdadasd.Name = "adasdasdasdadasd";
+            this.adasdasdasdadasd.Size = new System.Drawing.Size(64, 20);
+            this.adasdasdasdadasd.TabIndex = 21;
+            this.adasdasdasdadasd.Text = "User ID";
+            this.adasdasdasdadasd.Click += new System.EventHandler(this.label30_Click);
+            // 
+            // lbl_posUserID
+            // 
+            this.lbl_posUserID.AutoSize = true;
+            this.lbl_posUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_posUserID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_posUserID.Location = new System.Drawing.Point(391, 95);
+            this.lbl_posUserID.Name = "lbl_posUserID";
+            this.lbl_posUserID.Size = new System.Drawing.Size(18, 20);
+            this.lbl_posUserID.TabIndex = 22;
+            this.lbl_posUserID.Text = "0";
             // 
             // CashierHome
             // 
@@ -1276,12 +1437,24 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox rtb_posRemark;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox txt_ReportCashOnHand;
-        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.RichTextBox richTextRemarks;
+        private System.Windows.Forms.Button btnDebtCredit;
+        private System.Windows.Forms.Label lbl_TotalDebtCreditAmount;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label lbl_posCash;
+        private System.Windows.Forms.Label lbl_posQTY;
+        private System.Windows.Forms.Label lbl_posPrice;
+        private System.Windows.Forms.Label lbl_posChange;
+        private System.Windows.Forms.Label lbl_posIsCancel;
+        private System.Windows.Forms.Label lbl_posTDT;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lbl_posIsDeptCredit;
+        private System.Windows.Forms.Label adasdasdasdadasd;
+        private System.Windows.Forms.Label lbl_posUserID;
     }
 }

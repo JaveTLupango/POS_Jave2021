@@ -126,16 +126,25 @@ namespace POS_Jave2021.Class
             }
         }
 
-        public ResponseModel shiftOutUpdate()
+        public ResponseModel shiftOutUpdate(shiftmodel model)
         {
-            string query = "INSERT INTO [tbl_shifts_start] (user_id, shift_date, shift_In_amount, tdt)" +
-                   "VALUES (@userid, @shiftdate, @shiftamount, @tdt)";
+            string query = "UPDATE [tbl_shifts_start] " +
+                "shift_Out_amount = @shiftamount, " +
+                "out_dt = @tdt, " +
+                "is_balance = @isBalance," +
+                " disbalance_amount = @disbalanceAmount, " +
+                "total_void_sales = @totalVoidSales, " +
+                "assist_by = @assistedBy" +
+                " Where user_id = @userid and shift_date = @shiftdate";
             using (OleDbCommand command = new OleDbCommand(query, _conn))
             {
                 _conn.Open();
                 command.Parameters.AddWithValue("@userid", model.user_id);
                 command.Parameters.AddWithValue("@shiftdate", model.shift_date);
-                command.Parameters.AddWithValue("@shiftamount", model.shift_amount);
+                command.Parameters.AddWithValue("@isBalance", model.is_balance);
+                command.Parameters.AddWithValue("@disbalanceAmount", model.disbalance_amount);
+                command.Parameters.AddWithValue("@totalVoidSales", model.total_void_sales);
+                command.Parameters.AddWithValue("@assistedBy", model.assist_by);
                 command.Parameters.AddWithValue("@tdt", DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss"));
                 int rowsAffected = command.ExecuteNonQuery();
                 _conn.Close();

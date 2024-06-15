@@ -1,0 +1,327 @@
+20240611-135108 : 20240513081334 - testuser - POS Ready!!
+20240611-135110 : 20240513081334 - testuser - POS Clear Order: Started
+20240611-135112 : 20240513081334 - testuser - Clear Orders......
+20240611-135116 : 20240513081334 - testuser - Remarks : fdrasfsdfdsf
+20240611-135116 : 20240513081334 - testuser - POS Clear Order: End
+20240611-135143 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240611-135144 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":2}]
+20240611-135221 : 20240513081334 - testuser - POS Orders Transaction: Started
+20240611-135235 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"1","total_price":20.5,"cash":0.0,"change":0.0,"user_id":"20240513081334"}
+20240611-135335 : 20240513081334 - testuser - Orders POS response: {"is_Success":true,"message":"20240611135329","is_catch":false,"title":"Success"}
+20240611-135338 : 20240513081334 - testuser - Orders [tbl_inv_sold] : waiting
+20240611-135401 : 20240513081334 - testuser - Orders [tbl_inv_sold]: {"is_Success":true,"message":"Successfully Inserted","is_catch":false,"title":"Success"}
+20240611-135404 : 20240513081334 - testuser - POS Orders Transaction: End
+20240611-135502 : 20240513081334 - testuser - POS Ready!!
+20240611-135504 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240611-135504 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240611-135513 : 20240513081334 - testuser - POS Clear Order: Started
+20240611-135514 : 20240513081334 - testuser - Clear Orders......
+20240611-135517 : 20240513081334 - testuser - Remarks : zszdfasdfasd
+20240611-135517 : 20240513081334 - testuser - POS Clear Order: End
+20240611-135523 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240611-135523 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240611-135527 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240611-135531 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240611-135531 : 20240513081334 - testuser - Custumer total order: ₱20.50
+20240611-135531 : 20240513081334 - testuser - Custumer Change: ₱79.50
+20240611-135531 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240611-135554 : 20240513081334 - testuser - POS VOid Orders Transaction: Started
+20240611-135554 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"1","total_price":20.5,"cash":100.0,"change":79.5,"user_id":"20240513081334"}
+20240611-135554 : 20240513081334 - testuser - Orders POS response: {"is_Success":true,"message":"20240611135554","is_catch":false,"title":"Success"}
+20240611-135554 : 20240513081334 - testuser - Orders [tbl_inv_sold] : waiting
+20240611-135554 : 20240513081334 - testuser - Orders [tbl_inv_sold]: {"is_Success":true,"message":"Successfully Inserted","is_catch":false,"title":"Success"}
+20240611-135555 : 20240513081334 - testuser - POS VOid Orders Transaction: End
+20240611-135703 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-135703 : 20240513081334 - testuser - getSaleINV....wait
+20240611-135703 : 20240513081334 - testuser - getSaleINV....end
+20240611-135703 : 20240513081334 - testuser - getSalePOS....wait
+20240611-135703 : 20240513081334 - testuser - getSaleINV....end
+20240611-135703 : 20240513081334 - testuser - getShiftIN....wait
+20240611-135703 : 20240513081334 - testuser - getShiftIN....end
+20240611-135708 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-135708 : 20240513081334 - testuser - getSaleINV....wait
+20240611-135708 : 20240513081334 - testuser - getSaleINV....end
+20240611-135708 : 20240513081334 - testuser - getSalePOS....wait
+20240611-135708 : 20240513081334 - testuser - getSaleINV....end
+20240611-135708 : 20240513081334 - testuser - getShiftIN....wait
+20240611-135708 : 20240513081334 - testuser - getShiftIN....end
+20240611-135740 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-135742 : 20240513081334 - testuser - getSaleINV....wait
+20240611-135742 : 20240513081334 - testuser - getSaleINV....end
+20240611-135743 : 20240513081334 - testuser - getSalePOS....wait
+20240611-135743 : 20240513081334 - testuser - getSaleINV....end
+20240611-135743 : 20240513081334 - testuser - getShiftIN....wait
+20240611-135743 : 20240513081334 - testuser - getShiftIN....end
+20240611-135756 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-135835 : Login Successfully.....
+20240611-135835 : USER JSON : [{"ID":14,"user_id":"20240513081334","username":"testuser","password":"test12","lastname":"cash","firstname":"hier","middlename":"","phone_no":"09123456789","email":"cash@cahs.com","usertype":0,"auth_factor":false,"is_active":true,"is_deleted":false}]
+20240611-135847 : USER Shift CashOnHand : {"ID":0,"user_id":"20240513081334","shift_date":"06/11/2024","shift_amount":1200.0,"is_balance":false,"disbalance_amount":0.0,"total_void_sales":0.0,"assist_by":null}
+20240611-135852 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-135852 : 20240513081334 - testuser - getSaleINV....wait
+20240611-135852 : 20240513081334 - testuser - getSaleINV....end
+20240611-135852 : 20240513081334 - testuser - getSalePOS....wait
+20240611-135852 : 20240513081334 - testuser - getSaleINV....end
+20240611-135852 : 20240513081334 - testuser - getShiftIN....wait
+20240611-135852 : 20240513081334 - testuser - getShiftIN....end
+20240611-140710 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-140710 : 20240513081334 - testuser - getSaleINV....wait
+20240611-140710 : 20240513081334 - testuser - getSaleINV....end
+20240611-140710 : 20240513081334 - testuser - getSalePOS....wait
+20240611-140710 : 20240513081334 - testuser - getSaleINV....end
+20240611-140710 : 20240513081334 - testuser - getShiftIN....wait
+20240611-140710 : 20240513081334 - testuser - getShiftIN....end
+20240611-140908 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-140908 : 20240513081334 - testuser - getSaleINV....wait
+20240611-140908 : 20240513081334 - testuser - getSaleINV....end
+20240611-140908 : 20240513081334 - testuser - getSalePOS....wait
+20240611-140908 : 20240513081334 - testuser - getSaleINV....end
+20240611-140908 : 20240513081334 - testuser - getShiftIN....wait
+20240611-140908 : 20240513081334 - testuser - getShiftIN....end
+20240611-141012 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-141012 : 20240513081334 - testuser - getSaleINV....wait
+20240611-141012 : 20240513081334 - testuser - getSaleINV....end
+20240611-141012 : 20240513081334 - testuser - getSalePOS....wait
+20240611-141012 : 20240513081334 - testuser - getSaleINV....end
+20240611-141012 : 20240513081334 - testuser - getShiftIN....wait
+20240611-141012 : 20240513081334 - testuser - getShiftIN....end
+20240611-141203 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-141203 : 20240513081334 - testuser - getSaleINV....wait
+20240611-141203 : 20240513081334 - testuser - getSaleINV....end
+20240611-141203 : 20240513081334 - testuser - getSalePOS....wait
+20240611-141203 : 20240513081334 - testuser - getSaleINV....end
+20240611-141203 : 20240513081334 - testuser - getShiftIN....wait
+20240611-141203 : 20240513081334 - testuser - getShiftIN....end
+20240611-141254 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-141254 : 20240513081334 - testuser - getSaleINV....wait
+20240611-141254 : 20240513081334 - testuser - getSaleINV....end
+20240611-141254 : 20240513081334 - testuser - getSalePOS....wait
+20240611-141254 : 20240513081334 - testuser - getSaleINV....end
+20240611-141254 : 20240513081334 - testuser - getShiftIN....wait
+20240611-141254 : 20240513081334 - testuser - getShiftIN....end
+20240611-141446 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-141446 : 20240513081334 - testuser - getSaleINV....wait
+20240611-141446 : 20240513081334 - testuser - getSaleINV....end
+20240611-141446 : 20240513081334 - testuser - getSalePOS....wait
+20240611-141446 : 20240513081334 - testuser - getSaleINV....end
+20240611-141446 : 20240513081334 - testuser - getShiftIN....wait
+20240611-141446 : 20240513081334 - testuser - getShiftIN....end
+20240611-142345 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-142345 : 20240513081334 - testuser - getSaleINV....wait
+20240611-142345 : 20240513081334 - testuser - getSaleINV....end
+20240611-142345 : 20240513081334 - testuser - getSalePOS....wait
+20240611-142345 : 20240513081334 - testuser - getSaleINV....end
+20240611-142345 : 20240513081334 - testuser - getShiftIN....wait
+20240611-142345 : 20240513081334 - testuser - getShiftIN....end
+20240611-142351 : 20240513081334 - testuser - Shift Out Started
+20240611-142406 : 20240513081334 - testuser - Shift Out Started
+20240611-142602 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-142602 : 20240513081334 - testuser - getSaleINV....wait
+20240611-142602 : 20240513081334 - testuser - getSaleINV....end
+20240611-142602 : 20240513081334 - testuser - getSalePOS....wait
+20240611-142602 : 20240513081334 - testuser - getSaleINV....end
+20240611-142602 : 20240513081334 - testuser - getShiftIN....wait
+20240611-142602 : 20240513081334 - testuser - getShiftIN....end
+20240611-143605 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-143605 : 20240513081334 - testuser - getSaleINV....wait
+20240611-143605 : 20240513081334 - testuser - getSaleINV....end
+20240611-143605 : 20240513081334 - testuser - getSalePOS....wait
+20240611-143605 : 20240513081334 - testuser - getSaleINV....end
+20240611-143605 : 20240513081334 - testuser - getShiftIN....wait
+20240611-143605 : 20240513081334 - testuser - getShiftIN....end
+20240611-144730 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-144730 : 20240513081334 - testuser - getSaleINV....wait
+20240611-144730 : 20240513081334 - testuser - getSaleINV....end
+20240611-144730 : 20240513081334 - testuser - getSalePOS....wait
+20240611-144730 : 20240513081334 - testuser - getSaleINV....end
+20240611-144730 : 20240513081334 - testuser - getShiftIN....wait
+20240611-144730 : 20240513081334 - testuser - getShiftIN....end
+20240611-145322 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-145322 : 20240513081334 - testuser - getSaleINV....wait
+20240611-145322 : 20240513081334 - testuser - getSaleINV....end
+20240611-145322 : 20240513081334 - testuser - getSalePOS....wait
+20240611-145322 : 20240513081334 - testuser - getSaleINV....end
+20240611-145322 : 20240513081334 - testuser - getShiftIN....wait
+20240611-145322 : 20240513081334 - testuser - getShiftIN....end
+20240611-145524 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-145524 : 20240513081334 - testuser - getSaleINV....wait
+20240611-145524 : 20240513081334 - testuser - getSaleINV....end
+20240611-145524 : 20240513081334 - testuser - getSalePOS....wait
+20240611-145524 : 20240513081334 - testuser - getSaleINV....end
+20240611-145524 : 20240513081334 - testuser - getShiftIN....wait
+20240611-145524 : 20240513081334 - testuser - getShiftIN....end
+20240611-145558 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-145558 : 20240513081334 - testuser - getSaleINV....wait
+20240611-145558 : 20240513081334 - testuser - getSaleINV....end
+20240611-145558 : 20240513081334 - testuser - getSalePOS....wait
+20240611-145558 : 20240513081334 - testuser - getSaleINV....end
+20240611-145558 : 20240513081334 - testuser - getShiftIN....wait
+20240611-145558 : 20240513081334 - testuser - getShiftIN....end
+20240611-145716 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-145716 : 20240513081334 - testuser - getSaleINV....wait
+20240611-145716 : 20240513081334 - testuser - getSaleINV....end
+20240611-145716 : 20240513081334 - testuser - getSalePOS....wait
+20240611-145716 : 20240513081334 - testuser - getSaleINV....end
+20240611-145716 : 20240513081334 - testuser - getShiftIN....wait
+20240611-145716 : 20240513081334 - testuser - getShiftIN....end
+20240611-145844 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-145844 : 20240513081334 - testuser - getSaleINV....wait
+20240611-145844 : 20240513081334 - testuser - getSaleINV....end
+20240611-145844 : 20240513081334 - testuser - getSalePOS....wait
+20240611-145844 : 20240513081334 - testuser - getSaleINV....end
+20240611-145844 : 20240513081334 - testuser - getShiftIN....wait
+20240611-145844 : 20240513081334 - testuser - getShiftIN....end
+20240611-150208 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-150208 : 20240513081334 - testuser - getSaleINV....wait
+20240611-150208 : 20240513081334 - testuser - getSaleINV....end
+20240611-150208 : 20240513081334 - testuser - getSalePOS....wait
+20240611-150208 : 20240513081334 - testuser - getSaleINV....end
+20240611-150208 : 20240513081334 - testuser - getShiftIN....wait
+20240611-150208 : 20240513081334 - testuser - getShiftIN....end
+20240611-150301 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-150301 : 20240513081334 - testuser - getSaleINV....wait
+20240611-150301 : 20240513081334 - testuser - getSaleINV....end
+20240611-150301 : 20240513081334 - testuser - getSalePOS....wait
+20240611-150301 : 20240513081334 - testuser - getSaleINV....end
+20240611-150301 : 20240513081334 - testuser - getShiftIN....wait
+20240611-150301 : 20240513081334 - testuser - getShiftIN....end
+20240611-150358 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-150358 : 20240513081334 - testuser - getSaleINV....wait
+20240611-150358 : 20240513081334 - testuser - getSaleINV....end
+20240611-150358 : 20240513081334 - testuser - getSalePOS....wait
+20240611-150358 : 20240513081334 - testuser - getSaleINV....end
+20240611-150358 : 20240513081334 - testuser - getShiftIN....wait
+20240611-150358 : 20240513081334 - testuser - getShiftIN....end
+20240611-150404 : 20240513081334 - testuser - POS Ready!!
+20240611-151018 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151019 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151019 : 20240513081334 - testuser - getSaleINV....end
+20240611-151019 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151019 : 20240513081334 - testuser - getSaleINV....end
+20240611-151019 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151019 : 20240513081334 - testuser - getShiftIN....end
+20240611-151212 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151212 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151212 : 20240513081334 - testuser - getSaleINV....end
+20240611-151212 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151212 : 20240513081334 - testuser - getSaleINV....end
+20240611-151212 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151212 : 20240513081334 - testuser - getShiftIN....end
+20240611-151249 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151249 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151249 : 20240513081334 - testuser - getSaleINV....end
+20240611-151249 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151249 : 20240513081334 - testuser - getSaleINV....end
+20240611-151249 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151249 : 20240513081334 - testuser - getShiftIN....end
+20240611-151357 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151357 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151357 : 20240513081334 - testuser - getSaleINV....end
+20240611-151357 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151357 : 20240513081334 - testuser - getSaleINV....end
+20240611-151357 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151357 : 20240513081334 - testuser - getShiftIN....end
+20240611-151405 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151405 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151405 : 20240513081334 - testuser - getSaleINV....end
+20240611-151405 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151405 : 20240513081334 - testuser - getSaleINV....end
+20240611-151405 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151405 : 20240513081334 - testuser - getShiftIN....end
+20240611-151407 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151407 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151407 : 20240513081334 - testuser - getSaleINV....end
+20240611-151407 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151407 : 20240513081334 - testuser - getSaleINV....end
+20240611-151407 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151407 : 20240513081334 - testuser - getShiftIN....end
+20240611-151408 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151408 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151408 : 20240513081334 - testuser - getSaleINV....end
+20240611-151408 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151408 : 20240513081334 - testuser - getSaleINV....end
+20240611-151408 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151408 : 20240513081334 - testuser - getShiftIN....end
+20240611-151612 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151612 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151612 : 20240513081334 - testuser - getSaleINV....end
+20240611-151612 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151612 : 20240513081334 - testuser - getSaleINV....end
+20240611-151612 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151612 : 20240513081334 - testuser - getShiftIN....end
+20240611-151619 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151619 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151619 : 20240513081334 - testuser - getSaleINV....end
+20240611-151619 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151619 : 20240513081334 - testuser - getSaleINV....end
+20240611-151619 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151619 : 20240513081334 - testuser - getShiftIN....end
+20240611-151619 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151619 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151619 : 20240513081334 - testuser - getSaleINV....end
+20240611-151619 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151619 : 20240513081334 - testuser - getSaleINV....end
+20240611-151619 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151619 : 20240513081334 - testuser - getShiftIN....end
+20240611-151620 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151620 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151620 : 20240513081334 - testuser - getSaleINV....end
+20240611-151620 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151620 : 20240513081334 - testuser - getSaleINV....end
+20240611-151620 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151620 : 20240513081334 - testuser - getShiftIN....end
+20240611-151620 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151620 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151620 : 20240513081334 - testuser - getSaleINV....end
+20240611-151620 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151620 : 20240513081334 - testuser - getSaleINV....end
+20240611-151620 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151620 : 20240513081334 - testuser - getShiftIN....end
+20240611-151620 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151620 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151620 : 20240513081334 - testuser - getSaleINV....end
+20240611-151620 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151620 : 20240513081334 - testuser - getSaleINV....end
+20240611-151620 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151620 : 20240513081334 - testuser - getShiftIN....end
+20240611-151714 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151714 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151714 : 20240513081334 - testuser - getSaleINV....end
+20240611-151714 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151714 : 20240513081334 - testuser - getSaleINV....end
+20240611-151714 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151714 : 20240513081334 - testuser - getShiftIN....end
+20240611-151722 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151722 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151722 : 20240513081334 - testuser - getSaleINV....end
+20240611-151722 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151722 : 20240513081334 - testuser - getSaleINV....end
+20240611-151722 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151722 : 20240513081334 - testuser - getShiftIN....end
+20240611-151722 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151722 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151722 : 20240513081334 - testuser - getSaleINV....end
+20240611-151722 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151722 : 20240513081334 - testuser - getSaleINV....end
+20240611-151722 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151722 : 20240513081334 - testuser - getShiftIN....end
+20240611-151722 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151722 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151722 : 20240513081334 - testuser - getSaleINV....end
+20240611-151722 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151722 : 20240513081334 - testuser - getSaleINV....end
+20240611-151722 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151722 : 20240513081334 - testuser - getShiftIN....end
+20240611-151722 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151722 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151722 : 20240513081334 - testuser - getSaleINV....end
+20240611-151722 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151722 : 20240513081334 - testuser - getSaleINV....end
+20240611-151722 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151722 : 20240513081334 - testuser - getShiftIN....end
+20240611-151842 : 20240513081334 - testuser - Cashier window 2 is open...
+20240611-151842 : 20240513081334 - testuser - getSaleINV....wait
+20240611-151842 : 20240513081334 - testuser - getSaleINV....end
+20240611-151842 : 20240513081334 - testuser - getSalePOS....wait
+20240611-151842 : 20240513081334 - testuser - getSaleINV....end
+20240611-151842 : 20240513081334 - testuser - getShiftIN....wait
+20240611-151842 : 20240513081334 - testuser - getShiftIN....end

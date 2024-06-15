@@ -13,5 +13,6 @@ namespace POS_Jave2021.Model
         public bool _IsReset { get; set; }
         public bool _IsEnterCash { get; set; }
         public bool _IsVoid { get; set; }
+        public bool _IsDebtCredit { get; set; }
     }
 }

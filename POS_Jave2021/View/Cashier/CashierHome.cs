@@ -40,7 +40,9 @@ namespace POS_Jave2021.View
         shiftOffModel _soModel;
         public static DataTable _userAdminDetails;
         public static bool _isAdminVerified = false;
-
+        decimal totalDebtCreditAmount = 0;
+        PosSaleReportModel _posSaleReportModel = new PosSaleReportModel();
+        PosInvSoldModel _posInvSoldModel = new PosInvSoldModel();
         public CashierHome(DataTable userDetails, OleDbConnection conn)
         {
             InitializeComponent();
@@ -80,6 +82,24 @@ namespace POS_Jave2021.View
 
         private void CashierHome_Load(object sender, EventArgs e)
         {
+            #region datagridButton PosReport
+            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+            dgv_saleReportPOS.Columns.Add(btn); // .Columns.Add(btn);
+            btn.HeaderText = "Option";
+            btn.Text = "View";
+            btn.Name = "btnClick";
+            btn.UseColumnTextForButtonValue = true;
+            btn.DisplayIndex = 0;
+
+            DataGridViewButtonColumn btn1 = new DataGridViewButtonColumn();
+            dgv_salesReportInvSold.Columns.Add(btn1); // .Columns.Add(btn);
+            btn1.HeaderText = "Option";
+            btn1.Text = "View";
+            btn1.Name = "btnClick";
+            btn1.UseColumnTextForButtonValue = true;
+            btn1.DisplayIndex = 0;
+            #endregion
+
             _totalOrderAmount = 0;
             _cashorder = 0;
             _cashChange = 0;
@@ -98,6 +118,7 @@ namespace POS_Jave2021.View
                 _isReady = true,
                 _IsEnterCash = false,
                 _IsVoid = false,
+                _IsDebtCredit = false,
             });
             processOnOff(false);
         }
@@ -110,6 +131,7 @@ namespace POS_Jave2021.View
             btn_reset.Enabled = model._IsReset;
             btn_EnterCash.Enabled = model._IsEnterCash;
             btn_void.Enabled = model._IsVoid;
+            btnDebtCredit.Enabled = model._IsDebtCredit;
         }
 
         private void txtPosScreenSearch_KeyDown(object sender, KeyEventArgs e)
@@ -203,6 +225,10 @@ namespace POS_Jave2021.View
             {
                 btn_void_Click(null, null);
             }
+            else if(e.KeyCode == Keys.F9)
+            {
+                btnDebtCredit_Click(null, null);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -251,7 +277,8 @@ namespace POS_Jave2021.View
                 _IsReset = true,
                 _isReady = false,
                 _IsEnterCash = true,
-                _IsVoid = false
+                _IsVoid = false,
+                _IsDebtCredit = true,
             });
             txtPosScreenSearch.Focus();
             logs("POS Ready!!");
@@ -269,7 +296,7 @@ namespace POS_Jave2021.View
                 {
                     logs("POS Orders Transaction: Started");
                     processOnOff(true);
-                    await transaction(false);
+                    await transaction(false, false);
                     CashierHome_Load(null, null);
                     processOnOff(false);
                     logs("POS Orders Transaction: End");
@@ -281,7 +308,7 @@ namespace POS_Jave2021.View
             }
         }
 
-        public async Task transaction(bool isVoid)
+        public async Task transaction(bool isVoid, bool isDebtCredit)
         {
             var model = new PosModel
             {
@@ -292,7 +319,7 @@ namespace POS_Jave2021.View
                 user_id = _userDetails.Rows[0]["user_id"].ToString()
             };
             logs("Orders POS: " + JsonConvert.SerializeObject(model));
-            var response = _otClass.InsertPosTransaction(model, isVoid, string.Empty);
+            var response = _otClass.InsertPosTransaction(model, isVoid, isDebtCredit, _remarks);
             logs("Orders POS response: " + JsonConvert.SerializeObject(response));
             if (response.is_Success)
             {
@@ -390,7 +417,7 @@ namespace POS_Jave2021.View
                     {
                         logs("POS VOid Orders Transaction: Started");
                         processOnOff(true);
-                        await transaction(true);
+                        await transaction(true, false);
                         CashierHome_Load(null, null);
                         processOnOff(false);
                         logs("POS VOid Orders Transaction: End");
@@ -428,23 +455,21 @@ namespace POS_Jave2021.View
                     ShiftInAmount = decimal.Parse(_dtMyShiftIn.Rows[0]["shift_In_amount"].ToString()),
                     TotalSales = gettotalSales(false),
                     VoidSales = gettotalSales(true),
+                    totalDebtCredit = gettotalDebtCreditSales(),
                     IsBalance= false,
                     ExpectedCashOnHand = decimal.Parse(_dtMyShiftIn.Rows[0]["shift_In_amount"].ToString()) + gettotalSales(false),
                     CashOnHand = 0,
                 };
+                _soModel.TotalSalesWithOutDebtCredit = _soModel.TotalSales - _soModel.totalDebtCredit;
+
                 lbl_shiftInAmount.Text = _soModel.ShiftInAmount.ToString("C");
                 lbl_shiftTotalSales.Text = _soModel.TotalSales.ToString("C");
                 lbl_shiftVoidSales.Text = _soModel.VoidSales.ToString("C");
                 lbl_isBalance.Text = _soModel.IsBalance ? "Yes" : "No";
                 lbl_expectCashOnHand.Text = _soModel.ExpectedCashOnHand.ToString("C");
+                lbl_TotalDebtCreditAmount.Text = _soModel.totalDebtCredit.ToString("C");
 
-                DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
-                dgv_saleReportPOS.Columns.Add(btn); // .Columns.Add(btn);
-                btn.HeaderText = "Option";
-                btn.Text = "View";
-                btn.Name = "btnClick";
-                btn.UseColumnTextForButtonValue = true;
-                btn.DisplayIndex = 0;
+                
 
                 //btn = new DataGridViewButtonColumn();
                 //dgv_saleReportPOS.Columns.Add(btn); // .Columns.Add(btn);
@@ -484,7 +509,29 @@ namespace POS_Jave2021.View
             catch (Exception)
             {
                 return totalSales;
-            }            
+            }
+        }
+
+        public decimal gettotalDebtCreditSales()
+        {
+            decimal totalSales = 0;
+            try
+            {
+                DataTable ret = _dtMySalesPOS.AsEnumerable().Where(
+                    w => w.Field<bool>("is_void") == true).CopyToDataTable();
+                if (ret.Rows.Count > 0)
+                {
+                    foreach (DataRow row in ret.Rows)
+                    {
+                        totalSales = totalSales + Decimal.Parse(row["total_price"].ToString());
+                    }
+                }
+                return totalSales;
+            }
+            catch (Exception)
+            {
+                return totalSales;
+            }
         }
 
         public async Task getSaleINV()
@@ -544,7 +591,7 @@ namespace POS_Jave2021.View
             {
                 btn_shiftOut.Enabled = true;
                 decimal cashonHand = decimal.Parse(txt_ReportCashOnHand.Text);
-                _soModel.DisbalanceAmount = cashonHand - _soModel.ExpectedCashOnHand;
+                _soModel.DisbalanceAmount = cashonHand - (_soModel.ExpectedCashOnHand - _soModel.totalDebtCredit);
                 lbl_disbalance.Text = _soModel.DisbalanceAmount.ToString("C");
                 _soModel.IsBalance = _soModel.DisbalanceAmount == 0 ? true : false;
                 lbl_isBalance.Text = _soModel.IsBalance ? "Yes" : "No";
@@ -582,41 +629,103 @@ namespace POS_Jave2021.View
 
         private void dgv_saleReportPOS_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            string posID = string.Empty;
+            var senderGrid = (DataGridView)sender;
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+            {
+                posID = dgv_saleReportPOS.Rows[e.RowIndex].Cells[1].Value.ToString();
+                _posSaleReportModel = new PosSaleReportModel();
+                _posSaleReportModel.QTY = int.Parse(dgv_saleReportPOS.Rows[e.RowIndex].Cells[2].Value.ToString());
+                _posSaleReportModel.Price = decimal.Parse(dgv_saleReportPOS.Rows[e.RowIndex].Cells[3].Value.ToString());
+                _posSaleReportModel.Cash = decimal.Parse(dgv_saleReportPOS.Rows[e.RowIndex].Cells[4].Value.ToString());
+                _posSaleReportModel.Change = decimal.Parse(dgv_saleReportPOS.Rows[e.RowIndex].Cells[5].Value.ToString());
+                _posSaleReportModel.tdt = DateTime.Parse(dgv_saleReportPOS.Rows[e.RowIndex].Cells[6].Value.ToString());
+                _posSaleReportModel.UserID = dgv_saleReportPOS.Rows[e.RowIndex].Cells[8].Value.ToString();
+                _posSaleReportModel.IsCancel = bool.Parse(dgv_saleReportPOS.Rows[e.RowIndex].Cells[9].Value.ToString());
+                _posSaleReportModel.IsDebtCredit = bool.Parse(dgv_saleReportPOS.Rows[e.RowIndex].Cells[10].Value.ToString());
+                _posSaleReportModel.Remarks = dgv_saleReportPOS.Rows[e.RowIndex].Cells[11].Value.ToString();                
+                displaySalesReportDetails(_posSaleReportModel);
+            }
+
+            var retval = (from inv in _dtMySalesInv.AsEnumerable()
+                          where inv.Field<string>("transaction_id") == posID
+                          select inv);
+            if(retval.Any())
+            {                
+                dgv_salesReportInvSold.DataSource = retval.CopyToDataTable();
+            }
+            else
+            {
+                dgv_salesReportInvSold.DataSource = null;
+            }
+        }
+
+        public void displaySalesReportDetails(PosSaleReportModel model)
+        {
+            lbl_posCash.Text = model.Cash.ToString("C");
+            lbl_posQTY.Text = model.QTY.ToString();
+            lbl_posPrice.Text = model.Price.ToString("C");
+            lbl_posChange.Text = model.Change.ToString("C");
+            lbl_posTDT.Text = model.tdt.ToString();
+            lbl_posIsCancel.Text = model.IsCancel ? "YES" : "NO";
+            lbl_posIsDeptCredit.Text = model.IsDebtCredit ? "YES" : "NO";
+            lbl_posUserID.Text = model.UserID.ToString();
+            rtb_posRemark.Text = model.Remarks;
 
         }
+
 
         private void btn_shiftOut_Click(object sender, EventArgs e)
         {
             logs("Shift Out Started");
-            if (_ssClass.shiftOutAssistValidation())
+            if(_soModel.IsBalance || _soModel.DisbalanceAmount > 0 || !string.IsNullOrEmpty(richTextRemarks.Text))
             {
-                logs("Shift Out -- Admin Credential Login.. ");
-                var fr = new AdminCredential(_conn);
-                fr.ShowDialog();
-                if (_isAdminVerified)
+                if (_ssClass.shiftOutAssistValidation())
                 {
-                    logs("Shift Out -- Admin Credential Verified.. ");
-                    logs("Shift Out -- Assisted By: " + _userAdminDetails.Rows[0]["lastname"].ToString() + ", " + _userAdminDetails.Rows[0]["firstname"].ToString());
-                    cashierShiftOutAssisted(true, _userAdminDetails.Rows[0]["user_id"].ToString());
-                    logs("Shift Out -- Finish.. ");
+                    logs("Shift Out -- Admin Credential Login.. ");
+                    var fr = new AdminCredential(_conn);
+                    fr.ShowDialog();
+                    if (_isAdminVerified)
+                    {
+                        logs("Shift Out -- Admin Credential Verified.. ");
+                        logs("Shift Out -- Assisted By: " + _userAdminDetails.Rows[0]["lastname"].ToString() + ", " + _userAdminDetails.Rows[0]["firstname"].ToString());
+                        cashierShiftOutAssisted(true, _userAdminDetails.Rows[0]["user_id"].ToString());
+                        logs("Shift Out -- Finish.. ");
+                    }
+                    else
+                    {
+                        logs("Shift Out -- User Credential is not an Admin.. ");
+                    }
                 }
                 else
                 {
-                    logs("Shift Out -- User Credential is not an Admin.. ");
+                    logs("Shift Out -- Admin Credential Void..");
                 }
+                _isAdminVerified = false;
             }
             else
             {
-                logs("Shift Out -- Admin Credential Void..");
+                string notif = _soModel.DisbalanceAmount < 0 ? "Please Input Remarks below!": string.IsNullOrEmpty(richTextRemarks.Text)? "Remarks is empty! \nPlease Input Remarks below!" : string.Empty;
+                MessageBox.Show(notif, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            _isAdminVerified = false;
         }
 
         public void cashierShiftOutAssisted(bool isNeedAssisst, string adminID)
         {
             try
             {
-                
+                var model = new shiftmodel
+                {
+                    user_id = _userDetails.Rows[0]["user_id"].ToString(),
+                    shift_date = DateTime.Now.ToString("MM/dd/yyyy"),
+                    assist_by = adminID,
+                    shift_amount = decimal.Parse(txt_ReportCashOnHand.Text),
+                    is_balance = _soModel.IsBalance,
+                    total_void_sales = _soModel.VoidSales,
+                    disbalance_amount = _soModel.DisbalanceAmount,
+                };
+                _ssClass.shiftOutUpdate(model);
             }
             catch (Exception ex)
             {
@@ -625,6 +734,45 @@ namespace POS_Jave2021.View
         }
 
         private void dgv_salesReportInvSold_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var senderGrid = (DataGridView)sender;
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+            {
+                _posInvSoldModel = new PosInvSoldModel();
+
+            }
+        }
+
+        private async void btnDebtCredit_Click(object sender, EventArgs e)
+        {
+            if (dt_orderlist.Rows.Count == 0)
+            {
+                MessageBox.Show("No available item in order list.", "Warning!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                _remarks = null;
+                Remarks fr = new Remarks();
+                fr.ShowDialog();
+                if (!string.IsNullOrEmpty(_remarks))
+                {
+                    logs("POS Orders Transaction: Started");
+                    processOnOff(true);
+                    await transaction(false, true);
+                    CashierHome_Load(null, null);
+                    processOnOff(false);
+                    logs("POS Orders Transaction: End");
+                }               
+            }
+        }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label30_Click(object sender, EventArgs e)
         {
 
         }

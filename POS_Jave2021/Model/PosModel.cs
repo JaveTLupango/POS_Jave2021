@@ -16,4 +16,28 @@ namespace POS_Jave2021.Model
         public decimal change { get; set; }
         public string user_id { get; set; }
     }
+
+    public class PosSaleReportModel
+    {
+        public decimal Cash { get; set; }
+        public decimal Price { get; set; }
+        public decimal Change { get; set;}
+        public bool IsCancel { get; set; }
+        public int QTY { get; set; }
+        public DateTime tdt { get; set; }
+        public bool IsDebtCredit { get; set; }
+        public string Remarks { get; set; }
+        public string UserID { get; set; }
+    }
+
+    public class PosInvSoldModel
+    {    
+        public int ProductID { get; set; }
+        public decimal Cost { get; set; }
+        public decimal Price { get; set; }
+        public int QTY { get; set; }
+        public DateTime tdt { get; set; }
+        public bool IsCancel { get; set; }
+        public string Remarks { get; set; }
+    }
 }
