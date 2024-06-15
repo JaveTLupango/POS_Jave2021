@@ -29,9 +29,11 @@ namespace POS_Jave2021.View
         public decimal _totalOrderAmount;
         public static decimal _cashorder;
         public static decimal _cashChange;
-        public static string _remarks;
+        public static string _remarks = string.Empty;
         cashierBtnEnabilityModel btnEM = new cashierBtnEnabilityModel();
         InventoryClass _invClass;
+
+        bool dtgribBTN = false;
         /// Shift Out
         DataTable _dtMySalesInv = new DataTable();
         DataTable _dtMySalesPOS = new DataTable();
@@ -66,6 +68,28 @@ namespace POS_Jave2021.View
             {
                 CashierTab_window2();
             }
+
+            if(!dtgribBTN)
+            {
+                #region datagridButton PosReport
+                DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+                dgv_saleReportPOS.Columns.Add(btn); // .Columns.Add(btn);
+                btn.HeaderText = "Option";
+                btn.Text = "View";
+                btn.Name = "btnClick";
+                btn.UseColumnTextForButtonValue = true;
+                btn.DisplayIndex = 0;
+
+                DataGridViewButtonColumn btn1 = new DataGridViewButtonColumn();
+                dgv_salesReportInvSold.Columns.Add(btn1); // .Columns.Add(btn);
+                btn1.HeaderText = "Option";
+                btn1.Text = "View";
+                btn1.Name = "btnClick";
+                btn1.UseColumnTextForButtonValue = true;
+                btn1.DisplayIndex = 0;
+                #endregion
+                dtgribBTN = true;
+            }
         }
 
         #region Cashier POS
@@ -81,25 +105,7 @@ namespace POS_Jave2021.View
         }
 
         private void CashierHome_Load(object sender, EventArgs e)
-        {
-            #region datagridButton PosReport
-            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
-            dgv_saleReportPOS.Columns.Add(btn); // .Columns.Add(btn);
-            btn.HeaderText = "Option";
-            btn.Text = "View";
-            btn.Name = "btnClick";
-            btn.UseColumnTextForButtonValue = true;
-            btn.DisplayIndex = 0;
-
-            DataGridViewButtonColumn btn1 = new DataGridViewButtonColumn();
-            dgv_salesReportInvSold.Columns.Add(btn1); // .Columns.Add(btn);
-            btn1.HeaderText = "Option";
-            btn1.Text = "View";
-            btn1.Name = "btnClick";
-            btn1.UseColumnTextForButtonValue = true;
-            btn1.DisplayIndex = 0;
-            #endregion
-
+        {        
             _totalOrderAmount = 0;
             _cashorder = 0;
             _cashChange = 0;
@@ -271,6 +277,10 @@ namespace POS_Jave2021.View
             lblTotalPriceOrder.Text = _totalOrderAmount.ToString("C");
             lblCashLabel.Text = _cashorder.ToString("C");
             lblCashChange.Text = _cashChange.ToString("C");
+
+            _dtOrders.Rows.Clear();
+            _dtOrders.AcceptChanges();
+            dt_orderlist.DataSource = _dtOrders;
             btnSetEnability(new cashierBtnEnabilityModel
             {
                 _isProceed = false,
@@ -624,7 +634,35 @@ namespace POS_Jave2021.View
                     lbl_disbalance.BackColor = Color.White;
                     lbl_disbalance.ForeColor = Color.Black;
                 }
-            }   
+            }
+        }
+        private void dgv_salesReportInvSold_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var senderGrid = (DataGridView)sender;
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+            {
+                _posInvSoldModel = new PosInvSoldModel();
+                _posInvSoldModel.ProductID = int.Parse(dgv_salesReportInvSold.Rows[e.RowIndex].Cells[2].Value.ToString());
+                _posInvSoldModel.Cost = decimal.Parse(dgv_salesReportInvSold.Rows[e.RowIndex].Cells[3].Value.ToString());
+                _posInvSoldModel.Price = decimal.Parse(dgv_salesReportInvSold.Rows[e.RowIndex].Cells[4].Value.ToString());
+                _posInvSoldModel.tdt = DateTime.Parse(dgv_salesReportInvSold.Rows[e.RowIndex].Cells[5].Value.ToString());
+                _posInvSoldModel.QTY = int.Parse(dgv_salesReportInvSold.Rows[e.RowIndex].Cells[6].Value.ToString());
+                _posInvSoldModel.IsCancel = bool.Parse(dgv_salesReportInvSold.Rows[e.RowIndex].Cells[8].Value.ToString());
+                _posInvSoldModel.Remarks = dgv_salesReportInvSold.Rows[e.RowIndex].Cells[9].Value.ToString();
+                displayInvSoldDetails(_posInvSoldModel);
+            }
+        }
+
+        public void displayInvSoldDetails(PosInvSoldModel model)
+        {
+            lblInvSold_ProductID.Text = model.ProductID.ToString();
+            lblInvSold_Cost.Text = model.Cost.ToString("C");
+            lblInvSold_Price.Text = model.Price.ToString("C");
+            lblInvSold_TDT.Text = model.tdt.ToString();
+            lblInvSold_IsCancel.Text = model.IsCancel? "YES" : "NO";
+            rtb_InvSold_Remarks.Text = model.Remarks.ToString();
+            lblInvSold_QTY.Text = model.QTY.ToString();
         }
 
         private void dgv_saleReportPOS_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -679,35 +717,48 @@ namespace POS_Jave2021.View
         private void btn_shiftOut_Click(object sender, EventArgs e)
         {
             logs("Shift Out Started");
-            if(_soModel.IsBalance || _soModel.DisbalanceAmount > 0 || !string.IsNullOrEmpty(richTextRemarks.Text))
+            try
             {
-                if (_ssClass.shiftOutAssistValidation())
+                if (_soModel.IsBalance || _soModel.DisbalanceAmount > 0 || !string.IsNullOrEmpty(richTextRemarks.Text))
                 {
-                    logs("Shift Out -- Admin Credential Login.. ");
-                    var fr = new AdminCredential(_conn);
-                    fr.ShowDialog();
-                    if (_isAdminVerified)
+                    if (_ssClass.shiftOutAssistValidation())
                     {
-                        logs("Shift Out -- Admin Credential Verified.. ");
-                        logs("Shift Out -- Assisted By: " + _userAdminDetails.Rows[0]["lastname"].ToString() + ", " + _userAdminDetails.Rows[0]["firstname"].ToString());
-                        cashierShiftOutAssisted(true, _userAdminDetails.Rows[0]["user_id"].ToString());
-                        logs("Shift Out -- Finish.. ");
+                        logs("Shift Out -- Admin Credential Login.. ");
+                        var fr = new AdminCredential(_conn);
+                        fr.ShowDialog();
+                        if (_isAdminVerified)
+                        {
+                            logs("Shift Out -- Admin Credential Verified.. ");
+                            logs("Shift Out -- Assisted By: " + _userAdminDetails.Rows[0]["lastname"].ToString() + ", " + _userAdminDetails.Rows[0]["firstname"].ToString());
+                            cashierShiftOutAssisted(true, _userAdminDetails.Rows[0]["user_id"].ToString());
+                            logs("Shift Out -- Finish.. ");
+                            MessageBox.Show("Shift-out Reported Successfully!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            logs("Shift Out -- User Credential is not an Admin.. ");
+                        }
                     }
                     else
                     {
-                        logs("Shift Out -- User Credential is not an Admin.. ");
+                        logs("Shift Out -- Admin Credential Is not Required.. ");
+                        logs("Shift Out -- None");
+                        cashierShiftOutAssisted(true, string.Empty);
+                        logs("Shift Out -- Finish.. ");
                     }
+                    _isAdminVerified = false;
                 }
                 else
                 {
-                    logs("Shift Out -- Admin Credential Void..");
+                    string notif = _soModel.DisbalanceAmount < 0 ? "Please Input Remarks below!" : string.IsNullOrEmpty(richTextRemarks.Text) ? "Remarks is empty! \nPlease Input Remarks below!" : string.Empty;
+                    logs("CATCH ERR: " + notif);
+                    MessageBox.Show(notif, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                _isAdminVerified = false;
             }
-            else
+            catch (Exception ex)
             {
-                string notif = _soModel.DisbalanceAmount < 0 ? "Please Input Remarks below!": string.IsNullOrEmpty(richTextRemarks.Text)? "Remarks is empty! \nPlease Input Remarks below!" : string.Empty;
-                MessageBox.Show(notif, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                logs("CATCH ERR: " + ex.Message);
+                MessageBox.Show(ex.Message, "Catch Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -717,6 +768,7 @@ namespace POS_Jave2021.View
             {
                 var model = new shiftmodel
                 {
+                    ID = Int32.Parse(_dtMyShiftIn.Rows[0]["ID"].ToString()),
                     user_id = _userDetails.Rows[0]["user_id"].ToString(),
                     shift_date = DateTime.Now.ToString("MM/dd/yyyy"),
                     assist_by = adminID,
@@ -733,16 +785,6 @@ namespace POS_Jave2021.View
             }
         }
 
-        private void dgv_salesReportInvSold_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            var senderGrid = (DataGridView)sender;
-            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-                e.RowIndex >= 0)
-            {
-                _posInvSoldModel = new PosInvSoldModel();
-
-            }
-        }
 
         private async void btnDebtCredit_Click(object sender, EventArgs e)
         {
@@ -773,6 +815,11 @@ namespace POS_Jave2021.View
         }
 
         private void label30_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInventory_Click(object sender, EventArgs e)
         {
 
         }

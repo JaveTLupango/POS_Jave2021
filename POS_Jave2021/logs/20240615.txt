@@ -1,0 +1,697 @@
+20240615-095149 : Login Successfully.....
+20240615-095149 : USER JSON : [{"ID":14,"user_id":"20240513081334","username":"testuser","password":"test12","lastname":"cash","firstname":"hier","middlename":"","phone_no":"09123456789","email":"cash@cahs.com","usertype":0,"auth_factor":false,"is_active":true,"is_deleted":false}]
+20240615-095207 : USER Shift CashOnHand : {"ID":0,"user_id":"20240513081334","shift_date":"06/15/2024","shift_amount":1250.75,"is_balance":false,"disbalance_amount":0.0,"total_void_sales":0.0,"assist_by":null}
+20240615-095213 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095213 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095214 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095214 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095215 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095215 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095215 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095215 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095216 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095216 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095216 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095216 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095224 : 20240513081334 - testuser - POS Ready!!
+20240615-095404 : 20240513081334 - testuser - POS Ready!!
+20240615-095405 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095405 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095406 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095406 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095406 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095406 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095406 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095406 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095541 : 20240513081334 - testuser - POS Clear Order: Started
+20240615-095547 : 20240513081334 - testuser - Clear Orders......
+20240615-095549 : 20240513081334 - testuser - Remarks : sfgdfgfdgfdg
+20240615-095549 : 20240513081334 - testuser - POS Clear Order: End
+20240615-095559 : 20240513081334 - testuser - POS Clear Order: Started
+20240615-095600 : 20240513081334 - testuser - Clear Orders......
+20240615-095601 : 20240513081334 - testuser - POS Clear Order: End
+20240615-095603 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095603 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095604 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095604 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095605 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095605 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095609 : 20240513081334 - testuser - POS Clear Order: Started
+20240615-095611 : 20240513081334 - testuser - Clear Orders......
+20240615-095614 : 20240513081334 - testuser - Remarks : sadfsdfdsf
+
+20240615-095614 : 20240513081334 - testuser - POS Clear Order: End
+20240615-095745 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095745 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095747 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095747 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095747 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095747 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095747 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095747 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095758 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-095805 : 20240513081334 - testuser - Enter Custumer Cash: ₱0.00
+20240615-095805 : 20240513081334 - testuser - Custumer total order: ₱82.00
+20240615-095805 : 20240513081334 - testuser - Custumer Change: -₱82.00
+20240615-095805 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-095819 : 20240513081334 - testuser - POS Ready!!
+20240615-095819 : 20240513081334 - testuser - SCAN PRODUCTID : 
+20240615-095821 : 20240513081334 - testuser - Catch : No Item Found!
+20240615-095823 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095823 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095823 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095823 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095824 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095824 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-095824 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-095824 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-100939 : 20240513081334 - testuser - POS Ready!!
+20240615-100949 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-100949 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-100949 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-100949 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-100950 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-100950 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-100952 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-100952 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-100954 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-101001 : 20240513081334 - testuser - Enter Custumer Cash: ₱0.00
+20240615-101001 : 20240513081334 - testuser - Custumer total order: ₱82.00
+20240615-101001 : 20240513081334 - testuser - Custumer Change: -₱82.00
+20240615-101001 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-101005 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-101032 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240615-101032 : 20240513081334 - testuser - Custumer total order: ₱82.00
+20240615-101032 : 20240513081334 - testuser - Custumer Change: ₱18.00
+20240615-101032 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-101038 : 20240513081334 - testuser - POS Orders Transaction: Started
+20240615-101038 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"4","total_price":82.0,"cash":100.0,"change":18.0,"user_id":"20240513081334"}
+20240615-101038 : 20240513081334 - testuser - Orders POS response: {"is_Success":false,"message":"Parameter @remarks has no default value.","is_catch":true,"title":null}
+20240615-101042 : 20240513081334 - testuser - POS Orders Transaction: End
+20240615-101045 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-101045 : 20240513081334 - testuser - getSaleINV....wait
+20240615-101045 : 20240513081334 - testuser - getSaleINV....end
+20240615-101045 : 20240513081334 - testuser - getSalePOS....wait
+20240615-101045 : 20240513081334 - testuser - getSaleINV....end
+20240615-101045 : 20240513081334 - testuser - getShiftIN....wait
+20240615-101045 : 20240513081334 - testuser - getShiftIN....end
+20240615-101101 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-101101 : 20240513081334 - testuser - getSaleINV....wait
+20240615-101102 : 20240513081334 - testuser - getSaleINV....end
+20240615-101102 : 20240513081334 - testuser - getSalePOS....wait
+20240615-101102 : 20240513081334 - testuser - getSaleINV....end
+20240615-101102 : 20240513081334 - testuser - getShiftIN....wait
+20240615-101102 : 20240513081334 - testuser - getShiftIN....end
+20240615-101105 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-101105 : 20240513081334 - testuser - getSaleINV....wait
+20240615-101105 : 20240513081334 - testuser - getSaleINV....end
+20240615-101105 : 20240513081334 - testuser - getSalePOS....wait
+20240615-101105 : 20240513081334 - testuser - getSaleINV....end
+20240615-101105 : 20240513081334 - testuser - getShiftIN....wait
+20240615-101105 : 20240513081334 - testuser - getShiftIN....end
+20240615-101112 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-101112 : 20240513081334 - testuser - getSaleINV....wait
+20240615-101112 : 20240513081334 - testuser - getSaleINV....end
+20240615-101112 : 20240513081334 - testuser - getSalePOS....wait
+20240615-101112 : 20240513081334 - testuser - getSaleINV....end
+20240615-101112 : 20240513081334 - testuser - getShiftIN....wait
+20240615-101112 : 20240513081334 - testuser - getShiftIN....end
+20240615-101113 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-101113 : 20240513081334 - testuser - getSaleINV....wait
+20240615-101113 : 20240513081334 - testuser - getSaleINV....end
+20240615-101113 : 20240513081334 - testuser - getSalePOS....wait
+20240615-101113 : 20240513081334 - testuser - getSaleINV....end
+20240615-101113 : 20240513081334 - testuser - getShiftIN....wait
+20240615-101113 : 20240513081334 - testuser - getShiftIN....end
+20240615-101113 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-101113 : 20240513081334 - testuser - getSaleINV....wait
+20240615-101113 : 20240513081334 - testuser - getSaleINV....end
+20240615-101113 : 20240513081334 - testuser - getSalePOS....wait
+20240615-101113 : 20240513081334 - testuser - getSaleINV....end
+20240615-101113 : 20240513081334 - testuser - getShiftIN....wait
+20240615-101113 : 20240513081334 - testuser - getShiftIN....end
+20240615-101113 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-101113 : 20240513081334 - testuser - getSaleINV....wait
+20240615-101113 : 20240513081334 - testuser - getSaleINV....end
+20240615-101113 : 20240513081334 - testuser - getSalePOS....wait
+20240615-101113 : 20240513081334 - testuser - getSaleINV....end
+20240615-101113 : 20240513081334 - testuser - getShiftIN....wait
+20240615-101113 : 20240513081334 - testuser - getShiftIN....end
+20240615-101147 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-101147 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-101148 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-101148 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-101148 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-101148 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-101149 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-101149 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-101150 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-101150 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-101153 : 20240513081334 - testuser - POS Ready!!
+20240615-101156 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-101159 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240615-101159 : 20240513081334 - testuser - Custumer total order: ₱0.00
+20240615-101159 : 20240513081334 - testuser - Custumer Change: ₱100.00
+20240615-101159 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-101200 : 20240513081334 - testuser - POS Orders Transaction: Started
+20240615-101200 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"5","total_price":0.0,"cash":100.0,"change":100.0,"user_id":"20240513081334"}
+20240615-101200 : 20240513081334 - testuser - Orders POS response: {"is_Success":false,"message":"Parameter @remarks has no default value.","is_catch":true,"title":null}
+20240615-101202 : 20240513081334 - testuser - POS Orders Transaction: End
+20240615-101252 : 20240513081334 - testuser - POS Ready!!
+20240615-101254 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-101254 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-101254 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-101254 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-101258 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-101301 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240615-101301 : 20240513081334 - testuser - Custumer total order: ₱41.00
+20240615-101301 : 20240513081334 - testuser - Custumer Change: ₱59.00
+20240615-101301 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-101311 : 20240513081334 - testuser - POS Orders Transaction: Started
+20240615-101315 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"2","total_price":41.0,"cash":100.0,"change":59.0,"user_id":"20240513081334"}
+20240615-101324 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":"20240615101316","total_inv":"2","total_price":41.0,"cash":100.0,"change":59.0,"user_id":"20240513081334"}
+20240615-101425 : 20240513081334 - testuser - POS Ready!!
+20240615-101425 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-101425 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-101426 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-101426 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":21}]
+20240615-101428 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-101430 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240615-101430 : 20240513081334 - testuser - Custumer total order: ₱41.00
+20240615-101430 : 20240513081334 - testuser - Custumer Change: ₱59.00
+20240615-101430 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-101435 : 20240513081334 - testuser - POS Orders Transaction: Started
+20240615-101436 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"2","total_price":41.0,"cash":100.0,"change":59.0,"user_id":"20240513081334"}
+20240615-101436 : 20240513081334 - testuser - Orders POS response: {"is_Success":true,"message":"20240615101436","is_catch":false,"title":"Success"}
+20240615-101436 : 20240513081334 - testuser - Orders [tbl_inv_sold] : waiting
+20240615-101436 : 20240513081334 - testuser - Orders [tbl_inv_sold]: {"is_Success":true,"message":"Successfully Inserted","is_catch":false,"title":"Success"}
+20240615-101442 : 20240513081334 - testuser - POS Orders Transaction: End
+20240615-101445 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-101445 : 20240513081334 - testuser - getSaleINV....wait
+20240615-101445 : 20240513081334 - testuser - getSaleINV....end
+20240615-101445 : 20240513081334 - testuser - getSalePOS....wait
+20240615-101445 : 20240513081334 - testuser - getSaleINV....end
+20240615-101445 : 20240513081334 - testuser - getShiftIN....wait
+20240615-101445 : 20240513081334 - testuser - getShiftIN....end
+20240615-101504 : 20240513081334 - testuser - Shift Out Started
+20240615-101507 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-101538 : 20240513081334 - testuser - Shift Out -- User Credential is not an Admin.. 
+20240615-101543 : 20240513081334 - testuser - Shift Out Started
+20240615-101544 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-101615 : 20240513081334 - testuser - Shift Out -- User Credential is not an Admin.. 
+20240615-101638 : 20240513081334 - testuser - Shift Out Started
+20240615-101640 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-101658 : 20240513081334 - testuser - Shift Out -- Admin Credential Verified.. 
+20240615-101658 : 20240513081334 - testuser - Shift Out -- Assisted By: lupango, jave
+20240615-101921 : 20240513081334 - testuser - POS Ready!!
+20240615-101923 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-101923 : 20240513081334 - testuser - getSaleINV....wait
+20240615-101923 : 20240513081334 - testuser - getSaleINV....end
+20240615-101923 : 20240513081334 - testuser - getSalePOS....wait
+20240615-101923 : 20240513081334 - testuser - getSaleINV....end
+20240615-101923 : 20240513081334 - testuser - getShiftIN....wait
+20240615-101923 : 20240513081334 - testuser - getShiftIN....end
+20240615-101947 : 20240513081334 - testuser - Shift Out Started
+20240615-101947 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-101954 : 20240513081334 - testuser - Shift Out -- Admin Credential Verified.. 
+20240615-101954 : 20240513081334 - testuser - Shift Out -- Assisted By: lupango, jave
+20240615-102059 : 20240513081334 - testuser - CATCH ERR: No value given for one or more required parameters.
+20240615-102107 : 20240513081334 - testuser - Shift Out Started
+20240615-102107 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-102119 : 20240513081334 - testuser - CATCH ERR: The connection was not closed. The connection's current state is open.
+20240615-102121 : 20240513081334 - testuser - Shift Out Started
+20240615-102121 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-102128 : 20240513081334 - testuser - CATCH ERR: The connection was not closed. The connection's current state is open.
+20240615-102144 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-102144 : 20240513081334 - testuser - getSaleINV....wait
+20240615-102144 : 20240513081334 - testuser - getSaleINV....end
+20240615-102144 : 20240513081334 - testuser - getSalePOS....wait
+20240615-102144 : 20240513081334 - testuser - getSaleINV....end
+20240615-102144 : 20240513081334 - testuser - getShiftIN....wait
+20240615-102144 : 20240513081334 - testuser - getShiftIN....end
+20240615-102153 : 20240513081334 - testuser - Shift Out Started
+20240615-102153 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-102215 : 20240513081334 - testuser - Shift Out -- User Credential is not an Admin.. 
+20240615-102216 : 20240513081334 - testuser - Shift Out Started
+20240615-102216 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-102226 : 20240513081334 - testuser - Shift Out -- Admin Credential Verified.. 
+20240615-102226 : 20240513081334 - testuser - Shift Out -- Assisted By: lupango, jave
+20240615-102446 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-102446 : 20240513081334 - testuser - getSaleINV....wait
+20240615-102446 : 20240513081334 - testuser - getSaleINV....end
+20240615-102446 : 20240513081334 - testuser - getSalePOS....wait
+20240615-102446 : 20240513081334 - testuser - getSaleINV....end
+20240615-102446 : 20240513081334 - testuser - getShiftIN....wait
+20240615-102446 : 20240513081334 - testuser - getShiftIN....end
+20240615-102454 : 20240513081334 - testuser - Shift Out Started
+20240615-102454 : 20240513081334 - testuser - CATCH ERR: Please Input Remarks below!
+20240615-102502 : 20240513081334 - testuser - Shift Out Started
+20240615-102502 : 20240513081334 - testuser - CATCH ERR: Please Input Remarks below!
+20240615-102544 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-102544 : 20240513081334 - testuser - getSaleINV....wait
+20240615-102544 : 20240513081334 - testuser - getSaleINV....end
+20240615-102544 : 20240513081334 - testuser - getSalePOS....wait
+20240615-102544 : 20240513081334 - testuser - getSaleINV....end
+20240615-102544 : 20240513081334 - testuser - getShiftIN....wait
+20240615-102544 : 20240513081334 - testuser - getShiftIN....end
+20240615-102651 : 20240513081334 - testuser - Shift Out Started
+20240615-102651 : 20240513081334 - testuser - CATCH ERR: Please Input Remarks below!
+20240615-102655 : 20240513081334 - testuser - Shift Out Started
+20240615-102655 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-102717 : 20240513081334 - testuser - Shift Out -- Admin Credential Verified.. 
+20240615-102717 : 20240513081334 - testuser - Shift Out -- Assisted By: lupango, jave
+20240615-102736 : 20240513081334 - testuser - CATCH ERR: No value given for one or more required parameters.
+20240615-103058 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-103058 : 20240513081334 - testuser - getSaleINV....wait
+20240615-103058 : 20240513081334 - testuser - getSaleINV....end
+20240615-103058 : 20240513081334 - testuser - getSalePOS....wait
+20240615-103058 : 20240513081334 - testuser - getSaleINV....end
+20240615-103058 : 20240513081334 - testuser - getShiftIN....wait
+20240615-103058 : 20240513081334 - testuser - getShiftIN....end
+20240615-103103 : 20240513081334 - testuser - Shift Out Started
+20240615-103103 : 20240513081334 - testuser - CATCH ERR: Please Input Remarks below!
+20240615-103106 : 20240513081334 - testuser - Shift Out Started
+20240615-103106 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-103120 : 20240513081334 - testuser - Shift Out -- Admin Credential Verified.. 
+20240615-103120 : 20240513081334 - testuser - Shift Out -- Assisted By: lupango, jave
+20240615-103127 : 20240513081334 - testuser - Shift Out -- Finish.. 
+20240615-103151 : 20240513081334 - testuser - Shift Out Started
+20240615-103151 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-103208 : 20240513081334 - testuser - Shift Out -- Admin Credential Verified.. 
+20240615-103208 : 20240513081334 - testuser - Shift Out -- Assisted By: lupango, jave
+20240615-104017 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-104017 : 20240513081334 - testuser - getSaleINV....wait
+20240615-104017 : 20240513081334 - testuser - getSaleINV....end
+20240615-104017 : 20240513081334 - testuser - getSalePOS....wait
+20240615-104017 : 20240513081334 - testuser - getSaleINV....end
+20240615-104017 : 20240513081334 - testuser - getShiftIN....wait
+20240615-104017 : 20240513081334 - testuser - getShiftIN....end
+20240615-104025 : 20240513081334 - testuser - Shift Out Started
+20240615-104025 : 20240513081334 - testuser - CATCH ERR: Please Input Remarks below!
+20240615-104028 : 20240513081334 - testuser - Shift Out Started
+20240615-104028 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-104037 : 20240513081334 - testuser - Shift Out -- Admin Credential Verified.. 
+20240615-104037 : 20240513081334 - testuser - Shift Out -- Assisted By: lupango, jave
+20240615-104150 : 20240513081334 - testuser - CATCH ERR: Syntax error (missing operator) in query expression ''1291' out_dt = '06/15/2024 10:40:39''.
+20240615-104157 : 20240513081334 - testuser - Shift Out Started
+20240615-104157 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-104203 : 20240513081334 - testuser - Shift Out -- Admin Credential Verified.. 
+20240615-104203 : 20240513081334 - testuser - Shift Out -- Assisted By: lupango, jave
+20240615-104232 : 20240513081334 - testuser - CATCH ERR: Syntax error (missing operator) in query expression ''1291' out_dt = '06/15/2024 10:42:06''.
+20240615-104253 : 20240513081334 - testuser - Shift Out Started
+20240615-104253 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-104302 : 20240513081334 - testuser - Shift Out -- Admin Credential Verified.. 
+20240615-104302 : 20240513081334 - testuser - Shift Out -- Assisted By: lupango, jave
+20240615-104434 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-104434 : 20240513081334 - testuser - getSaleINV....wait
+20240615-104434 : 20240513081334 - testuser - getSaleINV....end
+20240615-104434 : 20240513081334 - testuser - getSalePOS....wait
+20240615-104434 : 20240513081334 - testuser - getSaleINV....end
+20240615-104434 : 20240513081334 - testuser - getShiftIN....wait
+20240615-104434 : 20240513081334 - testuser - getShiftIN....end
+20240615-104440 : 20240513081334 - testuser - Shift Out Started
+20240615-104440 : 20240513081334 - testuser - CATCH ERR: Please Input Remarks below!
+20240615-104443 : 20240513081334 - testuser - Shift Out Started
+20240615-104443 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-104443 : 20240513081334 - testuser - Shift Out -- None
+20240615-104515 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-104515 : 20240513081334 - testuser - getSaleINV....wait
+20240615-104515 : 20240513081334 - testuser - getSaleINV....end
+20240615-104515 : 20240513081334 - testuser - getSalePOS....wait
+20240615-104515 : 20240513081334 - testuser - getSaleINV....end
+20240615-104515 : 20240513081334 - testuser - getShiftIN....wait
+20240615-104515 : 20240513081334 - testuser - getShiftIN....end
+20240615-104529 : 20240513081334 - testuser - Shift Out Started
+20240615-104529 : 20240513081334 - testuser - CATCH ERR: Please Input Remarks below!
+20240615-104558 : 20240513081334 - testuser - Shift Out Started
+20240615-104558 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-104558 : 20240513081334 - testuser - Shift Out -- None
+20240615-104712 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-104712 : 20240513081334 - testuser - getSaleINV....wait
+20240615-104712 : 20240513081334 - testuser - getSaleINV....end
+20240615-104712 : 20240513081334 - testuser - getSalePOS....wait
+20240615-104712 : 20240513081334 - testuser - getSaleINV....end
+20240615-104712 : 20240513081334 - testuser - getShiftIN....wait
+20240615-104712 : 20240513081334 - testuser - getShiftIN....end
+20240615-104719 : 20240513081334 - testuser - Shift Out Started
+20240615-104719 : 20240513081334 - testuser - CATCH ERR: Please Input Remarks below!
+20240615-104721 : 20240513081334 - testuser - Shift Out Started
+20240615-104721 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-104721 : 20240513081334 - testuser - Shift Out -- None
+20240615-104758 : 20240513081334 - testuser - CATCH ERR: Data type mismatch in criteria expression.
+20240615-104802 : 20240513081334 - testuser - Shift Out Started
+20240615-104802 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-104802 : 20240513081334 - testuser - Shift Out -- None
+20240615-104903 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-104903 : 20240513081334 - testuser - getSaleINV....wait
+20240615-104903 : 20240513081334 - testuser - getSaleINV....end
+20240615-104903 : 20240513081334 - testuser - getSalePOS....wait
+20240615-104903 : 20240513081334 - testuser - getSaleINV....end
+20240615-104903 : 20240513081334 - testuser - getShiftIN....wait
+20240615-104903 : 20240513081334 - testuser - getShiftIN....end
+20240615-104907 : 20240513081334 - testuser - Shift Out Started
+20240615-104907 : 20240513081334 - testuser - CATCH ERR: Please Input Remarks below!
+20240615-104911 : 20240513081334 - testuser - POS Ready!!
+20240615-104912 : 20240513081334 - testuser - Shift Out Started
+20240615-104912 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-104912 : 20240513081334 - testuser - Shift Out -- None
+20240615-105018 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-105018 : 20240513081334 - testuser - getSaleINV....wait
+20240615-105018 : 20240513081334 - testuser - getSaleINV....end
+20240615-105018 : 20240513081334 - testuser - getSalePOS....wait
+20240615-105018 : 20240513081334 - testuser - getSaleINV....end
+20240615-105018 : 20240513081334 - testuser - getShiftIN....wait
+20240615-105018 : 20240513081334 - testuser - getShiftIN....end
+20240615-105022 : 20240513081334 - testuser - Shift Out Started
+20240615-105022 : 20240513081334 - testuser - CATCH ERR: Please Input Remarks below!
+20240615-105029 : 20240513081334 - testuser - Shift Out Started
+20240615-105029 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-105029 : 20240513081334 - testuser - Shift Out -- None
+20240615-105102 : 20240513081334 - testuser - Shift Out -- Finish.. 
+20240615-163510 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-163510 : 20240513081334 - testuser - getSaleINV....wait
+20240615-163510 : 20240513081334 - testuser - getSaleINV....end
+20240615-163510 : 20240513081334 - testuser - getSalePOS....wait
+20240615-163510 : 20240513081334 - testuser - getSaleINV....end
+20240615-163513 : 20240513081334 - testuser - getShiftIN....wait
+20240615-163721 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-163721 : 20240513081334 - testuser - getSaleINV....wait
+20240615-163721 : 20240513081334 - testuser - getSaleINV....end
+20240615-163721 : 20240513081334 - testuser - getSalePOS....wait
+20240615-163721 : 20240513081334 - testuser - getSaleINV....end
+20240615-163722 : 20240513081334 - testuser - getShiftIN....wait
+20240615-163722 : 20240513081334 - testuser - getShiftIN....end
+20240615-163729 : 20240513081334 - testuser - Shift Out Started
+20240615-163729 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-163729 : 20240513081334 - testuser - Shift Out -- None
+20240615-163743 : 20240513081334 - testuser - Shift Out -- Finish.. 
+20240615-164048 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-164048 : 20240513081334 - testuser - getSaleINV....wait
+20240615-164048 : 20240513081334 - testuser - getSaleINV....end
+20240615-164048 : 20240513081334 - testuser - getSalePOS....wait
+20240615-164048 : 20240513081334 - testuser - getSaleINV....end
+20240615-164051 : 20240513081334 - testuser - getShiftIN....wait
+20240615-164051 : 20240513081334 - testuser - getShiftIN....end
+20240615-164056 : 20240513081334 - testuser - Shift Out Started
+20240615-164056 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-164056 : 20240513081334 - testuser - Shift Out -- None
+20240615-164208 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-164208 : 20240513081334 - testuser - getSaleINV....wait
+20240615-164208 : 20240513081334 - testuser - getSaleINV....end
+20240615-164208 : 20240513081334 - testuser - getSalePOS....wait
+20240615-164208 : 20240513081334 - testuser - getSaleINV....end
+20240615-164208 : 20240513081334 - testuser - getShiftIN....wait
+20240615-164208 : 20240513081334 - testuser - getShiftIN....end
+20240615-164212 : 20240513081334 - testuser - Shift Out Started
+20240615-164212 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-164212 : 20240513081334 - testuser - Shift Out -- None
+20240615-164249 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-164249 : 20240513081334 - testuser - getSaleINV....wait
+20240615-164249 : 20240513081334 - testuser - getSaleINV....end
+20240615-164249 : 20240513081334 - testuser - getSalePOS....wait
+20240615-164249 : 20240513081334 - testuser - getSaleINV....end
+20240615-164249 : 20240513081334 - testuser - getShiftIN....wait
+20240615-164249 : 20240513081334 - testuser - getShiftIN....end
+20240615-164253 : 20240513081334 - testuser - Shift Out Started
+20240615-164253 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-164253 : 20240513081334 - testuser - Shift Out -- None
+20240615-164301 : 20240513081334 - testuser - CATCH ERR: Syntax error in UPDATE statement.
+20240615-164304 : 20240513081334 - testuser - Shift Out Started
+20240615-164304 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-164304 : 20240513081334 - testuser - Shift Out -- None
+20240615-164332 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-164332 : 20240513081334 - testuser - getSaleINV....wait
+20240615-164332 : 20240513081334 - testuser - getSaleINV....end
+20240615-164332 : 20240513081334 - testuser - getSalePOS....wait
+20240615-164332 : 20240513081334 - testuser - getSaleINV....end
+20240615-164332 : 20240513081334 - testuser - getShiftIN....wait
+20240615-164332 : 20240513081334 - testuser - getShiftIN....end
+20240615-164336 : 20240513081334 - testuser - Shift Out Started
+20240615-164336 : 20240513081334 - testuser - Shift Out -- Admin Credential Is not Required.. 
+20240615-164336 : 20240513081334 - testuser - Shift Out -- None
+20240615-164349 : 20240513081334 - testuser - Shift Out -- Finish.. 
+20240615-164423 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-164423 : 20240513081334 - testuser - getSaleINV....wait
+20240615-164423 : 20240513081334 - testuser - getSaleINV....end
+20240615-164423 : 20240513081334 - testuser - getSalePOS....wait
+20240615-164423 : 20240513081334 - testuser - getSaleINV....end
+20240615-164423 : 20240513081334 - testuser - getShiftIN....wait
+20240615-164423 : 20240513081334 - testuser - getShiftIN....end
+20240615-164439 : 20240513081334 - testuser - Shift Out Started
+20240615-164439 : 20240513081334 - testuser - Shift Out -- Admin Credential Login.. 
+20240615-164447 : 20240513081334 - testuser - Shift Out -- Admin Credential Verified.. 
+20240615-164447 : 20240513081334 - testuser - Shift Out -- Assisted By: lupango, jave
+20240615-164502 : 20240513081334 - testuser - Shift Out -- Finish.. 
+20240615-164835 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-164835 : 20240513081334 - testuser - getSaleINV....wait
+20240615-164835 : 20240513081334 - testuser - getSaleINV....end
+20240615-164835 : 20240513081334 - testuser - getSalePOS....wait
+20240615-164835 : 20240513081334 - testuser - getSaleINV....end
+20240615-164835 : 20240513081334 - testuser - getShiftIN....wait
+20240615-164835 : 20240513081334 - testuser - getShiftIN....end
+20240615-171346 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-171346 : 20240513081334 - testuser - getSaleINV....wait
+20240615-171346 : 20240513081334 - testuser - getSaleINV....end
+20240615-171346 : 20240513081334 - testuser - getSalePOS....wait
+20240615-171346 : 20240513081334 - testuser - getSaleINV....end
+20240615-171346 : 20240513081334 - testuser - getShiftIN....wait
+20240615-171346 : 20240513081334 - testuser - getShiftIN....end
+20240615-171948 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-171948 : 20240513081334 - testuser - getSaleINV....wait
+20240615-171948 : 20240513081334 - testuser - getSaleINV....end
+20240615-171948 : 20240513081334 - testuser - getSalePOS....wait
+20240615-171948 : 20240513081334 - testuser - getSaleINV....end
+20240615-171948 : 20240513081334 - testuser - getShiftIN....wait
+20240615-171948 : 20240513081334 - testuser - getShiftIN....end
+20240615-172006 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172006 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172006 : 20240513081334 - testuser - getSaleINV....end
+20240615-172006 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172006 : 20240513081334 - testuser - getSaleINV....end
+20240615-172006 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172006 : 20240513081334 - testuser - getShiftIN....end
+20240615-172031 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172031 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172031 : 20240513081334 - testuser - getSaleINV....end
+20240615-172031 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172031 : 20240513081334 - testuser - getSaleINV....end
+20240615-172031 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172031 : 20240513081334 - testuser - getShiftIN....end
+20240615-172048 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-172050 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-172050 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-172050 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-172054 : 20240513081334 - testuser - POS Ready!!
+20240615-172102 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-172105 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240615-172105 : 20240513081334 - testuser - Custumer total order: ₱0.00
+20240615-172105 : 20240513081334 - testuser - Custumer Change: ₱100.00
+20240615-172105 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-172110 : 20240513081334 - testuser - POS VOid Orders Transaction: Started
+20240615-172110 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"2","total_price":0.0,"cash":100.0,"change":100.0,"user_id":"20240513081334"}
+20240615-172110 : 20240513081334 - testuser - Orders POS response: {"is_Success":true,"message":"20240615172110","is_catch":false,"title":"Success"}
+20240615-172110 : 20240513081334 - testuser - Orders [tbl_inv_sold] : waiting
+20240615-172110 : 20240513081334 - testuser - Orders [tbl_inv_sold]: {"is_Success":true,"message":"Successfully Inserted","is_catch":false,"title":"Success"}
+20240615-172111 : 20240513081334 - testuser - POS VOid Orders Transaction: End
+20240615-172114 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172114 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172114 : 20240513081334 - testuser - getSaleINV....end
+20240615-172114 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172114 : 20240513081334 - testuser - getSaleINV....end
+20240615-172114 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172114 : 20240513081334 - testuser - getShiftIN....end
+20240615-172143 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172143 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172143 : 20240513081334 - testuser - getSaleINV....end
+20240615-172143 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172143 : 20240513081334 - testuser - getSaleINV....end
+20240615-172143 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172143 : 20240513081334 - testuser - getShiftIN....end
+20240615-172146 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172146 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172146 : 20240513081334 - testuser - getSaleINV....end
+20240615-172146 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172146 : 20240513081334 - testuser - getSaleINV....end
+20240615-172146 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172146 : 20240513081334 - testuser - getShiftIN....end
+20240615-172242 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172242 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172242 : 20240513081334 - testuser - getSaleINV....end
+20240615-172242 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172242 : 20240513081334 - testuser - getSaleINV....end
+20240615-172242 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172242 : 20240513081334 - testuser - getShiftIN....end
+20240615-172246 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172246 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172246 : 20240513081334 - testuser - getSaleINV....end
+20240615-172246 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172246 : 20240513081334 - testuser - getSaleINV....end
+20240615-172246 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172246 : 20240513081334 - testuser - getShiftIN....end
+20240615-172248 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172248 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172248 : 20240513081334 - testuser - getSaleINV....end
+20240615-172248 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172248 : 20240513081334 - testuser - getSaleINV....end
+20240615-172248 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172248 : 20240513081334 - testuser - getShiftIN....end
+20240615-172249 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172249 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172249 : 20240513081334 - testuser - getSaleINV....end
+20240615-172249 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172249 : 20240513081334 - testuser - getSaleINV....end
+20240615-172249 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172249 : 20240513081334 - testuser - getShiftIN....end
+20240615-172447 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172447 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172447 : 20240513081334 - testuser - getSaleINV....end
+20240615-172447 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172447 : 20240513081334 - testuser - getSaleINV....end
+20240615-172447 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172447 : 20240513081334 - testuser - getShiftIN....end
+20240615-172451 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172451 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172451 : 20240513081334 - testuser - getSaleINV....end
+20240615-172451 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172451 : 20240513081334 - testuser - getSaleINV....end
+20240615-172451 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172451 : 20240513081334 - testuser - getShiftIN....end
+20240615-172452 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172452 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172452 : 20240513081334 - testuser - getSaleINV....end
+20240615-172452 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172452 : 20240513081334 - testuser - getSaleINV....end
+20240615-172452 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172452 : 20240513081334 - testuser - getShiftIN....end
+20240615-172453 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172453 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172453 : 20240513081334 - testuser - getSaleINV....end
+20240615-172453 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172453 : 20240513081334 - testuser - getSaleINV....end
+20240615-172453 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172453 : 20240513081334 - testuser - getShiftIN....end
+20240615-172454 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172454 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172454 : 20240513081334 - testuser - getSaleINV....end
+20240615-172454 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172454 : 20240513081334 - testuser - getSaleINV....end
+20240615-172454 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172454 : 20240513081334 - testuser - getShiftIN....end
+20240615-172454 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172454 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172454 : 20240513081334 - testuser - getSaleINV....end
+20240615-172454 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172454 : 20240513081334 - testuser - getSaleINV....end
+20240615-172454 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172454 : 20240513081334 - testuser - getShiftIN....end
+20240615-172515 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172515 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172515 : 20240513081334 - testuser - getSaleINV....end
+20240615-172515 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172515 : 20240513081334 - testuser - getSaleINV....end
+20240615-172515 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172515 : 20240513081334 - testuser - getShiftIN....end
+20240615-172517 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172517 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172517 : 20240513081334 - testuser - getSaleINV....end
+20240615-172517 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172517 : 20240513081334 - testuser - getSaleINV....end
+20240615-172517 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172517 : 20240513081334 - testuser - getShiftIN....end
+20240615-172526 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172526 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172526 : 20240513081334 - testuser - getSaleINV....end
+20240615-172526 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172526 : 20240513081334 - testuser - getSaleINV....end
+20240615-172526 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172526 : 20240513081334 - testuser - getShiftIN....end
+20240615-172732 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-172732 : 20240513081334 - testuser - getSaleINV....wait
+20240615-172732 : 20240513081334 - testuser - getSaleINV....end
+20240615-172732 : 20240513081334 - testuser - getSalePOS....wait
+20240615-172732 : 20240513081334 - testuser - getSaleINV....end
+20240615-172732 : 20240513081334 - testuser - getShiftIN....wait
+20240615-172732 : 20240513081334 - testuser - getShiftIN....end
+20240615-172848 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-172848 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-172848 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-172848 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-172854 : 20240513081334 - testuser - POS Ready!!
+20240615-172856 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-172859 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240615-172859 : 20240513081334 - testuser - Custumer total order: ₱0.00
+20240615-172859 : 20240513081334 - testuser - Custumer Change: ₱100.00
+20240615-172859 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-172940 : 20240513081334 - testuser - POS VOid Orders Transaction: Started
+20240615-173020 : 20240513081334 - testuser - POS Ready!!
+20240615-173022 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173022 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-173022 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173022 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-173025 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-173029 : 20240513081334 - testuser - Enter Custumer Cash: ₱100.00
+20240615-173029 : 20240513081334 - testuser - Custumer total order: ₱41.00
+20240615-173029 : 20240513081334 - testuser - Custumer Change: ₱59.00
+20240615-173029 : 20240513081334 - testuser - POS Enter Cash Order: Started
+20240615-173044 : 20240513081334 - testuser - POS VOid Orders Transaction: Started
+20240615-173044 : 20240513081334 - testuser - Orders POS: {"ID":0,"pos_id":null,"total_inv":"2","total_price":41.0,"cash":100.0,"change":59.0,"user_id":"20240513081334"}
+20240615-173044 : 20240513081334 - testuser - Orders POS response: {"is_Success":true,"message":"20240615173044","is_catch":false,"title":"Success"}
+20240615-173044 : 20240513081334 - testuser - Orders [tbl_inv_sold] : waiting
+20240615-173044 : 20240513081334 - testuser - Orders [tbl_inv_sold]: {"is_Success":true,"message":"Successfully Inserted","is_catch":false,"title":"Success"}
+20240615-173046 : 20240513081334 - testuser - POS VOid Orders Transaction: End
+20240615-173050 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-173050 : 20240513081334 - testuser - getSaleINV....wait
+20240615-173050 : 20240513081334 - testuser - getSaleINV....end
+20240615-173050 : 20240513081334 - testuser - getSalePOS....wait
+20240615-173050 : 20240513081334 - testuser - getSaleINV....end
+20240615-173050 : 20240513081334 - testuser - getShiftIN....wait
+20240615-173050 : 20240513081334 - testuser - getShiftIN....end
+20240615-173303 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173303 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-173303 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173303 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-173305 : 20240513081334 - testuser - POS Ready!!
+20240615-173309 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173309 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173309 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173309 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173310 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173310 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173311 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173311 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173311 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173311 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173312 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173312 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173313 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173313 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173313 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173313 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173314 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173314 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173314 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173314 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173315 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173315 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173315 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173316 : 20240513081334 - testuser - Catch : Input array is longer than the number of columns in this table.
+20240615-173402 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173402 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-173403 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173403 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-173403 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173403 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-173406 : 20240513081334 - testuser - POS Ready!!
+20240615-173409 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173409 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-173409 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173409 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-173410 : 20240513081334 - testuser - SCAN PRODUCTID : 1
+20240615-173410 : 20240513081334 - testuser - Product JSON: [{"ID":"1","ProductID":"1","Name":"milo","Description":"milo 9grams","Price":20.5,"Stocks":19}]
+20240615-175857 : 20240513081334 - testuser - Cashier window 2 is open...
+20240615-175857 : 20240513081334 - testuser - getSaleINV....wait
+20240615-175857 : 20240513081334 - testuser - getSaleINV....end
+20240615-175857 : 20240513081334 - testuser - getSalePOS....wait
+20240615-175857 : 20240513081334 - testuser - getSaleINV....end
+20240615-175857 : 20240513081334 - testuser - getShiftIN....wait
+20240615-175857 : 20240513081334 - testuser - getShiftIN....end

@@ -142,6 +142,12 @@
     <Compile Include="View\Cashier\CashPayment.Designer.cs">
       <DependentUpon>CashPayment.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Cashier\Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cashier\Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Cashier\Remarks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Cashier\CashPayment.resx">
       <DependentUpon>CashPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cashier\Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Cashier\Remarks.resx">
       <DependentUpon>Remarks.cs</DependentUpon>
